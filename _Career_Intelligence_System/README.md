@@ -20,6 +20,7 @@ LinkedIn edit, job application, market pivot) plugs into the same brain.
 | `05_Learning_Roadmap.md` | 2 | ROI-ranked skills to learn, 6-month sequence |
 | `06_Growth_and_Coaching.md` | 6–8 | Personal brand, market trends, continuous coaching |
 | `07_Independent_Experience_and_Positioning.md` | 2/6 | Standing directive: value the WHOLE engineer (projects, consulting, hackathons) — truthfully, with evidence |
+| `prep/README.md` | Prep | **The Rick-Speak Technical Handbook** — JD-driven lexicon, answer cards, daily drills; grows with every new application |
 | `resumes/00_Master_Resume.md` | 4 | **Single source of truth for all facts** |
 | `resumes/*.docx` | 4 | ATS-optimized Word resumes (3 tracks) |
 | `resumes/build_resumes.py` | 4 | Regenerates the .docx resumes from structured data |
