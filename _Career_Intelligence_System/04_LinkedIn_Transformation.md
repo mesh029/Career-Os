@@ -207,3 +207,99 @@ hashtags: #DigitalHealth #HealthInformatics #DHIS2 #OpenMRS #HealthIT #KenyaHeal
 - Personalize every request in one line.
 - Join: OpenMRS Talk, DHIS2 Community, HELINA / health-informatics groups, Kenya digital-health forums.
 - Turn on "Creator mode," add the topics/hashtags above.
+
+---
+
+## M. Dual Positioning Copy Pack (single source for LinkedIn paste)
+
+Use this section when you want to switch between:
+- **Track 1:** Broad systems/data/operations roles across industries.
+- **Track 2:** Health systems / digital health roles.
+
+### Track 1 — Broad (cross-sector) positioning
+
+**Headline (paste-ready):**
+> ICT & Systems Operations Professional | Data & Reporting Automation | API Integrations | SQL · Power BI · Advanced Excel (VBA) | Service Delivery, M&E, Decision Support
+
+**Alternate headline:**
+> Systems & Data Operations Specialist | IT Support, Reporting Automation, API Integrations | SQL · Power BI · Excel VBA | Cross-Functional Delivery
+
+**About (paste-ready):**
+> I build reliable systems, automate reporting, and turn operational data into decisions.
+>
+> I work at the intersection of ICT support, data operations, and business/process improvement. Over the past ~3 years at PATH, I have progressed from ICT intern to HMIS-focused systems and data roles, leading initiatives in data collection, quality checks, dashboarding, API integrations, and end-user support.
+>
+> Core strengths I bring to any sector:
+> • Systems support and service continuity (incident handling, user enablement, process documentation)
+> • Data operations (collection, cleaning, validation, analysis, and reporting)
+> • Reporting automation (advanced Excel/VBA, SQL workflows, reusable templates/tools)
+> • Dashboard development (Power BI/Grafana/Excel) for monitoring and decision-making
+> • Integration work (API-based data sync between operational and reporting systems)
+> • Cross-functional collaboration with technical and non-technical decision-makers
+>
+> I am open to roles across technology operations, systems administration, service delivery, business operations, customer support operations, and data/reporting functions.
+>
+> 📩 aririmeshack@gmail.com
+
+**Experience bullets (transferable wording):**
+- Support mission-critical information systems and users, maintaining high service availability and operational continuity.
+- Lead end-to-end data workflows: collection, cleaning, validation, analysis, and reporting for program and management use.
+- Build advanced Excel/VBA automation tools that reduce manual reporting effort and improve output consistency.
+- Design SQL-based validation checks and reporting logic to improve data accuracy and auditability.
+- Integrate APIs between source systems and reporting platforms to improve timeliness of centralized reporting.
+- Develop and analyze dashboards (Power BI/Grafana/Excel) used by operational and leadership teams for decision-making.
+- Translate technical findings into actionable recommendations for cross-functional stakeholders.
+- Train teams on system use, reporting workflows, and data quality best practices.
+
+**First post (broad positioning):**
+> I am intentionally positioning my work beyond one sector: systems reliability, reporting automation, and data-driven operations apply everywhere.
+>
+> In my recent roles, I have focused on:
+> - Building reliable support workflows for end users and operational teams
+> - Automating reporting with advanced Excel/VBA and SQL checks
+> - Integrating APIs to improve data flow between systems
+> - Developing dashboards that help leadership make faster decisions
+> - Translating technical outputs into practical actions for cross-functional teams
+>
+> Going forward, I am open to opportunities across ICT operations, systems administration, service delivery, and data/reporting roles while continuing to apply what I have learned in high-impact environments.
+>
+> If you are working on operational excellence through better systems and data, let's connect.
+>
+> #ITOperations #SystemsAdministration #DataAnalysis #SQL #PowerBI #Excel #Automation #ServiceDelivery #Operations #API
+
+### Track 2 — Health systems positioning (equally strong)
+
+**Headline (paste-ready):**
+> Health Informatics Specialist | EMR (KenyaEMR/OpenMRS) & DHIS2 | NDWH Integration | SQL · Power BI · Advanced Excel (VBA) | Digital Health, Kenya
+
+**About (paste-ready):**
+> I help keep Kenya's digital health systems running and help teams turn data into decisions.
+>
+> Over the past ~3 years at PATH, I have grown from ICT intern to supporting national-scale health information systems, including KenyaEMR/TaifaCare, DHIS2, and integrations connecting EMR, laboratory, pharmacy, and national reporting systems. In my current work supporting Nuru ya Mtoto, I lead data collection and analysis workflows, build advanced Excel/VBA automation tools, integrate NDWH APIs for national sync, and develop dashboards for care and treatment, PMTCT, and E-TEC program decisions.
+>
+> What I do:
+> • Support and stabilize EMR/HMIS systems for service continuity
+> • Improve data quality with SQL validation and automated checks
+> • Build dashboards (Power BI/Grafana/Excel) for monitoring and decision-making
+> • Strengthen reporting workflows and timeliness for program and national use
+> • Support multidisciplinary teams with data-driven insights, including ECD implementation and cross-country learning touchpoints
+>
+> I am open to collaborations and roles in digital health, health informatics, and health data systems.
+>
+> 📩 aririmeshack@gmail.com
+
+**First post (health systems positioning):**
+> After ~3 years supporting digital health systems at PATH, one lesson stands out: the hardest part of digital health is not only software deployment, it is sustaining data quality and helping teams use data for decisions.
+>
+> In my current role supporting Nuru ya Mtoto, I focus on:
+> - Data collection, cleaning, and analysis for care and treatment, PMTCT, and E-TEC indicators
+> - Advanced Excel/VBA and SQL-based automation to reduce manual reporting workload
+> - NDWH API integration to improve national reporting sync
+> - Dashboard development for program monitoring and decision-making
+> - Supporting ECD implementation through practical, data-driven insights
+>
+> I will be sharing practical lessons on EMR/DHIS2 support, data quality, and reporting automation in health programs.
+>
+> If you work in digital health, HMIS, or health data, let's connect.
+>
+> #DigitalHealth #HealthInformatics #DHIS2 #EMR #HealthData #PMTCT #MonitoringAndEvaluation #GlobalHealth #KenyaHealth
