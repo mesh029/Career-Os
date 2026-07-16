@@ -61,7 +61,9 @@ You do the same — in interviews, not a cartoon voice.
 | 5 | **Card draw** | Pick 1 question from §5 matching tomorrow's interview track. 90-sec answer. Record yourself. |
 | 5 | **JD mirror** | Open target JD. Find 3 keywords you didn't use today. Work them into one answer. |
 
-**Weekly rotation:** Mon/Tue = M365 + identity · Wed = network + infra · Thu = data + APIs · Fri = support + escalation · Sat = stack/audit/CCaaS
+**Morning read (primary):** §11 — 10 questions for today's JD. Say every Rick answer out loud before coffee wears off.
+
+**Weekly rotation:** Mon=JD01 · Tue=JD02 · Wed=JD03 · Thu=JD04 · Fri=JD05 · Sat=JD06 · Sun=JD07–10 catch-up
 
 ---
 
@@ -344,6 +346,7 @@ Then:
 1. Add row to §8 registry
 2. Add new terms to §3 lexicon
 3. Write 1 answer card in §5 if the role needs a new angle
+4. **Add 10 interview Q&As with Rick answers to §11** (same format as existing JDs)
 
 ---
 
@@ -355,6 +358,372 @@ Then:
 | **Google SRE book** | §7 — SLI/SLO/error budget/toil/postmortem language |
 | **Your PATH work** | §5 answer cards — proof layer |
 | **New JDs you post** | §9 intake → auto-grows handbook |
+
+---
+
+## §11 — Morning Drill: 100 Interview Questions (10 per JD)
+
+**How to use:** Read **10 questions/day** — rotate by JD number (Day 1 = JD01, Day 2 = JD02… Day 10 = JD10, repeat).
+Say each **Rick answer** out loud. Under 90 seconds. One PATH proof per answer where it fits.
+
+---
+
+### JD01 — ICT Manager · Hospitality · Cluster D
+
+**Q1. Guest Wi-Fi is down during peak check-in. Walk us through your response.**  
+**Rick:** P1 incident — guest-facing revenue is bleeding. I isolate: AP status, controller, DHCP scope, ISP uplink. Fix the layer, not the symptom. Communicate ETA to front desk every 15 min. Post-incident: blameless review — was it capacity, config drift, or no monitoring? At PATH I held ~98% uptime across multi-site Wi-Fi by treating guest connectivity as an SLO, not a nice-to-have.
+
+**Q2. How would you manage PMS, POS, and keycard systems as one ecosystem?**  
+**Rick:** They're not three tools — they're one guest journey. PMS is source of truth for occupancy; POS feeds revenue; keycard is physical auth tied to reservation state. I document integrations, test failover, and run vendor SLAs like contracts. Break one link and check-in becomes chaos. Portfolio thinking, not silo admin.
+
+**Q3. The GM wants a technology upgrade but budget is tight. How do you advise?**  
+**Rick:** ROI or no slide deck. I audit current stack utilization, quantify downtime cost, and rank upgrades by risk × impact. Quick wins first — license reclamation, automation, security gaps. Big capex gets a use-case plan: problem, users, metric, fallback. That's how you get CEO sign-off without vibes.
+
+**Q4. Describe your approach to cybersecurity in a 24/7 hospitality environment.**  
+**Rick:** CIA triad at every layer — guest network segmented from staff, firewall policy, endpoint protection, MFA on admin, patched servers, tested backups. CCTV and access control are part of the surface. Security isn't a project; it's posture plus incident response: isolate, contain, restore, educate.
+
+**Q5. How do you handle vendor and ISP relationships?**  
+**Rick:** Vendors are part of your stack whether you like it or not. I keep live inventory, contract dates, escalation contacts, and SLA evidence. When they miss SLA, I log it and renegotiate from data. ISPs get monitored uplink metrics — don't wait for guests to tweet about outage.
+
+**Q6. Conference AV fails 30 minutes before a corporate event. What do you do?**  
+**Rick:** Contain panic, run the checklist: input source, HDMI handshake, audio routing, codec, network for VC. Spare adapter kit exists because Murphy lives in event rooms. Parallel path: phone bridge backup. After: document the config that worked and label the ports. AV failures are always "it worked yesterday."
+
+**Q7. How do you prioritize when every department says their issue is urgent?**  
+**Rick:** Impact × urgency × SLA. Guest-facing and revenue-blocking beat internal printer drama. I triage openly — "here's the queue, here's why you're third." Transparency kills politics. At PATH I handled 20+ tickets/day without hero culture by making priority logic visible.
+
+**Q8. How do you maintain hardware/software license inventory?**  
+**Rick:** If it's not in inventory, it doesn't exist for audit or renewal. Asset tag, owner, warranty, license seat, last audit date. Quarterly reconcile: active users vs. paid seats. Orphaned licenses are cash on the table. I've run stack audits that cut waste before asking for new budget.
+
+**Q9. Tell us about leading IT in a high-pressure environment.**  
+**Rick:** 24/7 ops means runbooks, not improvisation. I document SOPs, cross-train, and automate repetitive provisioning. Leadership is calm triage under noise — fix mechanism, communicate status, postmortem after. I trained 80+ users so IT isn't the single point of failure for basic tasks.
+
+**Q10. What's your disaster recovery philosophy?**  
+**Rick:** Backup without tested restore is fantasy. DR is RTO/RPO math — how fast back, how much data loss tolerated. 3-2-1 rule, offsite copies, annual restore drill. When disaster hits, you execute the runbook, not Google.
+
+---
+
+### JD02 — IT Support Engineer 2nd–3rd Line · Optimise · Cluster A
+
+**Q1. A client can't receive external email after a DNS change. Diagnose.**  
+**Rick:** Mail flow is DNS + auth + transport. I check MX, SPF, DKIM, DMARC, TTL propagation, and Exchange transport rules. Internal works but external doesn't? Usually MX or firewall port 25/587. I verify with message trace — evidence, not guessing.
+
+**Q2. How do you administer Microsoft 365 at scale for an MSP?**  
+**Rick:** Entra ID is the spine — users, groups, conditional access, MFA. Exchange/SharePoint/Teams are workloads on top. Intune for endpoint posture. Everything scripted where possible — PowerShell kills toil. Multi-tenant discipline: wrong tenant is a career-ending typo.
+
+**Q3. Intune enrollment fails on a new Windows device. Steps?**  
+**Rick:** Enrollment is identity + network + policy. Check Entra join status, autopilot profile, cert chain, firewall to Intune endpoints, compliance policy conflicts. Logs tell the truth — Company Portal and MDM diag reports. Fix the gate, re-enroll, document.
+
+**Q4. macOS user needs Jamf policy update but apps conflict. Approach?**  
+**Rick:** Jamf is Intune for Apple — smart groups, config profiles, scope. I reproduce on test device, check profile priority, PPPC permissions, and conflicting MDM payloads. Change one variable at a time. MSP clients don't care about your learning curve — they care that Slack opens.
+
+**Q5. When do you escalate vs. own an issue?**  
+**Rick:** I timebox L2 diagnosis — if it's architecture, vendor bug, or permission ceiling, I escalate with reproduction steps, logs, and hypothesis. Escalation isn't failure; bad handover is. At PATH I improved response time ~25% by escalating clean.
+
+**Q6. Explain VLAN troubleshooting for a remote client site.**  
+**Rick:** Layer 2/3 separation — wrong VLAN tag means device is alive but deaf. I verify switch port config, trunk allowed VLANs, DHCP scope per VLAN, and inter-VLAN routing. Ping gateway on VLAN, then upstream. "Can't connect" is never one answer.
+
+**Q7. How do you maintain documentation in IT Glue / PSA?**  
+**Rick:** Documentation is deflection currency. Every non-trivial fix becomes KB: symptom, cause, fix, prevention. Passwords in vault, configs versioned, vendor portals linked. If the next engineer starts from zero, you failed.
+
+**Q8. DLP policy blocked a legitimate file share. Resolve without weakening security.**  
+**Rick:** DLP caught a pattern — good. I trace the rule, classify the data, adjust policy scope or create exception with justification and expiry. Never blanket disable. Security and business share a Venn diagram; find the overlap.
+
+**Q9. VIP client is angry about recurring Teams issues. Handle it.**  
+**Rick:** Acknowledge impact first — their time is money. Reproduce, check client version, network QoS, meeting policy, and tenant service health. Fix root cause, not band-aid. Follow up proactively. VIP means higher touch, not lower standards.
+
+**Q10. Describe your experience in an MSP environment.**  
+**Rick:** MSP is multi-tenant triage at speed — SLAs, ticket quality, documentation, and depth across M365, endpoint, network. I've supported 120+ users with ITIL workflows in Freshdesk/Zoho. Context-switching is the job; runbooks and automation are how you survive it.
+
+---
+
+### JD03 — IT Systems Administrator (Web Dev) · Thika · Cluster G
+
+**Q1. Company website is down after a CMS update. Response?**  
+**Rick:** Rollback first, forensics second. Snapshot before update exists or shame. I check web server logs, PHP/DB errors, plugin conflicts, SSL cert. Restore last known good, then reproduce in staging. Production isn't a lab.
+
+**Q2. How do you balance sysadmin duties with web development?**  
+**Rick:** Same brain — different layers. Infra keeps the box up; app layer serves content. I timebox: ops mornings, dev afternoons, incidents override everything. Automation on ops creates dev time. One person roles need ruthless prioritization.
+
+**Q3. Walk through securing a Linux + Windows mixed environment.**  
+**Rick:** Harden both — patch cadence, least privilege, firewall zones, centralized logging, encrypted backups. Linux: SSH keys, fail2ban, sudo audit. Windows: GPO, Defender, Entra hybrid if cloud. Mixed env fails at the integration boundary — watch auth and file shares.
+
+**Q4. ERP integration is duplicating records. Fix approach?**  
+**Rick:** Integration without idempotency is a duplicate factory. I map the API contract, find the key field, add dedup logic and reconciliation job. Source and destination must match or scream. That's middleware thinking, not spreadsheet hope.
+
+**Q5. How do you handle confidential data as a sysadmin?**  
+**Rick:** Need-to-know access, encrypted storage, no personal email exfil, audit logs on sensitive shares. High integrity means you say no when asked to shortcut policy — and you document the request.
+
+**Q6. Network performance degraded across the office. Diagnose.**  
+**Rick:** Measure before theorizing — bandwidth, latency, packet loss, DNS time, switch port errors. Rogue device, broadcast storm, failing uplink, or ISP throttle. Baseline vs. now. Fix the bottleneck, not the loudest complaint.
+
+**Q7. Describe your cybersecurity knowledge in practice.**  
+**Rick:** Defense in depth: perimeter, endpoint, identity, data. Patch, MFA, segmentation, monitoring, incident response plan. I've supported vulnerability reporting and access controls at PATH. Security is continuous, not a checkbox before audit.
+
+**Q8. How do you work independently under pressure?**  
+**Rick:** Pressure means checklist mode — triage, communicate, execute, document. I don't need micromanagement; I need clear priorities and access. Solo IT is ownership: you are L1 through L3 until vendor escalation.
+
+**Q9. UI/UX matters on an internal web tool. Example?**  
+**Rick:** Bad UX creates support tickets. I simplify flows, label clearly, validate inputs server-side, mobile-test. Internal tools deserve the same discipline as customer-facing — every confused click becomes your 6pm call.
+
+**Q10. Backup job failed silently for a week. How do you prevent recurrence?**  
+**Rick:** Silent failure is the worst failure. Monitoring on backup success, not just schedule. Daily alert on miss, weekly restore test, monthly DR drill. Observability on backups or you're praying.
+
+---
+
+### JD04 — System Administrator · CCaaS · Cluster B
+
+**Q1. What is CCaaS and how would you own that stack?**  
+**Rick:** Contact Center as a Service — telephony, routing, IVR, QA, reporting, SSO, security as one platform. I treat it like production infra: uptime SLO, integration map, license utilization, module health. I've worked VoIP/3CX + Freshdesk ITSM — same physics, bigger scale.
+
+**Q2. How do you audit an enterprise software stack?**  
+**Rick:** Inventory everything — deploy date, owner, active users, license cost, overlap with other tools. Kill shelfware, consolidate duplicates, rightsized seats. Audit output is CSV truth, not slide deck fiction. CEOs fund savings, not jargon.
+
+**Q3. Present ROI for a proposed tool to executive leadership.**  
+**Rick:** Cost vs. time saved vs. risk reduced. Hours reclaimed × rate, error reduction, SLA improvement. Use-case plan: who uses it, how measured, fallback if it fails. Executives buy outcomes; engineers buy features.
+
+**Q4. SSO rollout broke access to a legacy app. Fix?**  
+**Rick:** SSO is identity bridge — SAML/OIDC config, attribute mapping, session timeout. Legacy apps often need middleware or phased cutover. I test pilot group, monitor auth logs, keep break-glass local accounts until stable. Never big-bang identity changes without rollback.
+
+**Q5. How do you design employee tool onboarding at scale?**  
+**Rick:** Framework: HR trigger → device provision → Entra account → app access by role → training → KB article → support runway. Operations executes frontline; IT owns the template. Ad-hoc onboarding is how orphans and security holes happen.
+
+**Q6. License audit shows 40% unused seats on expensive SaaS. Action?**  
+**Rick:** Reclaim immediately — disable inactive, downgrade tier, reassign. Policy: manager approves new seats. Recurring quarterly audit. That's budget recovered without asking for more money.
+
+**Q7. QA module in contact center shows agent scores dropping. Investigate.**  
+**Rick:** QA is signal on service quality — sample rate, rubric drift, or real performance issue? I check recording pipeline, scoring calibration, and correlate with ticket volume/spikes. Data before blame. Fix process or coaching based on pattern.
+
+**Q8. How do you operate with autonomy and minimal micromanagement?**  
+**Rick:** I ship outcomes — audit report, rollout plan, utilization dashboard — on schedule without being chased. Blockers escalated early with options. Autonomy isn't silence; it's informed independence.
+
+**Q9. Review a vendor contract before CEO signs. What do you check?**  
+**Rick:** Term, auto-renew trap, SLA penalties, data residency, exit clause, license metric (per seat vs. per active user), support tier, implementation scope. Detail on contracts is how you avoid vendor lock-in regret.
+
+**Q10. How do you integrate reporting/analytics into CCaaS operations?**  
+**Rick:** Reporting must tie to decisions — call volume, ASA, abandonment, QA scores, agent utilization. I pipe to Power BI or native analytics, validate data freshness, dashboard what leadership actually reads. Vanity metrics die in slide decks.
+
+---
+
+### JD05 — ICT Officer · Gas Africa · Cluster D
+
+**Q1. Mission-critical system uptime — how do you guarantee it?**  
+**Rick:** You don't guarantee — you engineer probability. Monitoring, redundancy, patch cadence, tested backups, runbooks, vendor SLAs. I sustained >98% uptime at PATH. Uptime is measured, not promised.
+
+**Q2. Walk through your troubleshooting methodology.**  
+**Rick:** Reproduce → isolate layer (physical, network, OS, app, identity) → hypothesize → test → fix → document. Ping/Tracert/DNS for network. Event logs for system. One variable at a time. Guessing is not troubleshooting.
+
+**Q3. How do you implement data security and backups?**  
+**Rick:** 3-2-1 backups, encrypted at rest, offsite copy, restore tested quarterly. Access control least privilege, patch management, MFA for admins. Backups and security are the same conversation — both are about surviving bad days.
+
+**Q4. User account compromise suspected. Steps?**  
+**Rick:** Contain fast — disable account, kill active sessions, force password reset, MFA re-enroll. Scan device, check mail rules and forwarding, audit recent access. Then root cause: phishing? weak password? shared creds? Educate after contain.
+
+**Q5. How do you track ICT assets across the organization?**  
+**Rick:** Asset register: tag, serial, assignee, location, warranty, dispose date. Tie to user onboarding/offboarding. Mystery hardware is mystery risk. I've maintained inventory across multi-site deployments.
+
+**Q6. Network performance monitoring — what do you watch?**  
+**Rick:** Uplink utilization, latency, packet loss, switch port errors, DNS response, Wi-Fi RF if wireless. Baselines matter — without baseline, "slow" is subjective. Alert on anomaly, not noise.
+
+**Q7. Explain technical concepts to non-technical staff.**  
+**Rick:** Metaphor + outcome, skip acronyms. "We're fixing how computers find the server — like updating the address book." Confirm understanding. I trained 80+ health workers on digital tools — if they nod but don't get it, you failed.
+
+**Q8. Multiple urgent tasks — how do you prioritize?**  
+**Rick:** Matrix: business impact vs. urgency. Production down beats printer. I communicate queue position honestly. Multitasking is rapid single-tasking with a visible list.
+
+**Q9. Routine maintenance to prevent failures?**  
+**Rick:** Patch Tuesday isn't optional. Firmware updates, disk health checks, cert expiry calendar, UPS battery test, log rotation. Preventive maintenance is boring until the day it saves you.
+
+**Q10. Coordinating external vendors for specialist support?**  
+**Rick:** Vendor is extension of your team — SLA, escalation path, scope in writing. I gather logs before calling — respect their time, get faster resolution. Post-ticket: did we need vendor or could we self-serve next time?
+
+---
+
+### JD06 — Customer Support Specialist · Influx · Cluster E
+
+**Q1. Angry customer can't log in. First 60 seconds?**  
+**Rick:** Empathy before mechanics — "I get why this is blocking you." Verify identity per policy, check account status, password reset flow, browser cache, 2FA device. Calm tone, clear steps, confirm resolution. User remembers how you made them feel.
+
+**Q2. Issue isn't in the knowledge base. What now?**  
+**Rick:** Document while solving — you're writing tomorrow's KB article. Reproduce, escalate with clean ticket: steps tried, screenshots, user environment. Escalation isn't "I don't know" — it's "I routed this to the layer that does."
+
+**Q3. How do you handle email, chat, and phone differently?**  
+**Rick:** Same brain, different bandwidth. Email: complete, structured. Chat: short, parallel conversations. Phone: lead with reassurance, one step at a time. All channels: categorize accurately or metrics lie.
+
+**Q4. Recurring issue from multiple customers — action?**  
+**Rick:** Pattern recognition is gold. Flag to product/ops with frequency count and examples. Propose KB update or process fix. Closing tickets without fixing recurrence is treadmill work.
+
+**Q5. How do you meet remote work setup requirements?**  
+**Rick:** Specs exist for a reason — 8GB RAM, stable 40+ Mbps, wired headset, quiet space. I test setup before shift, backup internet if possible. Remote support fails when your environment is the variable.
+
+**Q6. CRM/helpdesk — how do you keep ticket quality high?**  
+**Rick:** Category, priority, reproduction steps, resolution notes — every time. Bad data in CRM means bad reporting out. I've used Freshdesk/Zoho with ITIL categorization — garbage in, garbage dashboards.
+
+**Q7. Customer wants you to bend policy. Response?**  
+**Rick:** Empathize, explain policy reason, offer allowed alternatives. Escalate if exception warranted — don't rogue-authorize. Trust is consistency, not random favors.
+
+**Q8. How do you learn a new product quickly?**  
+**Rick:** Docs → sandbox → break it → support shadow → KB contribution. I map user journeys, not feature lists. Learn the 20% of features that cause 80% of tickets first.
+
+**Q9. Connectivity issue on user's home network — guide them.**  
+**Rick:** Layer 1 basics — cable, router reboot, DNS flush, try hotspot isolate. Plain language: "Let's see if it's your network or our app." Remote support is teaching while fixing.
+
+**Q10. Why customer support over pure IT?**  
+**Rick:** Support is applied systems thinking with humans in the loop. I like making broken things work under pressure — same triage discipline as IT, plus empathy as a tool. PATH taught me users don't care about your stack; they care that it works.
+
+---
+
+### JD07 — IT Support Technician · Solvo Global · Cluster E
+
+**Q1. Prepare and configure a new Windows workstation for deployment.**  
+**Rick:** Standard image, drivers, Windows update, domain join/Entra, M365 apps, security baseline, asset tag, ticket closed with config notes. Consistency beats customization — golden image is freedom.
+
+**Q2. User can't resolve hostname but IP ping works.**  
+**Rick:** DNS. Flush cache, check DHCP DNS servers, verify forward lookup zone, test with 8.8.8.8 to isolate local DNS failure. Classic L1 — solve in two minutes if you know the layer.
+
+**Q3. Walk through Ping vs. Tracert vs. DNS in diagnosis.**  
+**Rick:** Ping: is it alive? Tracert: where did it die? DNS: can it find the name? Three tools, three questions. Run them in that order before opening the ticket to L2.
+
+**Q4. Basic hardware fault — how do you isolate?**  
+**Rick:** Swap test — cable, port, monitor, RAM stick, power supply. POST beeps, smell burnt silicon (bad). Document serial for RMA. Hardware is binary; process is methodical.
+
+**Q5. Night shift — priorities when queue is full?**  
+**Rick:** SLA and business impact still rule night. Production blockers first, provisioning second, nice-to-haves when quiet. Document handover for day shift — async continuity is professionalism.
+
+**Q6. ITSM ticket closing standards?**  
+**Rick:** Resolution category, root cause tag, time spent, KB link if applicable. Reopen rate tracks your quality. Close means solved, not "stopped replying."
+
+**Q7. Equipment relocation across sites — plan?**  
+**Rick:** Inventory what's moving, label cables, shutdown order, transport protection, re-ip plan, test before declaring done. Moves are outage factories without a checklist.
+
+**Q8. Create M365 user account — full steps?**  
+**Rick:** Entra user, license assignment, groups for access, MFA enrollment, mailbox config, Teams enable, welcome doc with temp creds via secure channel. Offboarding is the same movie in reverse — disable first.
+
+**Q9. Customer-focused mindset in internal IT?**  
+**Rick:** Internal users are customers too. Their downtime is your P1. Communicate, don't condescend. "Have you tried rebooting" without context is how IT earns a bad reputation.
+
+**Q10. IT asset inventory assignment — why it matters?**  
+**Rick:** Unknown device = unknown risk and unknown cost. Assignee, location, serial, warranty. Onboard ties asset to user; offboard recovers it. Audit quarterly or finance will audit you.
+
+---
+
+### JD08 — IT & Systems Administrator · Bridge Talent · Cluster D
+
+**Q1. Manage Microsoft 365 across Kenya and Australia hubs.**  
+**Rick:** Distributed identity — Entra as source, conditional access for geo risk, license optimization across time zones. Async support docs beat real-time heroics. Australia hours means runbooks Australians can execute without waking you.
+
+**Q2. PowerShell automation example for M365?**  
+**Rick:** User provisioning script — create user, assign groups, license, generate report of orphans weekly. PowerShell murders toil. I automated validation at PATH with SQL/VBA — same philosophy, different syntax.
+
+**Q3. Zoho CRM data hygiene — approach?**  
+**Rick:** CRM rot is duplicate contacts, stale owners, broken fields. Validation rules, dedup job, mandatory fields, quarterly audit. Clean CRM or sales flies blind.
+
+**Q4. Integrate two internal systems so data doesn't duplicate manually.**  
+**Rick:** API or middleware — map fields, idempotent sync, error queue, reconciliation report. Humans as integration layer is how drift happens. I integrated NDWH APIs at PATH — contract-first, validate, reconcile.
+
+**Q5. Set up customer-support call centre infrastructure.**  
+**Rick:** VoIP platform, number routing, IVR, queue logic, CRM/ticket integration, recording for QA. Test peak load, failover path, agent headset standard. Calls are real-time — design for failure.
+
+**Q6. Remote staff home internet issue — support from Nairobi?**  
+**Rick:** Router reboot, DNS, speed test, wired vs. Wi-Fi, ISP outage map, escalate to ISP with traceroute evidence. Can't fix physics remotely — isolate whose pipe is broken.
+
+**Q7. Intune MDM rollout for remote endpoints?**  
+**Rick:** Pilot group, enrollment profile, compliance policy, app deployment rings, helpdesk KB for users. Staged rollout beats big-bang "why is my laptop locked."
+
+**Q8. Phishing email reported by staff. Response?**  
+**Rick:** Isolate — don't click links. Search org-wide for same message, block sender/URL, force password reset if anyone clicked, scan endpoints, company-wide alert with screenshot of phish. Speed beats shame.
+
+**Q9. Proactively flag system issues before users scream?**  
+**Rick:** Monitoring on disk, cert expiry, backup success, service health, unusual login patterns. Alert on signal, not noise. Proactive is cheaper than postmortem.
+
+**Q10. Research and recommend a new internal tool?**  
+**Rick:** Use-case plan: problem statement, alternatives, cost, integration effort, security review, pilot metric. Recommend with data; let leadership choose with eyes open.
+
+---
+
+### JD09 — IT Officer · Global Support · INSO · Cluster C
+
+**Q1. Support a Francophone country office remotely — challenges?**  
+**Rick:** Language, bandwidth, time zone, and context. Clear French/English docs, async video tutorials, confirm understanding. Technology is easy; communication gap is the actual outage.
+
+**Q2. Travel to high-risk country for IT project — preparation?**  
+**Rick:** Security briefing, local SIM, encrypted devices, offline runbooks, backup hardware, coordinate with country focal point. INGO context means safety first — IT second. Plan B for when Plan A can't ship.
+
+**Q3. Remote support via TeamViewer — best practices?**  
+**Rick:** User consent, session recorded if policy allows, least access, fix + teach, document after. Remote into hostile networks — assume compromised client side, don't leave credentials.
+
+**Q4. SharePoint permissions are a mess. Clean up?**  
+**Rick:** Audit inheritance, remove over-sharing, group-based access not named users, periodic access review. SharePoint sprawl is security debt with a friendly UI.
+
+**Q5. Country office fails IT standards compliance audit. Plan?**  
+**Rick:** Gap list prioritized by risk — patch cadence, AV status, encryption, backup proof, account hygiene. Remediation timeline with owner per item. Compliance is provable, not aspirational.
+
+**Q6. Humanitarian context — how does IT support differ?**  
+**Rick:** Austere connectivity, high stakes, low margin for downtime. Empathy for field conditions, rugged solutions, offline-capable where possible. Your ticket isn't a printer — it might be incident reporting for aid worker safety.
+
+**Q7. Create training tutorial for INSO IT tools.**  
+**Rick:** Screenshot each step, plain language, FR + EN if required, 5-min video for complex flows. Test with one non-technical user before publishing. KB that isn't read is vanity.
+
+**Q8. Intune deployment in field office with poor bandwidth?**  
+**Rick:** Staged downloads, local caching, offline policies, USB fallback image. Design for the network you have, not the network you wish for.
+
+**Q9. Bridge HQ IT and country office conflict on standards.**  
+**Rick:** Diplomacy with specs — explain risk in their terms, offer phased path, escalate with evidence not ego. Focal point role is translator between policy and reality.
+
+**Q10. First-line support during site visit vs. second-line remote?**  
+**Rick:** On-site: hands, hardware, relationship, observe environment. Remote: depth, architecture, follow-up. I do both at PATH — facility visits plus remote HMIS support. Match mode to problem layer.
+
+---
+
+### JD10 — IT Specialist · Kuehne+Nagel · Cluster F
+
+**Q1. IT in logistics — what's different?**  
+**Rick:** Time-sensitive operations — shipment tracking, warehouse systems, global handoffs. Downtime costs money per minute. I speak systems + operations: fix fast, document, prevent recurrence across time zones.
+
+**Q2. Handle escalation from junior admin with poor ticket notes?**  
+**Rick:** Send it back with template — reproduction, logs, steps tried. Mentor once, enforce after. Bad handover wastes two people's time. Quality tickets are a culture, not a feature.
+
+**Q3. Improve customer service support quality with metrics?**  
+**Rick:** Define metrics — FRT, resolution time, reopen rate, CSAT. Baseline, target, weekly review, process change, re-measure. I've improved response time ~25% at PATH with SLA discipline. What gets measured gets managed.
+
+**Q4. Collaborate with global IT teams across cultures?**  
+**Rick:** Async docs, clear ownership, respect time zones, over-communicate handoffs. Assume good intent, clarify ambiguity. Global IT fails at boundaries — be explicit about who owns what.
+
+**Q5. Anti-virus and backup software in networked environment?**  
+**Rick:** Central policy, definition updates, scan schedules, quarantine workflow. Backup agents monitored — success/fail alerts. AV without updates is decoration; backup without restore test is hope.
+
+**Q6. Three projects, same deadline — how?**  
+**Rick:** Ruthless prioritization, negotiate deadline with data, parallelize what doesn't conflict, daily status without being asked. Under-promise on scope, over-deliver on communication.
+
+**Q7. Mentor a colleague on troubleshooting?**  
+**Rick:** Teach the layer model, not the magic fix. Pair on one ticket, they drive, you question. Next ticket they solo, you review. I've trained 80+ users — scaffolding beats lecturing.
+
+**Q8. User says "it's broken" with no details. Investigate?**  
+**Rick:** Investigative questions — what were you doing, what did you expect, what happened instead, when did it start, anyone else affected. Screenshots. Reproduce before theorizing. Vague input doesn't get vague output.
+
+**Q9. Flexible hours and short-notice travel — readiness?**  
+**Rick:** Go-bag mindset — laptop, adapters, docs accessible offline, comms plan. Flexibility is structured — I know my on-call boundaries and escalation paths before the plane ticket.
+
+**Q10. Why Kuehne+Nagel / logistics IT?**  
+**Rick:** Global systems at operational speed — my PATH work was national-scale health data under pressure. Same muscle: reliability, integration, user support, metrics. I fix mechanisms in environments where downtime has real cost.
+
+---
+
+### §11 Quick reference — question types by JD
+
+| JD | Technical | Scenario | Behavioral | Process |
+|----|-----------|----------|------------|---------|
+| 01 Hospitality | Wi-Fi, PMS/POS, DR | Peak check-in outage | Leadership, vendor mgmt | Budget, 24/7 ops |
+| 02 Optimise MSP | M365, Intune, Jamf, VLAN | Email/DNS, VIP client | Escalation, documentation | MSP multi-tenant |
+| 03 Thika hybrid | Linux/Win, CMS, ERP | Site down post-update | Independent work | Security, backups |
+| 04 CCaaS | SSO, stack audit | License waste | Autonomy, exec presence | ROI, onboarding framework |
+| 05 Gas Africa | Network, backups | Account compromise | Non-tech communication | Prioritization, vendors |
+| 06 Influx | KB, CRM tickets | Angry customer login | Empathy, policy | Remote setup, multi-channel |
+| 07 Solvo L1 | DNS, Ping, imaging | Night shift queue | Customer-focused | ITSM standards, assets |
+| 08 Bridge | PowerShell, Zoho, API | Phishing, AU hours | Proactive monitoring | Tool research |
+| 09 INSO | SharePoint, Intune | High-risk travel | Cross-cultural | Compliance, tutorials |
+| 10 Kuehne+Nagel | AV/backup, global IT | Bad escalation ticket | Mentoring | Metrics, logistics context |
+
+**Add new JDs:** 10 questions + Rick answers → append as JD11, JD12… Update §8 registry.
 
 ---
 
