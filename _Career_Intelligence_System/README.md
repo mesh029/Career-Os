@@ -1,81 +1,434 @@
 # Meshack Ariri — Career Intelligence System
 
-This folder is a permanent, evolving system for maximizing Meshack Ariri's career outcomes.
-It is governed by one charter and organized so every future action (resume, cover letter,
-LinkedIn edit, job application, market pivot) plugs into the same brain.
+This repository is the durable memory for Meshack Ariri's career work. AI chat history,
+computer-local settings, and agent memory may disappear; the versioned files in this
+repository must contain enough context for a person or a fresh agent to continue safely.
 
-> **Read `00_SYSTEM_PROMPT.md` first — it is the constitution. Everything else obeys it.**
+> **Start with this README, then read `00_SYSTEM_PROMPT.md`. Do not rely on a previous chat.**
+
+**Last continuity update:** 2026-07-16
+**Repository:** `https://github.com/mesh029/Career-Os.git`
+**Default branch:** `main`
 
 ---
 
-## Index
+## 1. Five-minute restart on another computer
 
-| File | Phase | What it is |
+### Clone and enter the system
+
+```bash
+git clone https://github.com/mesh029/Career-Os.git
+cd Career-Os/_Career_Intelligence_System
+git pull --ff-only
+```
+
+If the repository is already cloned:
+
+```bash
+cd /path/to/Career-Os
+git status
+git pull --ff-only
+cd _Career_Intelligence_System
+```
+
+Never discard local changes just to pull. If `git status` is not clean, review or save
+those changes first.
+
+### Create the Python environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install "python-docx==1.1.2" "reportlab==3.6.13"
+```
+
+These versions reproduce the environment last verified on Python 3.8.10. There is
+currently no dependency manifest, so keep this setup block current if dependencies change.
+
+### Read the state in this order
+
+1. `README.md` — continuity guide and latest handoff.
+2. `00_SYSTEM_PROMPT.md` — constitution, KPIs, and truthfulness rules.
+3. `resumes/00_Master_Resume.md` — canonical personal and employment facts.
+4. `applications/APPLICATIONS_TRACKER.md` — active pipeline, deadlines, and submission status.
+5. The active role's `Job_Description.md` and `Application_Intelligence.md`.
+6. `03_Application_Intelligence.md` — historical patterns and strategy.
+7. `prep/README.md` — interview language, answer cards, drills, and JD registry.
+8. `04_LinkedIn_Transformation.md` when working on LinkedIn.
+
+Then check `git status` and the dates inside the tracker. Job listings and deadlines can
+expire, so verify them live before acting.
+
+---
+
+## 2. Copy-paste prompt for any fresh AI agent
+
+```text
+You are taking over the Career Intelligence System in this repository.
+You have no reliable memory of previous chats. Establish the current state from files.
+
+Read, in order:
+1. _Career_Intelligence_System/README.md
+2. _Career_Intelligence_System/00_SYSTEM_PROMPT.md
+3. _Career_Intelligence_System/resumes/00_Master_Resume.md
+4. _Career_Intelligence_System/applications/APPLICATIONS_TRACKER.md
+5. The files for the application or task we are currently working on
+6. _Career_Intelligence_System/prep/README.md when a JD or interview is involved
+
+Rules:
+- Never invent facts, metrics, certifications, experience, links, or outcomes.
+- Preserve the canonical PATH employer name, titles, and dates from the Master Resume.
+- Treat DOCX/PDF files as generated outputs, not sources of truth.
+- Builders currently duplicate facts; they do not read the Markdown Master Resume.
+- Before editing a builder, compare its facts against the Master Resume.
+- Mark uncertain claims as unverified and ask me before publishing them.
+- Keep the application tracker, application log, prep handbook, and LinkedIn guidance
+  synchronized when the same change affects them.
+- Verify live job deadlines and links; do not trust old tracker dates blindly.
+- Preserve the visual theme in resumes/resume_theme.py unless I request a redesign.
+- Do not expose this repository publicly without a privacy review.
+
+Before changing anything, report:
+1. Git state
+2. Current deadlines and unsent applications
+3. Unresolved factual confirmations
+4. Any source-versus-builder drift relevant to the task
+5. The smallest safe next action
+
+At the end, update the repository's durable handoff state instead of relying on chat memory.
+```
+
+---
+
+## 3. Source-of-truth hierarchy
+
+When files disagree, use this order:
+
+| Priority | Source | Authority |
+|---:|---|---|
+| 1 | `00_SYSTEM_PROMPT.md` | Governance, objectives, and ethical rules |
+| 2 | `resumes/00_Master_Resume.md` | Canonical facts: titles, dates, metrics, education, certifications |
+| 3 | `01_` through `07_*.md` | Strategy and interpretation |
+| 4 | `applications/<Role>/Job_Description.md` | Captured requirements for one role |
+| 5 | `applications/<Role>/Application_Intelligence.md` | Fit analysis and honest positioning |
+| 6 | `applications/<Role>/build.py` | Renderable role-specific content |
+| 7 | Generated `.docx` and `.pdf` files | Outputs only |
+| 8 | `applications/APPLICATIONS_TRACKER.md` | Operational status and deadlines |
+| 9 | `prep/README.md` | Interview vocabulary and practice material |
+
+### Critical limitation: the builders do not read the master
+
+`resumes/00_Master_Resume.md` is the human source of truth, but `resumes/build_resumes.py`
+and every `applications/*/build.py` currently contain duplicated Python data. Therefore,
+editing the Master Resume and rerunning a builder **does not automatically propagate the
+change**.
+
+For every factual change, manually reconcile:
+
+- `resumes/00_Master_Resume.md`
+- `resumes/build_resumes.py`
+- affected `applications/*/build.py` files
+- LinkedIn copy and reusable templates
+- application intelligence and interview material where relevant
+
+Do not assume “regenerate” means “synchronize.”
+
+---
+
+## 4. Current career strategy
+
+**Primary identity:** Health Informatics / EMR–DHIS2 specialist.
+
+Approved variants:
+
+1. INGO/UN ICT Officer
+2. Enterprise or remote IT Operations / Systems Administration
+
+Avoid making off-brand tracks the main identity: web/Webflow, talent acquisition, pure
+CRM, generic L1 voice helpdesk, and non-health M&E.
+
+Canonical PATH timeline:
+
+1. **ICT Intern** — Apr 2023 to Dec 2023
+2. **ICT Associate** — Jan 2024 to Mar 2025
+3. **Health Informatics / HMIS Officer** — Mar 2025 to Present
+
+Employer must be written as **PATH**, not “Program Appropriate for Technology in Health.”
+Tailoring bullets and summaries is allowed; silently replacing official job titles is a
+credibility risk.
+
+---
+
+## 5. Current operational snapshot
+
+Snapshot from `applications/APPLICATIONS_TRACKER.md`, last updated 2026-07-15:
+
+- Ten application packages are built; none is recorded as sent.
+- **Immediate deadline:** ICT Officer — Gas Africa, 2026-07-21, approximately 85% apply score.
+- Other strong unsent packages include Solvo Global (~85%), CCaaS SysAdmin (~85%),
+  Influx (~82%), Thika SysAdmin/Web Dev (~80%), and Kuehne+Nagel (~78%).
+- INSO is a long-shot because French is essential.
+- Confirm every listing, deadline, employer, and submission channel before applying.
+- `applications/APPLICATIONS_TRACKER.md` is newer than the running log in
+  `03_Application_Intelligence.md`; those files need synchronization.
+
+The tracker is the live pipeline. This snapshot is only a handoff summary and will become
+stale; update both when the pipeline changes.
+
+### Facts still requiring Meshack's confirmation
+
+- [ ] Exact number of facilities/sites supported.
+- [ ] Whether CCNA is an exam certification or a course completion.
+- [ ] Whether AZ-900 is an exam certification or a course completion.
+- [ ] Whether the approximately 40% processing-time improvement is defensible.
+- [ ] Whether the approximately 25% ticket-response improvement is defensible.
+- [ ] Whether freelance/consulting work is genuinely ongoing.
+- [ ] GitHub URL.
+- [ ] LinkedIn experience updated to the canonical three-role timeline.
+
+Until confirmed, do not turn these into stronger or more definite claims.
+
+---
+
+## 6. Repository map
+
+| Path | Purpose |
+|---|---|
+| `00_SYSTEM_PROMPT.md` | Founding charter and non-negotiable rules |
+| `01_Career_Profile.md` | Professional identity, target market, positioning, risks |
+| `02_Skills_Intelligence.md` | Skills inventory, hidden strengths, terminology, gaps |
+| `03_Application_Intelligence.md` | Historical application analysis and running log |
+| `04_LinkedIn_Transformation.md` | LinkedIn audit, copy, SEO, visuals, and content plan |
+| `05_Learning_Roadmap.md` | ROI-ranked six-month learning sequence |
+| `06_Growth_and_Coaching.md` | Brand, market trends, coaching, and KPI tracker |
+| `07_Independent_Experience_and_Positioning.md` | Truthful use of projects, consulting, and hackathons |
+| `resumes/00_Master_Resume.md` | Canonical facts and master bullet bank |
+| `resumes/resume_theme.py` | Shared palette, fonts, and contact header |
+| `resumes/build_resumes.py` | Builds the three general DOCX resumes |
+| `resumes/pdf_builder.py` | Shared ReportLab renderer for application PDFs |
+| `applications/APPLICATIONS_TRACKER.md` | Active application pipeline |
+| `applications/<Role>/` | JD, analysis, builder, messages, and generated package |
+| `prep/README.md` | Rick-Speak Technical Handbook and interview preparation |
+| `templates/` | Reusable cover letters, emails, and recruiter messages |
+| `reports/` | Portfolio, market, and supporting research reports |
+
+---
+
+## 7. Build and regeneration guide
+
+Run commands from `_Career_Intelligence_System/`.
+
+### General resume tracks
+
+```bash
+python3 resumes/build_resumes.py
+```
+
+Outputs:
+
+1. `resumes/Meshack_Ariri_Resume_HealthInformatics.docx` — default
+2. `resumes/Meshack_Ariri_Resume_ICT_Officer_INGO.docx`
+3. `resumes/Meshack_Ariri_Resume_IT_Operations.docx`
+
+The general builder currently creates DOCX only.
+
+### One application package
+
+```bash
+python3 "applications/ICT Officer - Gas Africa/build.py"
+```
+
+Each application builder normally creates four files beside itself:
+
+- tailored CV DOCX
+- tailored cover letter DOCX
+- tailored CV PDF
+- tailored cover letter PDF
+
+### All application packages
+
+```bash
+for build in applications/*/build.py; do
+  python3 "$build"
+done
+```
+
+After building, inspect the files visually and verify text, dates, page breaks, links,
+placeholders, and filename requirements. A successful Python exit does not prove the
+documents are factually correct or visually clean.
+
+---
+
+## 8. Visual identity and theme
+
+The source of truth for resume styling is `resumes/resume_theme.py`.
+
+**Current theme:** Royal Indigo and slate, not teal.
+
+| Token | Hex | Use |
 |---|---|---|
-| `00_SYSTEM_PROMPT.md` | — | The founding charter (KPIs, principles, phases, golden rule) |
-| `01_Career_Profile.md` | 1 | Who you are, level now vs. 6–18 mo, target industries/companies, critical findings |
-| `02_Skills_Intelligence.md` | 2 | Full skill inventory, hidden skills, missing terminology, skill broadcasting, overselling to fix |
-| `03_Application_Intelligence.md` | — | Analysis of all past applications + patterns + strategy + running application log |
-| `04_LinkedIn_Transformation.md` | 3 | Full audit + headline/About/experience rewrites, SEO, visuals, GitHub, content plan |
-| `05_Learning_Roadmap.md` | 2 | ROI-ranked skills to learn, 6-month sequence |
-| `06_Growth_and_Coaching.md` | 6–8 | Personal brand, market trends, continuous coaching |
-| `07_Independent_Experience_and_Positioning.md` | 2/6 | Standing directive: value the WHOLE engineer (projects, consulting, hackathons) — truthfully, with evidence |
-| `prep/README.md` | Prep | **The Rick-Speak Technical Handbook** — JD-driven lexicon, answer cards, daily drills; grows with every new application |
-| `resumes/00_Master_Resume.md` | 4 | **Single source of truth for all facts** |
-| `resumes/*.docx` | 4 | ATS-optimized Word resumes (3 tracks) |
-| `resumes/build_resumes.py` | 4 | Regenerates the .docx resumes from structured data |
-| `templates/Cover_Letters_Messages_Emails.md` | 5 | Cover letters, recruiter DMs, application & follow-up emails |
-| `reports/` | 5/7 | Per-application and market-research reports (added over time) |
+| Accent | `#3730A3` | Section bars, titles, labels, bullets |
+| Accent dark | `#2A2478` | Top stripe and name |
+| Accent mid | `#6366F1` | Rules and separators |
+| Accent light | `#ECEDFB` | Soft lavender header band |
+| Accent pale | `#F6F6FD` | Section-heading strip |
+| Slate | `#1E293B` | Body text |
+| Muted slate | `#64748B` | Dates and secondary text |
+
+Fonts:
+
+- DOCX: Calibri
+- PDF: Helvetica
+
+Layout:
+
+- ATS-safe, single column
+- top accent stripe
+- shaded centered header
+- two-line contact row
+- section headings with a left accent bar
+- dark body text on white
+
+To change the look globally, edit `resumes/resume_theme.py`, then rebuild all affected
+documents. Check `resumes/build_resumes.py` and `resumes/pdf_builder.py` for hard-coded
+style values before assuming every token is centralized.
+
+Portability notes:
+
+- Calibri may be substituted on computers where it is unavailable.
+- PDFs explicitly use A4; DOCX page size should be visually checked because it may inherit
+  a Word/LibreOffice default.
+- LinkedIn's blue/teal visual prompts in `04_LinkedIn_Transformation.md` are separate and
+  are not generated from the resume theme.
 
 ---
 
-## The current strategy (one line)
-**Primary identity = Health Informatics / EMR–DHIS2 specialist.** Two sanctioned variants:
-INGO/UN ICT Officer, and Enterprise/Remote IT Operations. Retire off-brand tracks
-(web/Webflow, talent acquisition, pure CRM, L1 voice helpdesk, non-health M&E).
+## 9. Standard workflows
 
-## Resume tracks (generated .docx)
-1. `Meshack_Ariri_Resume_HealthInformatics.docx` — **default / primary**
-2. `Meshack_Ariri_Resume_ICT_Officer_INGO.docx` — UN/INGO IT roles
-3. `Meshack_Ariri_Resume_IT_Operations.docx` — enterprise/remote sysadmin & ops
+### Starting any work session
 
-Visual theme (shared across all CV/cover-letter PDFs and DOCX): shaded header band with top accent stripe, two-line contact row, accent-bar section headings, refined slate/teal palette. Defined in `resumes/resume_theme.py`; rendered by `build_resumes.py` and `pdf_builder.py`.
+1. Pull the latest `main`.
+2. Read this README and the charter.
+3. Check `git status`.
+4. Read the tracker and verify urgent deadlines live.
+5. Read the Master Resume before changing career facts.
+6. Work only from confirmed evidence.
 
-To regenerate after editing facts: `python3 resumes/build_resumes.py`
+### Adding a new job
+
+1. Verify the live posting, employer, location, deadline, and application channel.
+2. Create `applications/<Role - Employer>/`.
+3. Save the JD and its source/date in `Job_Description.md`.
+4. Create `Application_Intelligence.md`: fit, gaps, ATS terms, evidence, risks, and
+   recommendation.
+5. Create or adapt `build.py` using facts checked against the Master Resume.
+6. Add an email/application message when needed.
+7. Build and inspect the DOCX/PDF package.
+8. Update `applications/APPLICATIONS_TRACKER.md`.
+9. Append the application to `03_Application_Intelligence.md`.
+10. Update `prep/README.md` with the JD registry, terminology, answer cards, and questions.
+11. After submission, record the sent date, channel, response, and outcome.
+
+Active applications belong under `applications/`, not `reports/`.
+
+### Changing a personal fact
+
+1. Confirm the fact and evidence with Meshack.
+2. Update `resumes/00_Master_Resume.md` first.
+3. Search for every old version across the repository.
+4. Update general and application builders manually.
+5. Update LinkedIn/template/strategy copy where applicable.
+6. Rebuild affected outputs.
+7. Inspect output and check `git diff`.
+
+### Ending a work session
+
+Before stopping, leave durable state:
+
+1. Update trackers and checklists with what actually happened.
+2. Add a dated note to the “Latest handoff” section below.
+3. Record commands needed to regenerate outputs.
+4. Record unresolved questions and the next concrete action.
+5. Check for accidental secrets, lock files, caches, or personal-data exposure.
+6. Commit and push only when Meshack requests it; unpushed work will not appear on another
+   computer.
 
 ---
 
-## Top 5 fixes that will move KPIs fastest
-1. **Lock one timeline & titles** everywhere (done in Master Resume) — fixes credibility screen-outs.
-2. **Fix employer name** ("PATH", not "Program Appropriate for Technology in Health").
-3. **Rewrite LinkedIn** headline + About around health informatics + start posting (breaks "0 posts").
-4. **Apply into your strength** (health informatics / EMR–DHIS2) far more than you have been.
-5. **Quantify everything** (users, uptime %, facilities, % time saved) — recruiters skim for impact.
+## 10. Git, generated files, and portability
+
+The repository is the memory only when changes are committed and pushed to GitHub.
+Saving a local file is not enough for cross-computer continuity.
+
+Application DOCX/PDF outputs are intentionally ignored by `.gitignore`. A fresh clone will
+contain their source builders but not those generated files. Rebuild them using the commands
+above.
+
+The three general resume DOCX files are currently tracked. This mixed policy means:
+
+- application documents must be regenerated after cloning;
+- general resumes may exist but can be stale relative to their source;
+- generated files must never override Markdown/Python source authority.
+
+Do not commit:
+
+- LibreOffice lock files such as `.~lock.*`
+- `__pycache__/` or `.pyc` files
+- virtual environments
+- credentials, tokens, private keys, or `.env` files
+- generated artifacts unless the repository policy intentionally tracks them
+
+Known portability gap: `reports/Project_NDWH_CBS_Platform.md` references an external project
+using an old absolute `/home/kenyaemr/...` path. That project does not travel with this
+repository, so a new agent cannot independently verify it unless the external source is also
+available.
+
+This repository contains personal contact details, employment history, and application
+recipient information. Treat it as private unless a deliberate privacy review says otherwise.
 
 ---
 
-## How to use this system going forward
+## 11. Known technical debt and credibility risks
 
-**When you get a job link (Phase 5):**
-1. Add a folder under `reports/[Company-Role]/` with the JD.
-2. Ask for: company research, keyword extraction, match %, resume+cover-letter+email tailoring,
-   and interview Q&A. The output cites `00_SYSTEM_PROMPT.md` and uses the Master Resume facts.
-3. Log it in `03_Application_Intelligence.md` §M.
+- Builders duplicate master facts instead of importing structured canonical data.
+- Several tailored builders use alternative current-role titles. Tailored positioning is
+  useful, but official employment titles should remain canonical.
+- Certification status and some metrics remain unconfirmed while generated documents may
+  phrase them definitively.
+- The current application tracker is ahead of `03_Application_Intelligence.md`.
+- There is no automated drift check, test suite, requirements file, or output validation.
+- Some generated/cache/LibreOffice lock artifacts have historically been tracked.
+- General DOCX and application PDF/DOCX tracking policies are inconsistent.
+- Historical application analysis references source material not fully represented under
+  the current `applications/` directory.
 
-**When you add new past applications:** drop them in the workspace; they become training data and
-`03_Application_Intelligence.md` gets updated.
-
-**When facts change (new role, new metric, new cert):** update `resumes/00_Master_Resume.md` first,
-then regenerate resumes and propagate to LinkedIn.
+High-value future engineering improvement: move canonical resume data into one structured
+source consumed by all builders, then add consistency checks for titles, dates, metrics,
+certifications, unresolved placeholders, and stale deadlines.
 
 ---
 
-## Open items needing YOUR input (to sharpen everything)
-- [x] **Canonical current title** at PATH: **Health Informatics / HMIS Officer** (confirmed 2026-07-13).
-- [x] **Employment structure** confirmed (2026-07-13): 3 roles — ICT Intern (Apr–Dec 2023) → ICT Associate (Jan 2024–Mar 2025) → Health Informatics/HMIS Officer (Mar 2025–Present).
-- [ ] Confirm exact **# of facilities/sites** you support (for metrics).
-- [ ] Confirm **CCNA & AZ-900** are exam certs vs. course completions (label correctly).
-- [ ] Confirm the **~40%** and **~25%** improvement figures are defensible.
-- [ ] Confirm whether the **freelance/consulting** work is currently ongoing (affects resume).
-- [ ] Add your **GitHub URL**.
-- [ ] **LinkedIn experience** still shows 2 roles with wrong titles/dates — restructure to the confirmed 3 roles.
+## 12. Latest handoff
+
+### 2026-07-16
+
+**State**
+
+- Career strategy remains Health Informatics / EMR–DHIS2 first.
+- Ten application packages are built and recorded as unsent.
+- Gas Africa is the nearest known deadline: 2026-07-21.
+- The Royal Indigo/slate theme is implemented in `resumes/resume_theme.py`.
+- Canonical PATH timeline is confirmed; LinkedIn alignment is not confirmed complete.
+
+**Next actions**
+
+1. Verify and submit Gas Africa before its deadline if still open.
+2. Resolve the certification, metric, facilities, freelance, and GitHub questions above.
+3. Synchronize the ten active applications into `03_Application_Intelligence.md`.
+4. Reconcile tailored job titles against the canonical Master Resume.
+
+**Rule for the next agent**
+
+Do not replace this handoff with chat-only context. Update this section whenever the
+operational state changes, keeping the newest dated entry first.
