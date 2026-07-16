@@ -1,0 +1,11 @@
+# Keep application strategy/content files versioned
+# and ignore generated application document artifacts.
+_Career_Intelligence_System/applications/**/*.doc
+_Career_Intelligence_System/applications/**/*.docx
+_Career_Intelligence_System/applications/**/*.pdf
+_Career_Intelligence_System/applications/**/*.odt
+_Career_Intelligence_System/applications/**/*.rtf
+
+# Optional editor/OS noise
+.DS_Store
+Thumbs.db
