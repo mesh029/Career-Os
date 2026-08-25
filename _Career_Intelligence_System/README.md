@@ -211,6 +211,7 @@ Until confirmed, do not turn these into stronger or more definite claims.
 | `06_Growth_and_Coaching.md` | Brand, market trends, coaching, and KPI tracker |
 | `07_Independent_Experience_and_Positioning.md` | Truthful use of projects, consulting, and hackathons |
 | `08_Jobless_Remote_Volume_Playbook.md` | Survival mode: remote browse filter, apply cadence, LinkedIn paste copy |
+| `reports/Opportunity_Scour_2026-08-25.md` | Live career-page + remote-board scour with links and suitability |
 | `resumes/00_Master_Resume.md` | Canonical facts and master bullet bank |
 | `resumes/resume_theme.py` | Shared palette, fonts, and contact header |
 | `resumes/build_resumes.py` | Builds the three general DOCX resumes |
@@ -418,6 +419,22 @@ certifications, unresolved placeholders, and stale deadlines.
 ---
 
 ## 12. Latest handoff
+
+### 2026-08-25 (evening — opportunity scour)
+
+**State**
+
+- Web scour completed for NGO career pages, BruntWork, Remote4Africa, Influx, Pavago, IRC, Amref, IntelliSOFT, CarePay, Living Goods, CHAI.
+- Report: `reports/Opportunity_Scour_2026-08-25.md` with links + suitability.
+- BruntWork classic IT Support posts mostly **closed** today; open adjacent: Lead Triage Administrator (EMR clinic).
+- Strongest immediate applies: Influx Tier 2, MOHI IT Support Officer, Amref ICT talent pool, IntelliSOFT talent database, Remote4Africa IT Ops Specialist, Pavago Tech Support.
+
+**Next actions for Meshack**
+
+1. Submit Amref General Interest + IntelliSOFT talent database today.
+2. Apply Influx Tier 2 + MOHI (if faith requirement OK) + Remote4Africa IT Ops.
+3. Check BruntWork daily for new IT Support/MSP posts.
+4. Send any still-open packages from APPLICATIONS_TRACKER (Solvo, Gas Africa if live).
 
 ### 2026-08-25
 
