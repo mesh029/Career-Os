@@ -6,7 +6,7 @@ repository must contain enough context for a person or a fresh agent to continue
 
 > **Start with this README, then read `00_SYSTEM_PROMPT.md`. Do not rely on a previous chat.**
 
-**Last continuity update:** 2026-07-16
+**Last continuity update:** 2026-08-25
 **Repository:** `https://github.com/mesh029/Career-Os.git`
 **Default branch:** `main`
 
@@ -52,10 +52,11 @@ currently no dependency manifest, so keep this setup block current if dependenci
 2. `00_SYSTEM_PROMPT.md` — constitution, KPIs, and truthfulness rules.
 3. `resumes/00_Master_Resume.md` — canonical personal and employment facts.
 4. `applications/APPLICATIONS_TRACKER.md` — active pipeline, deadlines, and submission status.
-5. The active role's `Job_Description.md` and `Application_Intelligence.md`.
-6. `03_Application_Intelligence.md` — historical patterns and strategy.
-7. `prep/README.md` — interview language, answer cards, drills, and JD registry.
-8. `04_LinkedIn_Transformation.md` when working on LinkedIn.
+5. `08_Jobless_Remote_Volume_Playbook.md` — use when income is urgent and remote niche roles are scarce.
+6. The active role's `Job_Description.md` and `Application_Intelligence.md`.
+7. `03_Application_Intelligence.md` — historical patterns and strategy.
+8. `prep/README.md` — interview language, answer cards, drills, and JD registry.
+9. `04_LinkedIn_Transformation.md` when working on LinkedIn (includes jobless/remote headline + About).
 
 Then check `git status` and the dates inside the tracker. Job listings and deadlines can
 expire, so verify them live before acting.
@@ -109,7 +110,7 @@ When files disagree, use this order:
 |---:|---|---|
 | 1 | `00_SYSTEM_PROMPT.md` | Governance, objectives, and ethical rules |
 | 2 | `resumes/00_Master_Resume.md` | Canonical facts: titles, dates, metrics, education, certifications |
-| 3 | `01_` through `07_*.md` | Strategy and interpretation |
+| 3 | `01_` through `08_*.md` | Strategy and interpretation (incl. jobless/remote volume playbook) |
 | 4 | `applications/<Role>/Job_Description.md` | Captured requirements for one role |
 | 5 | `applications/<Role>/Application_Intelligence.md` | Fit analysis and honest positioning |
 | 6 | `applications/<Role>/build.py` | Renderable role-specific content |
@@ -138,12 +139,18 @@ Do not assume “regenerate” means “synchronize.”
 
 ## 4. Current career strategy
 
-**Primary identity:** Health Informatics / EMR–DHIS2 specialist.
+**Long-term primary identity:** Health Informatics / EMR–DHIS2 specialist.
+
+**Active survival mode (2026-08-25):** Jobless / remote volume — default public positioning is
+**Remote IT Support & Systems Operations**, with PATH health-systems work as proof of seriousness.
+Full operating system: `08_Jobless_Remote_Volume_Playbook.md`. LinkedIn paste-ready copy lives
+there and in `04_LinkedIn_Transformation.md` (JOBLESS / REMOTE VOLUME headline + About).
 
 Approved variants:
 
-1. INGO/UN ICT Officer
-2. Enterprise or remote IT Operations / Systems Administration
+1. Remote IT Support / Tech Ops / SysAdmin (**default while job hunting for income**)
+2. INGO/UN ICT Officer
+3. Health Informatics / EMR–DHIS2 (**use when a real digital-health JD appears**)
 
 Avoid making off-brand tracks the main identity: web/Webflow, talent acquisition, pure
 CRM, generic L1 voice helpdesk, and non-health M&E.
@@ -203,6 +210,7 @@ Until confirmed, do not turn these into stronger or more definite claims.
 | `05_Learning_Roadmap.md` | ROI-ranked six-month learning sequence |
 | `06_Growth_and_Coaching.md` | Brand, market trends, coaching, and KPI tracker |
 | `07_Independent_Experience_and_Positioning.md` | Truthful use of projects, consulting, and hackathons |
+| `08_Jobless_Remote_Volume_Playbook.md` | Survival mode: remote browse filter, apply cadence, LinkedIn paste copy |
 | `resumes/00_Master_Resume.md` | Canonical facts and master bullet bank |
 | `resumes/resume_theme.py` | Shared palette, fonts, and contact header |
 | `resumes/build_resumes.py` | Builds the three general DOCX resumes |
@@ -411,6 +419,33 @@ certifications, unresolved placeholders, and stale deadlines.
 
 ## 12. Latest handoff
 
+### 2026-08-25
+
+**State**
+
+- Meshack needs applications out now (jobless / income-urgent). Remote health-informatics
+  roles are scarce; browsing general remote boards is the practical channel.
+- Added `08_Jobless_Remote_Volume_Playbook.md`: 60-second JD filter, daily cadence (5–8 apps/day,
+  30–50/week), boards, message templates, and LinkedIn jobless-mode copy.
+- LinkedIn `04_LinkedIn_Transformation.md` updated with JOBLESS / REMOTE VOLUME headline + About.
+- Survival public identity: **IT Support & Systems Operations (remote-ready, Kenya)**; health
+  EMR/DHIS2 stays as differentiator, not the only search target.
+- Default CV while in this mode: `Meshack_Ariri_Resume_IT_Operations.docx` (CV-A).
+- Long-term health-informatics strategy remains valid when those JDs appear.
+
+**Next actions for Meshack**
+
+1. Paste LinkedIn headline + About + Open to Work titles from the playbook today.
+2. Align Experience titles/dates to Master Resume; employer = PATH.
+3. Send 5 filtered remote IT/support applications today using CV-A.
+4. Turn on green Open to Work; pin skills: Technical Support, Systems Administration, Microsoft 365.
+5. Verify whether PATH employment is still "Present" — set end date truthfully if not.
+
+**Rule for the next agent**
+
+Do not replace this handoff with chat-only context. Update this section whenever the
+operational state changes, keeping the newest dated entry first.
+
 ### 2026-07-16
 
 **State**
@@ -427,8 +462,3 @@ certifications, unresolved placeholders, and stale deadlines.
 2. Resolve the certification, metric, facilities, freelance, and GitHub questions above.
 3. Synchronize the ten active applications into `03_Application_Intelligence.md`.
 4. Reconcile tailored job titles against the canonical Master Resume.
-
-**Rule for the next agent**
-
-Do not replace this handoff with chat-only context. Update this section whenever the
-operational state changes, keeping the newest dated entry first.
