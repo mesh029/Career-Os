@@ -212,6 +212,7 @@ Until confirmed, do not turn these into stronger or more definite claims.
 | `07_Independent_Experience_and_Positioning.md` | Truthful use of projects, consulting, and hackathons |
 | `08_Jobless_Remote_Volume_Playbook.md` | Survival mode: remote browse filter, apply cadence, LinkedIn paste copy |
 | `reports/Opportunity_Scour_2026-08-25.md` | Live career-page + remote-board scour with links and suitability |
+| `downloads/` | Ready-to-download CVs (DOCX+PDF) + apply-links README from chat |
 | `resumes/00_Master_Resume.md` | Canonical facts and master bullet bank |
 | `resumes/resume_theme.py` | Shared palette, fonts, and contact header |
 | `resumes/build_resumes.py` | Builds the three general DOCX resumes |
@@ -419,6 +420,20 @@ certifications, unresolved placeholders, and stale deadlines.
 ---
 
 ## 12. Latest handoff
+
+### 2026-08-25 (CVs + apply links packaged)
+
+**State**
+
+- Regenerated all 3 resume tracks as **DOCX + PDF** in `resumes/` and `downloads/`.
+- Apply links from chat packaged in `downloads/README.md`.
+- Artifacts also copied under `/opt/cursor/artifacts/meshack-cvs/` for download in the agent UI.
+- Default jobless CV: `Meshack_Ariri_Resume_IT_Operations.pdf` / `.docx`.
+
+**Next actions for Meshack**
+
+1. Download IT Operations CV and start Influx / Amref / IntelliSOFT / MOHI applications.
+2. Use INGO CV for NGO ICT; Health Informatics CV for IntelliSOFT / HIS roles.
 
 ### 2026-08-25 (evening — opportunity scour)
 
