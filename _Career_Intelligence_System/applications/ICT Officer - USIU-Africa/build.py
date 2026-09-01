@@ -89,29 +89,42 @@ cv_docx_referees = [
 COVER_BODY = [
     "Dear Director Human Resource,",
     "",
-    "I am writing to apply for the ICT Officer positions (Service Delivery / Multimedia) at USIU-Africa. "
-    "With a BSc in Applied Computing and about three years of ICT support and systems administration experience "
-    "at PATH, I am prepared to deliver first-level technical support that protects availability, security, and "
-    "user satisfaction across a busy academic environment.",
+    "I am applying for the ICT Officer roles (Service Delivery / Multimedia) at USIU-Africa because "
+    "I want to put my experience where it matters every day: keeping people productive on reliable "
+    "systems. My story in ICT started in service — not in a title.",
     "",
-    "At PATH I have been a primary contact for ICT requests across walk-in, remote, and ticketing channels, "
-    "resolving Level 1 and 2 incidents — password and account issues, Microsoft 365 and Windows endpoints, "
-    "connectivity, printers, and related peripherals — under ITIL/SLA discipline for 120+ users at roughly "
-    "98% uptime. I handle Active Directory and Microsoft 365 onboarding and offboarding, monitor and escalate "
-    "infrastructure issues, support backups and documentation, maintain asset awareness, and build knowledge-base "
-    "articles and SOPs so issues are solved consistently.",
+    "I graduated from KCA University with a BSc in Applied Computing (Cybersecurity and Digital "
+    "Forensics) in November 2023. Before that, and alongside my growth since, I joined PATH as an "
+    "ICT Intern in Homa Bay. I learned the basics the hard way and the right way: cabling and "
+    "connectivity, imaging machines, logging tickets properly, and staying calm with users who "
+    "just needed something to work. That foundation shaped how I still show up — clear "
+    "communication, clean documentation, and respect for the person on the other side of the request.",
     "",
-    "I am comfortable supporting teaching and innovation spaces (venue/AV readiness, reliable connectivity, "
-    "user guidance) and I learn enterprise platforms quickly — including guiding staff through new digital "
-    "workflows. I understand the importance of security hygiene (patching, MFA, least privilege, careful "
-    "handling of confidential data) in line with institutional policy and Kenya’s Data Protection Act.",
+    "As an ICT Associate, I became a first point of contact for more than 120 users across sites. "
+    "I resolved Level 1 and 2 issues — Microsoft 365 and Active Directory accounts, Windows "
+    "endpoints, printers, Wi-Fi and VPN problems — through Freshdesk and Zoho under SLA discipline. "
+    "We kept services near 98% uptime. I owned onboarding and offboarding so access stayed "
+    "audit-ready, monitored networks on Cisco Meraki, and wrote knowledge-base articles so the "
+    "same problem did not waste the next person’s afternoon. Later, as I moved into health "
+    "informatics support, I kept that ICT backbone: when systems matter to people’s work — and "
+    "in health, sometimes to people’s care — availability and trust are not optional.",
     "",
-    "I hold CCNA and Microsoft Azure Fundamentals (AZ-900) certifications, among others, and I am ready to "
-    "relocate fully to Nairobi to serve USIU-Africa’s staff and students. Please find my CV attached. "
-    "Certified copies of my academic certificates and transcripts, and referee details, are included as required. "
-    "I would welcome the opportunity to contribute to the ICT team’s 99.5% availability and 90% satisfaction goals.",
+    "What I bring to USIU-Africa is that same service mindset in a university setting. Staff and "
+    "students need a service desk that answers, an infrastructure that holds during peak periods, "
+    "classrooms and innovation spaces that are ready, and security habits that protect institutional "
+    "data. I am comfortable with Windows and Microsoft 365 administration, basic networking "
+    "(TCP/IP, DNS, DHCP, VLANs), ticketing, asset awareness, patching and MFA, and escalating "
+    "critical alerts quickly. I learn enterprise platforms fast — I have guided non-technical "
+    "users through complex digital tools before — and I take confidentiality seriously under "
+    "Kenya’s Data Protection Act.",
     "",
-    "Thank you for your consideration.",
+    "I hold certifications including CCNA and Microsoft Azure Fundamentals (AZ-900), and I am "
+    "ready to relocate to Nairobi to serve USIU-Africa fully. Please find my CV, academic "
+    "documents, and referees attached as requested. I would be proud to help your ICT team "
+    "pursue 99.5% availability and genuine user satisfaction — one ticket, one classroom, and "
+    "one well-handled escalation at a time.",
+    "",
+    "Thank you for your time and consideration.",
     "",
     "Sincerely,",
     "Meshack Ariri",

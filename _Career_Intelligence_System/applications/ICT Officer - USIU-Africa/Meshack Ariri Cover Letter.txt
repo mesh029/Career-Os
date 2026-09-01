@@ -1,0 +1,18 @@
+Dear Director Human Resource,
+
+I am applying for the ICT Officer roles (Service Delivery / Multimedia) at USIU-Africa because I want to put my experience where it matters every day: keeping people productive on reliable systems. My story in ICT started in service — not in a title.
+
+I graduated from KCA University with a BSc in Applied Computing (Cybersecurity and Digital Forensics) in November 2023. Before that, and alongside my growth since, I joined PATH as an ICT Intern in Homa Bay. I learned the basics the hard way and the right way: cabling and connectivity, imaging machines, logging tickets properly, and staying calm with users who just needed something to work. That foundation shaped how I still show up — clear communication, clean documentation, and respect for the person on the other side of the request.
+
+As an ICT Associate, I became a first point of contact for more than 120 users across sites. I resolved Level 1 and 2 issues — Microsoft 365 and Active Directory accounts, Windows endpoints, printers, Wi-Fi and VPN problems — through Freshdesk and Zoho under SLA discipline. We kept services near 98% uptime. I owned onboarding and offboarding so access stayed audit-ready, monitored networks on Cisco Meraki, and wrote knowledge-base articles so the same problem did not waste the next person’s afternoon. Later, as I moved into health informatics support, I kept that ICT backbone: when systems matter to people’s work — and in health, sometimes to people’s care — availability and trust are not optional.
+
+What I bring to USIU-Africa is that same service mindset in a university setting. Staff and students need a service desk that answers, an infrastructure that holds during peak periods, classrooms and innovation spaces that are ready, and security habits that protect institutional data. I am comfortable with Windows and Microsoft 365 administration, basic networking (TCP/IP, DNS, DHCP, VLANs), ticketing, asset awareness, patching and MFA, and escalating critical alerts quickly. I learn enterprise platforms fast — I have guided non-technical users through complex digital tools before — and I take confidentiality seriously under Kenya’s Data Protection Act.
+
+I hold certifications including CCNA and Microsoft Azure Fundamentals (AZ-900), and I am ready to relocate to Nairobi to serve USIU-Africa fully. Please find my CV, academic documents, and referees attached as requested. I would be proud to help your ICT team pursue 99.5% availability and genuine user satisfaction — one ticket, one classroom, and one well-handled escalation at a time.
+
+Thank you for your time and consideration.
+
+Sincerely,
+Meshack Ariri
++254 741 174 779  |  aririmeshack@gmail.com
+linkedin.com/in/meshack-ariri
