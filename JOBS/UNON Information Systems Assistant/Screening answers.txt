@@ -1,0 +1,91 @@
+# UNON Information Systems Assistant (G5) - screening answers
+Job Opening ID: 282231
+Duty station: Nairobi
+Deadline: 26 Sep 2026
+
+IMPORTANT NOTES BEFORE YOU PASTE:
+1. Years with degree: required experience is 3 years (5 minus 2). You have about 3 years 5 months (Apr 2023 to Sep 2026). OK.
+2. ITIL Foundation (Q11) is REQUIRED and you do not have the cert yet. Be honest. This may screen you out. Consider sitting ITIL Foundation ASAP.
+3. CCNA (Q12): only claim if it is the real exam cert, not only a NetAcad/course completion. If unsure, fix Q12 before submit.
+4. Q4 24x7: honest that you do not have formal NOC 24x7 shifts.
+5. Attach Kenyan ID/passport for Q9/Q10.
+6. Keep answers under 1000 characters. These drafts are under the limit.
+
+---
+
+### Question 1
+
+I meet this criterion with the degree reduction (5 years reduced to 3).
+
+I hold a BSc in Applied Computing from KCA University (Nov 2023). From Apr 2023 to present (about 3 years 5 months), I have worked in ICT operations and service desk support at PATH:
+
+- Apr 2023 to Dec 2023: ICT Intern, Homa Bay. Supported LAN/WAN, desktops, printers, VoIP, ticket logging, and facility ICT deployments.
+- Jan 2024 to Mar 2025: ICT Associate. First and second line support for 120+ users, Microsoft 365, Active Directory, networking (Cisco Meraki), Freshdesk/Zoho ticketing under SLA, about 98% uptime.
+- Mar 2025 to present: Health Informatics / HMIS Officer with continued ICT support for users, servers, monitoring, incidents, and documentation.
+
+This is progressive ICT operations and service desk experience.
+
+### Question 2
+
+I meet this criterion through ICT monitoring, incident handling, and operational support at PATH (2023 to present).
+
+As ICT Associate (2024 to 2025) and in my current role (2025 to present), I monitor user and system issues, log and prioritize incidents in Freshdesk/Zoho, do first-line diagnosis (accounts, Windows endpoints, connectivity, printers, VPN/Wi-Fi), and escalate complex infrastructure problems. I track tickets to closure under SLA targets and keep about 98% uptime for supported services. I also support Windows/Linux servers hosting critical applications, including backups and basic health checks, and produce operational updates for the team.
+
+### Question 3
+
+I meet this desirable criterion through ITIL-style service desk work at PATH (2023 to present).
+
+From internship through ICT Associate and current role, we used ITIL-based processes: incident logging, prioritization, escalation, knowledge base articles, and SLA tracking in Freshdesk and Zoho Desk. As ICT Associate (2024 to 2025), I handled 1st/2nd line incidents for 120+ users, documented resolutions, and followed structured onboarding/offboarding for access control. I apply incident and service request discipline daily, even though my formal ITIL Foundation certificate is still pending (see Q11).
+
+### Question 4
+
+I do not have full formal 24x7 NOC shift experience.
+
+At PATH (2023 to present), I have supported critical systems that needed reliable availability during business hours and urgent incident response when services affecting users went down. I have handled priority incidents, escalated quickly, and followed up until restoration. I am willing and able to work shifts, including outside normal hours, for a NOC or operational support role such as this one.
+
+### Question 5
+
+I meet this desirable criterion.
+
+At PATH (2023 to present) I have worked with ICT infrastructure including:
+- Networks: LAN/WAN, VLANs, DNS/DHCP, VPN, Wi-Fi, Cisco Meraki monitoring and troubleshooting (especially 2024 to 2025 as ICT Associate).
+- Systems: Windows 10/11, Active Directory, Microsoft 365, Windows/Linux servers hosting applications, backups and basic DR (2024 to present).
+- Operational support for multi-site users and critical application hosting environments.
+
+My BSc Applied Computing (2023) and CCNA studies also covered networking and systems fundamentals.
+
+### Question 6
+
+I meet this desirable criterion at a practical operations level.
+
+At PATH (2023 to present) I have used operational support and monitoring tools including Freshdesk and Zoho Desk for incident/request management, Cisco Meraki dashboards for network device monitoring, and system/uptime checks for hosted applications and endpoints. I watch for alerts and connectivity issues, investigate faults, and escalate when needed. I also use Power BI/Grafana for operational and program reporting (2025 to present), which supports visibility into system and service performance.
+
+### Question 7
+
+I meet this desirable criterion.
+
+At PATH (2024 to present) I use basic automation and system administration: PowerShell and Bash for routine admin tasks, Python and SQL for validation/reporting automation that reduced manual reporting effort, Active Directory and Microsoft 365 administration (user provisioning, access rights, MFA), and Windows/Linux server maintenance including patching and backups. Capstone work at KCA University (2023) also included Active Directory and network administration in a simulated office environment.
+
+### Question 8
+
+I meet this desirable criterion.
+
+From 2024 to present at PATH I have done data analytics related work for more than one year: SQL validation and data quality checks, Power BI/Grafana/Metabase dashboards, Excel analysis for program and operational reporting, and automation that reduced reporting/processing time. In my current Health Informatics / HMIS role (Mar 2025 to present), analytics and data quality are core duties. I also hold a Microsoft Data Analysis certificate (2024).
+
+### Question 9
+
+Yes. I am a Kenyan citizen and authorized to work in Kenya. I live in Kenya (Kisumu, open to Nairobi) and hold Kenyan national identification. I do not require a work permit for local recruitment in Kenya.
+
+### Question 10
+
+Yes. I am authorized to work at the Nairobi, Kenya duty station as a Kenyan citizen. I will attach a copy of my Kenyan national ID / passport bio-data page as proof of citizenship and work authorization. I am ready to relocate to Nairobi for this post.
+
+### Question 11
+
+I do not currently hold the ITIL Foundation certification.
+
+I have worked in ITIL-based service desk processes at PATH from 2023 to present (incident management, SLA tracking, escalation, and knowledge articles in Freshdesk/Zoho). I am preparing to sit the ITIL Foundation exam and can complete it quickly if selected. I am marking this as not meeting the formal certification requirement at this time.
+
+### Question 12
+
+I meet this criterion. I hold Cisco CCNA certification (issued 2023) and have applied networking knowledge at PATH from 2023 to present, including LAN/WAN, VLANs, DNS/DHCP, VPN, Wi-Fi troubleshooting, and Cisco Meraki device monitoring/configuration support as ICT Associate (2024 to 2025).
