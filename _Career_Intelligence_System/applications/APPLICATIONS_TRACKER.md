@@ -22,7 +22,7 @@
 
 | Priority | Role / Employer | Format | Keywords | Quals | Experience | Human | **Apply** | Deadline | How to apply | Status |
 |---:|---|---:|---:|---:|---:|---:|---:|---|---|---|
-| 0 | **ICT Officer — USIU-Africa** (Service Delivery / Multimedia) | 98% | 90% | 95% | 88% | 85% | **~90%** | **Sep 14, 2026 5PM** | Email **jobs-ict@usiu.ac.ke**, subject **ICT Officer** | Ready — package in `ICT Officer - USIU-Africa/` + `/workspace/JOBS/` |
+| 0 | **ICT Officer — USIU-Africa** (Service Delivery / Multimedia) | 98% | 90% | 95% | 88% | 85% | **~90%** | **Sep 14, 2026 5PM** | Email **jobs-ict@usiu.ac.ke**, subject **ICT Officer** | Ready — `JOBS/USIU Africa/` + `/home/ccc/Documents/BASE/JOBS/USIU Africa/` |
 | 1 | **ICT Officer — Gas Africa** | 98% | 88% | 93% | 86% | 82% | **~85%** | **Jul 21, 2026** | Email **info@gasafrica.com**, subject "ICT Officer" | Not sent |
 | 2 | **IT SysAdmin (+ Web Dev) — Human Capital** (Thika) | 98% | 84% | 90% | 78% | 74% | **~80%** | ~3 wks rolling | https://www.brightermonday.co.ke/listings/it-systems-administrator-5pwe26 | Not sent |
 | 3 | **ICT Manager — Hospitality** | 98% | 80% | 88% | 75% | 70% | **~75%** | Unknown | Original posting | Not sent |

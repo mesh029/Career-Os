@@ -5,8 +5,8 @@
 **Deadline:** Monday, 14 September 2026, 5:00 PM  
 
 **Attach:**  
-1. Meshack_Ariri_Cover_Letter_ICT_Officer_USIU.pdf  
-2. Meshack_Ariri_CV_ICT_Officer_USIU.pdf  
+1. Meshack Ariri Cover Letter.pdf  
+2. Meshack Ariri CV.pdf  
 3. Certified copies of certificates & transcripts *(you attach)*  
 
 ---

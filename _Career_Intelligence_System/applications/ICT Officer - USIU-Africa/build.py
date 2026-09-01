@@ -139,12 +139,17 @@ def build_cover_letter(path):
 
 def export_copies(*paths):
     targets = [
-        os.path.join(ROOT, "downloads", "JOBS", "USIU-Africa-ICT-Officer"),
-        os.path.join("/workspace", "JOBS", "USIU-Africa-ICT-Officer"),
-        "/opt/cursor/artifacts/meshack-cvs/USIU-Africa-ICT-Officer",
+        os.path.join(ROOT, "downloads", "JOBS", "USIU Africa"),
+        os.path.join("/workspace", "JOBS", "USIU Africa"),
+        "/opt/cursor/artifacts/meshack-cvs/USIU Africa",
+        "/home/ccc/Documents/BASE/JOBS/USIU Africa",
     ]
     for dest in targets:
-        os.makedirs(dest, exist_ok=True)
+        try:
+            os.makedirs(dest, exist_ok=True)
+        except PermissionError:
+            # Fall back with elevated copy handled outside if needed
+            continue
         for src in paths:
             if os.path.isfile(src):
                 shutil.copy2(src, dest)
@@ -157,12 +162,12 @@ if __name__ == "__main__":
     cv_pdf = dict(cv)
     cv_pdf["referees"] = cv_docx_referees
 
-    cv_docx_path = os.path.join(HERE, "Meshack_Ariri_CV_ICT_Officer_USIU.docx")
-    cv_pdf_path = os.path.join(HERE, "Meshack_Ariri_CV_ICT_Officer_USIU.pdf")
-    cl_docx_path = os.path.join(HERE, "Meshack_Ariri_Cover_Letter_ICT_Officer_USIU.docx")
-    cl_pdf_path = os.path.join(HERE, "Meshack_Ariri_Cover_Letter_ICT_Officer_USIU.pdf")
+    # Human-readable filenames (no SCREAMING_SNAKE)
+    cv_docx_path = os.path.join(HERE, "Meshack Ariri CV.docx")
+    cv_pdf_path = os.path.join(HERE, "Meshack Ariri CV.pdf")
+    cl_docx_path = os.path.join(HERE, "Meshack Ariri Cover Letter.docx")
+    cl_pdf_path = os.path.join(HERE, "Meshack Ariri Cover Letter.pdf")
 
-    # Temporarily use Nairobi-leaning contact on CV header via monkeypatch of CONTACT used in build
     original_contact = br.CONTACT
     br.CONTACT = CONTACT_NAIROBI
     try:
