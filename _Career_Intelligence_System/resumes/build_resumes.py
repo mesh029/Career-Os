@@ -354,7 +354,11 @@ def build(data, path):
         add_bullets(doc, data["achievements"])
 
     add_heading(doc, "Referees")
-    add_para(doc, "Available upon request.", size=10, color=GREY)
+    if data.get("referees"):
+        for ref in data["referees"]:
+            add_para(doc, ref, size=10, space_after=4)
+    else:
+        add_para(doc, "Available upon request.", size=10, color=GREY)
 
     doc.save(path)
     print("Saved:", path)
