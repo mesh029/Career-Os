@@ -28,9 +28,9 @@
 Lead as **ICT Officer – Service Delivery**: university-style service desk, M365, AD, networking, assets, SLA, documentation. Mention classroom/AV and event support so Multimedia posts remain credible without overselling.
 
 ## Referees (user-provided)
-1. **Patrick Ondieki** — pondieki@path.org (PATH — employer referee)  
-2. **Marvin Ngosa** — mngosa@path.org (PATH — employer referee)  
-3. **Gadaffi Ochieng** — **email not provided** — confirm before send  
+1. **Patrick Ondieki** — ICT Officer, PATH — pondieki@path.org (employer referee)  
+2. **Marvin Ngosa** — Systems Administrator, PATH — mngosa@path.org (employer referee)  
+3. **Gadaffi Ochieng** — Procurement Officer, Ampath — ochienggadaffi@gmail.com  
 
 ## Gaps / honesty
 - Do **not** claim Dynamics/SAP/Oracle admin. Say quick learner on ERP modules for staff/students.  
@@ -39,7 +39,7 @@ Lead as **ICT Officer – Service Delivery**: university-style service desk, M36
 - Prefer Nairobi/open to relocate — state clearly (USIU is Nairobi).
 
 ## Apply checklist
-- [ ] Confirm Gadaffi Ochieng email (and title/relationship)  
+- [x] Confirm Gadaffi Ochieng email (and title/relationship)  
 - [ ] Fill current salary & benefits in email body  
 - [ ] Attach CV + cover letter PDF  
 - [ ] Attach certified certificates & transcripts  

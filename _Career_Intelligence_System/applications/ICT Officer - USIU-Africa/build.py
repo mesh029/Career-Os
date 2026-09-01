@@ -73,17 +73,17 @@ cv = {
     "Cybersecurity hackathon participant (Cyberise / CA Kenya; NRF), reinforcing security-awareness mindset.",
 ],
 "referees": [
-    "<b>Patrick Ondieki</b> — PATH  |  pondieki@path.org",
-    "<b>Marvin Ngosa</b> — PATH  |  mngosa@path.org",
-    "<b>Gadaffi Ochieng</b> — PATH  |  [email — confirm before sending]",
+    "Patrick Ondieki — ICT Officer, PATH  |  pondieki@path.org",
+    "Marvin Ngosa — Systems Administrator, PATH  |  mngosa@path.org",
+    "Gadaffi Ochieng — Procurement Officer, Ampath  |  ochienggadaffi@gmail.com",
 ],
 }
 
-# DOCX referees without HTML; PDF can use simple text
+# DOCX / PDF referees (plain text)
 cv_docx_referees = [
-    "Patrick Ondieki — PATH  |  pondieki@path.org",
-    "Marvin Ngosa — PATH  |  mngosa@path.org",
-    "Gadaffi Ochieng — PATH  |  [email — confirm before sending]",
+    "Patrick Ondieki — ICT Officer, PATH  |  pondieki@path.org",
+    "Marvin Ngosa — Systems Administrator, PATH  |  mngosa@path.org",
+    "Gadaffi Ochieng — Procurement Officer, Ampath  |  ochienggadaffi@gmail.com",
 ]
 
 COVER_BODY = [

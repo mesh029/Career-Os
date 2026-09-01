@@ -13,15 +13,17 @@
 | `Email_to_USIU.txt` | Email body to paste |
 | `Email_Templates.md` | Full + short email |
 
+## Referees (final)
+1. Patrick Ondieki — ICT Officer, PATH — pondieki@path.org  
+2. Marvin Ngosa — Systems Administrator, PATH — mngosa@path.org  
+3. Gadaffi Ochieng — Procurement Officer, Ampath — ochienggadaffi@gmail.com  
+
 ## Before you send
-1. Add **Gadaffi Ochieng’s email** on the CV and in the email (placeholder now).
-2. Fill **current salary and benefits** in the email (USIU requires it).
-3. Attach **certified** certificates + transcripts yourself.
-4. Prefer PDF attachments for CV + cover letter.
+1. Fill **current salary and benefits** in the email (USIU requires it).  
+2. Attach **certified** certificates + transcripts yourself.  
+3. Prefer PDF attachments for CV + cover letter.
 
-## Local path note
-Cloud workspace outputs live at:
-- `/workspace/JOBS/USIU-Africa-ICT-Officer/`
-- `_Career_Intelligence_System/downloads/JOBS/USIU-Africa-ICT-Officer/`
-
-Copy/sync to your machine path `/home/ccc/Documents/BASE/JOBS/` as needed (that path is not available on the cloud agent).
+## Paths
+- `/workspace/JOBS/USIU-Africa-ICT-Officer/`  
+- `_Career_Intelligence_System/downloads/JOBS/USIU-Africa-ICT-Officer/`  
+- Sync to `/home/ccc/Documents/BASE/JOBS/` on your PC if needed.
