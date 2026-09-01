@@ -26,7 +26,7 @@ Referees:
 2. Marvin Ngosa — Systems Administrator, PATH — mngosa@path.org
 3. Gadaffi Ochieng — Procurement Officer, Ampath — ochienggadaffi@gmail.com
 
-Current salary and benefits: [FILL BEFORE SEND — e.g. KSh ___ gross/net; benefits ___]
+Current salary and benefits: KSh 120,000 with medical insurance
 
 Telephone: +254 741 174 779  
 Email: aririmeshack@gmail.com  
@@ -45,7 +45,7 @@ Dear Director Human Resource,
 Application for ICT Officer (Service Delivery / Multimedia). Attached: cover letter, CV, certified certificates/transcripts. ~3 years ICT support at PATH (M365, AD, networking, SLA ticketing, ~98% uptime, 120+ users). Ready to relocate to Nairobi.
 
 Referees: Patrick Ondieki, ICT Officer, PATH (pondieki@path.org); Marvin Ngosa, Systems Administrator, PATH (mngosa@path.org); Gadaffi Ochieng, Procurement Officer, Ampath (ochienggadaffi@gmail.com).  
-Current salary/benefits: [FILL].  
+Current salary and benefits: KSh 120,000 with medical insurance.  
 Tel: +254 741 174 779 | aririmeshack@gmail.com
 
 Meshack Ariri
