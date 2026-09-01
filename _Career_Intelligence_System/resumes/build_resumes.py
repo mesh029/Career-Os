@@ -354,7 +354,11 @@ def build(data, path):
         add_bullets(doc, data["achievements"])
 
     add_heading(doc, "Referees")
-    add_para(doc, "Available upon request.", size=10, color=GREY)
+    if data.get("referees"):
+        for ref in data["referees"]:
+            add_para(doc, ref, size=10, space_after=4)
+    else:
+        add_para(doc, "Available upon request.", size=10, color=GREY)
 
     doc.save(path)
     print("Saved:", path)
@@ -489,9 +493,27 @@ itops = {
 "achievements": ACH,
 }
 
+def _export_pdf(data, path):
+    """PDF twin of each DOCX track (reportlab)."""
+    from pdf_builder import build_cv_pdf
+    from resume_theme import CONTACT as THEME_CONTACT
+    build_cv_pdf(data, path, THEME_CONTACT)
+
+
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
-    build(health, os.path.join(here, "Meshack_Ariri_Resume_HealthInformatics.docx"))
-    build(ingo,   os.path.join(here, "Meshack_Ariri_Resume_ICT_Officer_INGO.docx"))
-    build(itops,  os.path.join(here, "Meshack_Ariri_Resume_IT_Operations.docx"))
-    print("All resumes generated.")
+    root = os.path.dirname(here)
+    downloads = os.path.join(root, "downloads")
+    os.makedirs(downloads, exist_ok=True)
+
+    tracks = [
+        ("Meshack_Ariri_Resume_HealthInformatics", health),
+        ("Meshack_Ariri_Resume_ICT_Officer_INGO", ingo),
+        ("Meshack_Ariri_Resume_IT_Operations", itops),
+    ]
+    for name, data in tracks:
+        build(data, os.path.join(here, f"{name}.docx"))
+        build(data, os.path.join(downloads, f"{name}.docx"))
+        _export_pdf(data, os.path.join(here, f"{name}.pdf"))
+        _export_pdf(data, os.path.join(downloads, f"{name}.pdf"))
+    print("All resumes generated (DOCX + PDF) in resumes/ and downloads/.")

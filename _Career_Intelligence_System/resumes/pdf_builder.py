@@ -243,7 +243,12 @@ def build_cv_pdf(data, path, contact):
             ))
 
     _heading(story, S, "Referees")
-    story.append(Paragraph("Available upon request.", S["smallg"]))
+    if data.get("referees"):
+        for ref in data["referees"]:
+            story.append(Paragraph(ref, S["small"]))
+            story.append(Spacer(1, 4))
+    else:
+        story.append(Paragraph("Available upon request.", S["smallg"]))
 
     _doc(path).build(story)
     print("Saved:", path)

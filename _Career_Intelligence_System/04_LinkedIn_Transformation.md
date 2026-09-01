@@ -27,8 +27,11 @@ terms recruiters search: *Health Informatics, EMR, KenyaEMR, OpenMRS, DHIS2, Dat
 
 ## B. Headline variations (pick per target track)
 
-**Primary (Health Informatics — default):**
+**Primary (Health Informatics — use when employed or hunting niche roles):**
 > Health Informatics Specialist | EMR (KenyaEMR/OpenMRS) & DHIS2 | Health Data & Systems Support | SQL · Power BI | Digital Health, Kenya
+
+**JOBLESS / REMOTE VOLUME (use now while browsing remote boards — see `08_Jobless_Remote_Volume_Playbook.md`):**
+> IT Support & Systems Operations | Microsoft 365 · Active Directory · Networking | Remote-Ready (Kenya) | PATH — 120+ users, ~98% uptime | EMR/DHIS2 systems experience
 
 **Alt A (broader digital health / implementation):**
 > Digital Health & Health Informatics | EMR/DHIS2 Implementation & Support | Data Quality · Interoperability · Analytics | 120+ users, multi-site
@@ -40,7 +43,9 @@ terms recruiters search: *Health Informatics, EMR, KenyaEMR, OpenMRS, DHIS2, Dat
 > Health Data Analyst | SQL · Power BI · DHIS2 | EMR & Surveillance Data | Turning health data into decisions
 
 *Keep headlines ≤ 220 characters. Lead with the exact role title recruiters search. Drop "Chess
-Player" from the headline (fine as an Interest, not a positioning word).*
+Player" from the headline (fine as an Interest, not a positioning word). If you need applications
+out this week and health-informatics remote roles are scarce, use the JOBLESS / REMOTE VOLUME
+headline — not the primary health one.*
 
 ---
 
@@ -71,6 +76,28 @@ Player" from the headline (fine as an Interest, not a positioning word).*
 
 *(Adjust metrics to your final canonical numbers from the Master Resume. Keep the first two lines
 strong — LinkedIn truncates the About after ~2 lines on mobile.)*
+
+### C2. About — JOBLESS / REMOTE VOLUME (paste while actively hunting remote IT roles)
+
+> I'm a remote-ready IT Support and Systems Operations professional based in Kenya.
+>
+> For ~3 years at PATH, I've supported 120+ users across multi-site programs — Microsoft 365, Active Directory, networking, endpoint support, and ITIL-style ticketing (Freshdesk/Zoho) — sustaining ~98% uptime. I've also supported mission-critical health information systems (KenyaEMR/OpenMRS, DHIS2), which trained me to keep services stable when downtime actually hurts people.
+>
+> What I deliver:
+> • 1st/2nd-line IT support, incident management, SLA discipline, knowledge bases
+> • Microsoft 365, Active Directory / Entra ID, Windows endpoints, user onboarding/offboarding
+> • Networking basics (LAN/WAN, VPN, Meraki), Windows/Linux server maintenance, backups
+> • SQL + Power BI/Grafana for operational and program reporting
+> • Clear documentation and user training (80+ staff trained)
+>
+> Comfortable with async remote work, ticketing platforms, and overlapping Africa / EMEA hours (flexible for other zones when needed).
+>
+> Certifications: CCNA · Azure Fundamentals (AZ-900) · Google IT Support · IBM Technical Support · GitHub Professional · Microsoft Data Analysis.
+>
+> Open to remote roles: IT Support, Technical Support, Systems Administration, IT Operations, ICT Officer.
+> 📩 aririmeshack@gmail.com · Portfolio: meshreallycodes.online
+
+*Full Open-to-Work titles, skills reorder, daily apply cadence, and browse filter: `08_Jobless_Remote_Volume_Playbook.md`.*
 
 ---
 

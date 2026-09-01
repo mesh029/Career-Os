@@ -1,0 +1,19 @@
+Dear Director Human Resource,
+
+I am writing to apply for the ICT Officer positions at USIU-Africa (Service Delivery and Multimedia).
+
+I have about three years of hands-on ICT experience at PATH. I started as an ICT Intern in Homa Bay, then moved to ICT Associate, and later supported health information systems while still doing day to day IT support. That path taught me one thing clearly: good ICT work is about keeping people working, not just fixing machines.
+
+Day to day I have supported over 120 users. I handle Level 1 and Level 2 issues like Microsoft 365 and Active Directory accounts, Windows computers, printers, Wi-Fi, and VPN problems. I use ticketing tools such as Freshdesk and Zoho, follow SLAs, and we kept systems at about 98% uptime. I also do user onboarding and offboarding, basic network monitoring, and I write simple guides so common issues get solved faster next time.
+
+I believe this fits USIU-Africa well. A university needs a service desk that responds, systems that stay up during busy periods, classrooms and labs that are ready for teaching, and careful handling of staff and student data. I am comfortable with Windows, Microsoft 365, basic networking (TCP/IP, DNS, DHCP, VLANs), ticketing, asset tracking, patching, and MFA. I learn new systems quickly and I explain technical things in plain language.
+
+I hold a BSc in Applied Computing from KCA University (2023), plus certifications including CCNA and Microsoft Azure Fundamentals (AZ-900). I am ready to relocate to Nairobi and join your ICT team.
+
+Please find my CV, academic documents, and referees attached. Thank you for your time. I would welcome the chance to contribute to reliable ICT support for staff and students at USIU-Africa.
+
+Yours faithfully,
+Meshack Ariri
++254 741 174 779
+aririmeshack@gmail.com
+linkedin.com/in/meshack-ariri
