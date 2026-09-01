@@ -1,18 +1,19 @@
 Dear Director Human Resource,
 
-I am applying for the ICT Officer roles (Service Delivery / Multimedia) at USIU-Africa because I want to put my experience where it matters every day: keeping people productive on reliable systems. My story in ICT started in service — not in a title.
+I am writing to apply for the ICT Officer positions at USIU-Africa (Service Delivery and Multimedia).
 
-I graduated from KCA University with a BSc in Applied Computing (Cybersecurity and Digital Forensics) in November 2023. Before that, and alongside my growth since, I joined PATH as an ICT Intern in Homa Bay. I learned the basics the hard way and the right way: cabling and connectivity, imaging machines, logging tickets properly, and staying calm with users who just needed something to work. That foundation shaped how I still show up — clear communication, clean documentation, and respect for the person on the other side of the request.
+I have about three years of hands-on ICT experience at PATH. I started as an ICT Intern in Homa Bay, then moved to ICT Associate, and later supported health information systems while still doing day to day IT support. That path taught me one thing clearly: good ICT work is about keeping people working, not just fixing machines.
 
-As an ICT Associate, I became a first point of contact for more than 120 users across sites. I resolved Level 1 and 2 issues — Microsoft 365 and Active Directory accounts, Windows endpoints, printers, Wi-Fi and VPN problems — through Freshdesk and Zoho under SLA discipline. We kept services near 98% uptime. I owned onboarding and offboarding so access stayed audit-ready, monitored networks on Cisco Meraki, and wrote knowledge-base articles so the same problem did not waste the next person’s afternoon. Later, as I moved into health informatics support, I kept that ICT backbone: when systems matter to people’s work — and in health, sometimes to people’s care — availability and trust are not optional.
+Day to day I have supported over 120 users. I handle Level 1 and Level 2 issues like Microsoft 365 and Active Directory accounts, Windows computers, printers, Wi-Fi, and VPN problems. I use ticketing tools such as Freshdesk and Zoho, follow SLAs, and we kept systems at about 98% uptime. I also do user onboarding and offboarding, basic network monitoring, and I write simple guides so common issues get solved faster next time.
 
-What I bring to USIU-Africa is that same service mindset in a university setting. Staff and students need a service desk that answers, an infrastructure that holds during peak periods, classrooms and innovation spaces that are ready, and security habits that protect institutional data. I am comfortable with Windows and Microsoft 365 administration, basic networking (TCP/IP, DNS, DHCP, VLANs), ticketing, asset awareness, patching and MFA, and escalating critical alerts quickly. I learn enterprise platforms fast — I have guided non-technical users through complex digital tools before — and I take confidentiality seriously under Kenya’s Data Protection Act.
+I believe this fits USIU-Africa well. A university needs a service desk that responds, systems that stay up during busy periods, classrooms and labs that are ready for teaching, and careful handling of staff and student data. I am comfortable with Windows, Microsoft 365, basic networking (TCP/IP, DNS, DHCP, VLANs), ticketing, asset tracking, patching, and MFA. I learn new systems quickly and I explain technical things in plain language.
 
-I hold certifications including CCNA and Microsoft Azure Fundamentals (AZ-900), and I am ready to relocate to Nairobi to serve USIU-Africa fully. Please find my CV, academic documents, and referees attached as requested. I would be proud to help your ICT team pursue 99.5% availability and genuine user satisfaction — one ticket, one classroom, and one well-handled escalation at a time.
+I hold a BSc in Applied Computing from KCA University (2023), plus certifications including CCNA and Microsoft Azure Fundamentals (AZ-900). I am ready to relocate to Nairobi and join your ICT team.
 
-Thank you for your time and consideration.
+Please find my CV, academic documents, and referees attached. Thank you for your time. I would welcome the chance to contribute to reliable ICT support for staff and students at USIU-Africa.
 
-Sincerely,
+Yours faithfully,
 Meshack Ariri
-+254 741 174 779  |  aririmeshack@gmail.com
++254 741 174 779
+aririmeshack@gmail.com
 linkedin.com/in/meshack-ariri
