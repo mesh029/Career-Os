@@ -1,7 +1,7 @@
 # Applications Tracker — Meshack Ariri
 
 *Governed by `00_SYSTEM_PROMPT.md`. Update the Status column as you apply / hear back.*
-*Last updated: 2026-07-15*
+*Last updated: 2026-09-12*
 
 ## ATS scoring key
 
@@ -22,7 +22,8 @@
 
 | Priority | Role / Employer | Format | Keywords | Quals | Experience | Human | **Apply** | Deadline | How to apply | Status |
 |---:|---|---:|---:|---:|---:|---:|---:|---|---|---|
-| 0 | **ICT Officer — USIU-Africa** (Service Delivery / Multimedia) | 98% | 90% | 95% | 88% | 85% | **~90%** | **Sep 14, 2026 5PM** | Email **jobs-ict@usiu.ac.ke**, subject **ICT Officer** | Ready — `JOBS/USIU Africa/` + `/home/ccc/Documents/BASE/JOBS/USIU Africa/` |
+| 0 | **Research Intern — UNU Macau** (Neuroscience, Learning & AI in HE, remote) | 98% | 70% | 25% | 45% | 30% | **~35%*** | **Sep 18, 2026 11:59PM GMT+8** | https://go.unu.edu/VeaX7 | Ready — `JOBS/UNU Macau Research Intern/` (Master’s gap) |
+| 0b | **ICT Officer — USIU-Africa** (Service Delivery / Multimedia) | 98% | 90% | 95% | 88% | 85% | **~90%** | **Sep 14, 2026 5PM** | Email **jobs-ict@usiu.ac.ke**, subject **ICT Officer** | Ready — `JOBS/USIU Africa/` |
 | 1 | **ICT Officer — Gas Africa** | 98% | 88% | 93% | 86% | 82% | **~85%** | **Jul 21, 2026** | Email **info@gasafrica.com**, subject "ICT Officer" | Not sent |
 | 2 | **IT SysAdmin (+ Web Dev) — Human Capital** (Thika) | 98% | 84% | 90% | 78% | 74% | **~80%** | ~3 wks rolling | https://www.brightermonday.co.ke/listings/it-systems-administrator-5pwe26 | Not sent |
 | 3 | **ICT Manager — Hospitality** | 98% | 80% | 88% | 75% | 70% | **~75%** | Unknown | Original posting | Not sent |
@@ -34,7 +35,8 @@
 | 9 | **IT Specialist — Kuehne+Nagel** | 98% | 86% | 91% | 79% | 76% | **~78%** | TBC | TBC | Not sent |
 | 10 | **Customer Support Specialist — Influx** (remote, Kenya) | 98% | 91% | 96% | 74% | 68% | **~82%** | TBC | TBC (@influx.com only) | Not sent |
 
-\*INSO **Apply ~40%** is dragged down by **French essential** (Human 35%); technical ATS scores are stronger. Full breakdown in that folder's `Application_Intelligence.md`.
+\*INSO **Apply ~40%** is dragged down by **French essential** (Human 35%); technical ATS scores are stronger. Full breakdown in that folder's `Application_Intelligence.md`.  
+\*UNU Macau **Apply ~35%** is dragged down by **Master’s required** (Quals 25%); pack is still ready to submit with honest BSc framing.
 
 **Detailed ATS audits** (keyword present/missing tables): see `Application_Intelligence.md` in **CCaaS**, **Kuehne+Nagel**, and **Influx** folders. Other folders have match notes in their intelligence files; add full scorecards when those roles become priority.
 

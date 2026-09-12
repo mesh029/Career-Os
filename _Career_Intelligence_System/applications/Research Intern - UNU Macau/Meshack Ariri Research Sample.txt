@@ -1,0 +1,62 @@
+AI-Supported Adult Learning in Digital Systems Training
+A short research brief based on practice in Kenyan health programs
+
+Meshack Ariri
+September 2026
+
+1. Purpose
+This brief examines how adult learners adopt complex digital systems at work, and how artificial intelligence (AI) tools may support that learning. It draws on professional practice supporting electronic medical records (EMR), DHIS2, and related reporting tools in Kenyan health programs. It is not a laboratory neuroscience study. It is a practice-based research note meant to show analytical writing and a clear research interest at the intersection of AI, learning, and education.
+
+2. Background
+Higher education and workplace training both face the same pressure: people must learn tools that change quickly. In health programs, staff must learn EMR modules, indicator definitions, data quality rules, and secure handling of sensitive information. Failure is costly. Wrong data or downtime can delay care and reporting.
+
+In my work at PATH, training is not a one-off workshop. It is repeated coaching: demonstrations, guided practice, written job aids, and follow-up support when users get stuck. Over three years I have supported more than 120 users and trained more than 80 health workers across 15+ sessions. That experience shapes the questions below.
+
+3. Working questions
+Q1. Which parts of adult digital-skills learning are hardest: conceptual understanding, procedural memory, motivation, or workplace constraints?
+Q2. Where can AI assistants help (for example drafting job aids, answering routine “how do I…” questions, or summarising long SOPs) without creating over-reliance or errors?
+Q3. What safeguards should education and training policy set when AI is used to teach high-stakes professional systems?
+
+These questions connect workplace learning to debates now common in higher education: AI as tutor, AI as writing assistant, and AI as a risk to integrity and judgment.
+
+4. Observations from practice (evidence from work, not a controlled trial)
+Observation A — Load and sequencing matter.
+Adult learners often fail when training dumps too many screens at once. Shorter sequences with a clear goal (“complete this form correctly”) work better than long feature tours. This matches basic cognitive load ideas in learning science, even when the setting is a clinic, not a university classroom.
+
+Observation B — Written scaffolds reduce repeat tickets.
+When I write simple SOPs and knowledge-base articles, common support tickets drop. Learners need a stable external memory. AI can speed drafting of those scaffolds, but a human must verify accuracy against the live system.
+
+Observation C — Trust and feedback loops drive retention.
+Staff learn faster when they see that correct data entry improves a dashboard or reduces rework. Feedback that is delayed or opaque weakens learning. AI chat answers that sound confident but are wrong are especially dangerous here.
+
+Observation D — Context beats generic content.
+Generic “how to use Excel” training underperforms compared with role-based examples (for example PMTCT indicators or facility reporting deadlines). The same rule likely applies to AI tutors: local, role-specific prompts beat generic advice.
+
+5. Implications for AI in higher education
+If AI is used to support learning in universities and professional programs, three design principles follow from the observations above:
+1) Keep human verification for high-stakes procedures.
+2) Prefer short, sequenced learning tasks over long unstructured chat.
+3) Build feedback that shows learners the effect of their actions, not only a verbal explanation.
+
+Neuroscience and learning science can refine these principles further (attention, spaced practice, retrieval, sleep and memory). My contribution as an intern would be to help gather and synthesise that literature, connect it to AI-in-education debates, and draft clear English research and policy notes under supervision.
+
+6. Proposed contribution to UNU Macau
+If selected, I would:
+- Map recent literature on AI tutors, cognitive load, and adult learning in higher education.
+- Draft short research briefs and blog-style summaries for non-specialist readers.
+- Flag policy risks: hallucination, equity of access, assessment integrity, and over-automation of teaching.
+- Support editorial preparation for the Springer volume on AI and higher education where asked.
+
+7. Limits of this brief
+This note is based on professional practice and public learning-science concepts. It does not include new experimental data, neuroimaging, or a formal systematic review. Those gaps are exactly why supervised research at UNU Macau would be valuable.
+
+8. Closing
+AI will keep entering classrooms and workplaces. The useful research question is not whether AI can answer questions, but how it can support durable learning while protecting judgment. I want to help UNU Macau examine that question carefully and write about it clearly.
+
+References (illustrative starting points for a full review)
+- Sweller, J. Cognitive load theory (foundational overview in learning science literature).
+- UNESCO and related UN policy notes on AI and education (for policy framing).
+- Springer / academic literature on AI in higher education (to be reviewed systematically during the internship).
+
+Contact
+Meshack Ariri · aririmeshack@gmail.com · +254 741 174 779 · Kisumu / Nairobi, Kenya
