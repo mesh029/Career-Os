@@ -195,11 +195,15 @@ Train until these roll off your tongue. **Bold** = appears in 3+ JDs.
 
 ### Card 1 — "Tell me about yourself" (universal)
 
-> I'm a systems and data operations person. I don't just close tickets — I fix the layer underneath.
+> I'm Meshack. I keep people working when systems want to fall over.
 >
-> At PATH I've gone from ICT intern to HMIS officer supporting national-scale systems. I run the full loop: keep platforms up, automate reporting with Excel VBA and SQL, integrate APIs for national data sync, and build dashboards that leadership actually uses.
+> For about three years at PATH I grew from ICT Intern to ICT Associate to Health Informatics / HMIS Officer — still doing real IT support the whole way. I support 120-plus users across multiple sites: Microsoft 365, Active Directory, networking, endpoints, and ITIL-style ticketing in Freshdesk and Zoho. We held about 98% uptime. Not because nothing breaks — because we triage fast, fix the right layer, and document so it doesn't break the same way twice.
 >
-> Whether it's M365 and endpoint support, network troubleshooting, or data pipeline validation — I speak both technical and business. Give me a fragile process and I'll show you the mechanism that's breaking and the metric that proves it's fixed.
+> The part most candidates skip: I also support mission-critical health systems — KenyaEMR and DHIS2 — where downtime isn't an inconvenience, it's clinics and reporting on the line. That trained me to treat reliability like an SLO, not a vibe. I've trained 80-plus staff, written the SOPs and job aids, and cut reporting grind about 40% with SQL validation and automation.
+>
+> So if you need someone who can own the service desk, stabilize the stack, explain tech in plain language, and still think in systems — that's me. Happy to go deep on whatever matters most for this role.
+
+**Full variants + 30-sec hook:** `Interview_Intro_Pitch.md` · also `JOBS/Interview Intro Pitch.txt`
 
 ### Card 2 — M365 / identity (Optimise, Bridge, INSO, Gas Africa)
 
