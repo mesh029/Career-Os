@@ -13,8 +13,10 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 from resume_theme import (
+    HEADER_BG_HEX, HEADER_FG_HEX, HEADER_SUB_HEX, HEADER_MUTED_HEX, WARM_HEX,
     ACCENT_HEX, ACCENT_DARK_HEX, ACCENT_MID_HEX, ACCENT_LIGHT_HEX, ACCENT_PALE_HEX,
-    SLATE_HEX, SLATE_MUTED_HEX, FONT, CONTACT, format_contact_lines,
+    SLATE_HEX, SLATE_MUTED_HEX, FONT, CONTACT, format_contact_lines, pack_files,
+    format_certs_line, EDU_DEGREE, EDU_SCHOOL, EDU_DATE, EDU_SPEC, EDU_CAPSTONE,
 )
 
 
@@ -25,11 +27,17 @@ def _rgb(hex6):
 ACCENT = _rgb(ACCENT_HEX)
 ACCENT_DARK = _rgb(ACCENT_DARK_HEX)
 ACCENT_MID = _rgb(ACCENT_MID_HEX)
+INK = _rgb(HEADER_BG_HEX)
+INK_FG = _rgb(HEADER_FG_HEX)
+INK_SUB = _rgb(HEADER_SUB_HEX)
+INK_MUTED = _rgb(HEADER_MUTED_HEX)
+WHITE = _rgb(HEADER_FG_HEX)
 DARK = _rgb(SLATE_HEX)
 GREY = _rgb(SLATE_MUTED_HEX)
 FONT_NAME = FONT
 
 CONTACT = CONTACT  # re-export for application build scripts
+pack_files = pack_files
 
 
 def _set_cell_shading(cell, fill_hex):
@@ -74,90 +82,95 @@ def set_base_style(doc):
     pf.space_after = Pt(2)
     pf.line_spacing = 1.05
     for section in doc.sections:
-        section.top_margin = Inches(0.48)
-        section.bottom_margin = Inches(0.48)
-        section.left_margin = Inches(0.58)
-        section.right_margin = Inches(0.58)
+        section.top_margin = Inches(0.40)
+        section.bottom_margin = Inches(0.42)
+        section.left_margin = Inches(0.52)
+        section.right_margin = Inches(0.52)
 
 
-def _render_header_band(doc, name, headline, contact):
-    """Full-width shaded header with top accent stripe."""
-    content_w = Inches(6.84)
+def _render_metrics_row(doc, metrics):
+    """Impact chips under the header. Real text, ATS-readable."""
+    n = max(len(metrics), 1)
+    table = doc.add_table(rows=1, cols=n)
+    _set_table_width(table, 7.06)
+    _remove_table_borders(table)
+    for i, (value, caption) in enumerate(metrics):
+        cell = table.rows[0].cells[i]
+        _set_cell_shading(cell, ACCENT_LIGHT_HEX)
+        cell.paragraphs[0].clear()
+        pv = cell.paragraphs[0]
+        pv.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        pv.paragraph_format.space_before = Pt(6)
+        pv.paragraph_format.space_after = Pt(0)
+        rv = pv.add_run(value)
+        rv.bold = True
+        rv.font.size = Pt(12)
+        rv.font.color.rgb = ACCENT
+        rv.font.name = FONT_NAME
+        pc = cell.add_paragraph()
+        pc.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        pc.paragraph_format.space_after = Pt(6)
+        rc = pc.add_run(caption.upper())
+        rc.font.size = Pt(7)
+        rc.font.color.rgb = GREY
+        rc.font.name = FONT_NAME
+    spacer = doc.add_paragraph()
+    spacer.paragraph_format.space_after = Pt(4)
 
-    # Top accent stripe
-    stripe = doc.add_table(rows=1, cols=1)
-    _set_table_width(stripe, 6.84)
-    _remove_table_borders(stripe)
-    sc = stripe.rows[0].cells[0]
-    _set_cell_shading(sc, ACCENT_DARK_HEX)
-    sp = sc.paragraphs[0]
-    sp.paragraph_format.space_after = Pt(0)
-    sp.paragraph_format.space_before = Pt(0)
-    run = sp.add_run(" ")
-    run.font.size = Pt(3)
 
-    # Main header band
-    band = doc.add_table(rows=1, cols=1)
-    _set_table_width(band, 6.84)
-    _remove_table_borders(band)
-    cell = band.rows[0].cells[0]
-    _set_cell_shading(cell, ACCENT_LIGHT_HEX)
-    cell.vertical_alignment = 1  # center
-
-    # Clear default paragraph
-    cell.paragraphs[0].clear()
-
-    p_name = cell.add_paragraph()
-    p_name.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_name.paragraph_format.space_before = Pt(10)
-    p_name.paragraph_format.space_after = Pt(4)
+def _render_header_band(doc, name, headline, contact, metrics=None):
+    """Light editorial header: navy name on white, copper hairline."""
+    p_name = doc.add_paragraph()
+    p_name.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_name.paragraph_format.space_before = Pt(2)
+    p_name.paragraph_format.space_after = Pt(2)
     rn = p_name.add_run(name)
     rn.bold = True
-    rn.font.size = Pt(26)
-    rn.font.color.rgb = ACCENT_DARK
+    rn.font.size = Pt(22)
+    rn.font.color.rgb = INK_FG
     rn.font.name = FONT_NAME
 
-    p_title = cell.add_paragraph()
-    p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_title.paragraph_format.space_after = Pt(6)
+    p_title = doc.add_paragraph()
+    p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_title.paragraph_format.space_after = Pt(3)
     rt = p_title.add_run(headline)
-    rt.font.size = Pt(10.2)
-    rt.font.color.rgb = DARK
+    rt.font.size = Pt(10)
+    rt.font.color.rgb = INK_SUB
     rt.font.name = FONT_NAME
 
     for line in format_contact_lines(contact):
-        p_contact = cell.add_paragraph()
-        p_contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p_contact.paragraph_format.space_after = Pt(2)
-        parts = [x.strip() for x in line.split("|")]
-        for i, part in enumerate(parts):
+        p_contact = doc.add_paragraph()
+        p_contact.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p_contact.paragraph_format.space_after = Pt(1)
+        parts = [x.strip() for x in line.replace("|", "·").split("·")]
+        parts = [p for p in parts if p]
+        raw_parts = [x.strip() for x in line.split("|")] if "|" in line else [x.strip() for x in line.split("·")]
+        for i, part in enumerate(raw_parts):
             if i > 0:
-                sep = p_contact.add_run("  |  ")
-                sep.font.size = Pt(8.4)
-                sep.font.color.rgb = ACCENT_MID
+                sep = p_contact.add_run("  ·  ")
+                sep.font.size = Pt(8)
+                sep.font.color.rgb = INK_MUTED
                 sep.font.name = FONT_NAME
             rc = p_contact.add_run(part)
-            rc.font.size = Pt(8.4)
-            rc.font.color.rgb = GREY
+            rc.font.size = Pt(8)
+            rc.font.color.rgb = INK_MUTED
             rc.font.name = FONT_NAME
 
-    # padding bottom
-    p_pad = cell.add_paragraph()
-    p_pad.paragraph_format.space_after = Pt(10)
-
-    # Rule under header
     rule = doc.add_paragraph()
     rule.paragraph_format.space_before = Pt(4)
-    rule.paragraph_format.space_after = Pt(8)
+    rule.paragraph_format.space_after = Pt(6)
     p_pr = rule._p.get_or_add_pPr()
     pbdr = OxmlElement("w:pBdr")
     bottom = OxmlElement("w:bottom")
     bottom.set(qn("w:val"), "single")
-    bottom.set(qn("w:sz"), "16")
+    bottom.set(qn("w:sz"), "18")
     bottom.set(qn("w:space"), "1")
-    bottom.set(qn("w:color"), ACCENT_HEX)
+    bottom.set(qn("w:color"), WARM_HEX)
     pbdr.append(bottom)
     p_pr.append(pbdr)
+
+    if metrics:
+        _render_metrics_row(doc, metrics)
 
 
 def _init_header_state(doc):
@@ -172,12 +185,12 @@ def _maybe_render_header(doc):
     if not all(k in h for k in ("name", "title", "contact")):
         return
     h["_rendered"] = True
-    _render_header_band(doc, h["name"], h["title"], h["contact"])
+    _render_header_band(doc, h["name"], h["title"], h["contact"], h.get("metrics"))
 
 
-def add_header(doc, name, headline, contact):
+def add_header(doc, name, headline, contact, metrics=None):
     """Render the full header band in one call."""
-    _render_header_band(doc, name, headline, contact)
+    _render_header_band(doc, name, headline, contact, metrics)
     doc._cv_header = {"_rendered": True}
 
 
@@ -200,43 +213,22 @@ def add_contact(doc, contact):
 
 
 def add_heading(doc, text):
-    """Section heading with left accent bar on pale background."""
-    bar_w = Inches(0.12)
-    content_w = Inches(6.72)
-    row = doc.add_table(rows=1, cols=2)
-    _set_table_width(row, 6.84)
-    _remove_table_borders(row)
-
-    bar_cell = row.rows[0].cells[0]
-    bar_cell.width = bar_w
-    _set_cell_shading(bar_cell, ACCENT_HEX)
-    bar_cell.paragraphs[0].clear()
-
-    text_cell = row.rows[0].cells[1]
-    text_cell.width = content_w
-    _set_cell_shading(text_cell, ACCENT_PALE_HEX)
-    text_cell.paragraphs[0].clear()
-    p = text_cell.paragraphs[0]
-    p.paragraph_format.space_before = Pt(5)
-    p.paragraph_format.space_after = Pt(5)
-    p.paragraph_format.left_indent = Inches(0.08)
+    """Compact uppercase section heading with copper rule."""
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(8)
+    p.paragraph_format.space_after = Pt(1)
     r = p.add_run(text.upper())
     r.bold = True
-    r.font.size = Pt(10.8)
+    r.font.size = Pt(9)
     r.font.color.rgb = ACCENT_DARK
     r.font.name = FONT_NAME
-
-    # Subtle rule under section heading
-    rule = doc.add_paragraph()
-    rule.paragraph_format.space_before = Pt(0)
-    rule.paragraph_format.space_after = Pt(6)
-    p_pr = rule._p.get_or_add_pPr()
+    p_pr = p._p.get_or_add_pPr()
     pbdr = OxmlElement("w:pBdr")
     bottom = OxmlElement("w:bottom")
     bottom.set(qn("w:val"), "single")
-    bottom.set(qn("w:sz"), "4")
+    bottom.set(qn("w:sz"), "12")
     bottom.set(qn("w:space"), "1")
-    bottom.set(qn("w:color"), ACCENT_MID_HEX)
+    bottom.set(qn("w:color"), WARM_HEX)
     pbdr.append(bottom)
     p_pr.append(pbdr)
 
@@ -305,60 +297,148 @@ def add_bullets(doc, bullets):
         r.font.color.rgb = DARK
 
 
+def add_toolkit(doc, skills):
+    """Copper-rail toolkit ribbon. Not a Core Skills heading."""
+    if not skills:
+        return
+    row = doc.add_table(rows=1, cols=2)
+    _set_table_width(row, 7.06)
+    _remove_table_borders(row)
+    rail = row.rows[0].cells[0]
+    body = row.rows[0].cells[1]
+    rail.width = Inches(0.12)
+    body.width = Inches(6.94)
+    _set_cell_shading(rail, WARM_HEX)
+    _set_cell_shading(body, ACCENT_PALE_HEX)
+    rail.paragraphs[0].clear()
+    body.paragraphs[0].clear()
+    first = True
+    for label, items in skills:
+        p = body.paragraphs[0] if first else body.add_paragraph()
+        first = False
+        p.paragraph_format.space_before = Pt(1)
+        p.paragraph_format.space_after = Pt(1)
+        rl = p.add_run(label + "  ")
+        rl.bold = True
+        rl.font.size = Pt(8.5)
+        rl.font.color.rgb = ACCENT
+        rl.font.name = FONT_NAME
+        ri = p.add_run(items)
+        ri.font.size = Pt(8.5)
+        ri.font.color.rgb = DARK
+        ri.font.name = FONT_NAME
+    pad = doc.add_paragraph()
+    pad.paragraph_format.space_after = Pt(4)
+
+
+def add_credentials(doc, data):
+    """Full-width Education + Certifications strip. Never a two-column footer."""
+    table = doc.add_table(rows=2, cols=3)
+    _set_table_width(table, 7.06)
+    _remove_table_borders(table)
+    table.columns[0].width = Inches(0.12)
+    table.columns[1].width = Inches(1.18)
+    table.columns[2].width = Inches(5.76)
+
+    rail_top = table.rows[0].cells[0]
+    rail_bot = table.rows[1].cells[0]
+    rail_top.merge(rail_bot)
+    _set_cell_shading(table.rows[0].cells[0], WARM_HEX)
+    for r in range(2):
+        _set_cell_shading(table.rows[r].cells[1], ACCENT_PALE_HEX)
+        _set_cell_shading(table.rows[r].cells[2], ACCENT_PALE_HEX)
+        table.rows[r].cells[0].paragraphs[0].clear()
+        table.rows[r].cells[1].paragraphs[0].clear()
+        table.rows[r].cells[2].paragraphs[0].clear()
+
+    def _label(cell, text):
+        p = cell.paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        p.paragraph_format.space_before = Pt(5)
+        p.paragraph_format.space_after = Pt(4)
+        r = p.add_run(text)
+        r.bold = True
+        r.font.size = Pt(7)
+        r.font.color.rgb = ACCENT
+        r.font.name = FONT_NAME
+
+    def _lines(cell, lines):
+        first = True
+        for text, size, color, bold in lines:
+            p = cell.paragraphs[0] if first else cell.add_paragraph()
+            first = False
+            p.paragraph_format.space_before = Pt(2)
+            p.paragraph_format.space_after = Pt(2)
+            run = p.add_run(text)
+            run.bold = bold
+            run.font.size = Pt(size)
+            run.font.color.rgb = color
+            run.font.name = FONT_NAME
+
+    _label(table.rows[0].cells[1], "EDUCATION")
+    spec = EDU_SPEC if data.get("compact_education") else f"{EDU_SPEC} {EDU_CAPSTONE}"
+    _lines(table.rows[0].cells[2], [
+        (f"{EDU_DEGREE}  ·  {EDU_SCHOOL}  ·  {EDU_DATE}", 10.2, ACCENT_DARK, True),
+        (spec, 8.4, GREY, False),
+    ])
+    _label(table.rows[1].cells[1], "CERTIFICATIONS")
+    _lines(table.rows[1].cells[2], [
+        (format_certs_line(data.get("certs") or ""), 9.0, DARK, False),
+    ])
+
+    pad = doc.add_paragraph()
+    pad.paragraph_format.space_before = Pt(6)
+    pad.paragraph_format.space_after = Pt(2)
+
+
 def add_skill_line(doc, label, items):
-    p = doc.add_paragraph()
-    p.paragraph_format.space_after = Pt(3)
-    p.paragraph_format.left_indent = Inches(0.04)
-    r = p.add_run(f"{label}: ")
-    r.bold = True
-    r.font.size = Pt(9.3)
-    r.font.color.rgb = ACCENT
-    r.font.name = FONT_NAME
-    r2 = p.add_run(items)
-    r2.font.size = Pt(9.3)
-    r2.font.name = FONT_NAME
-    r2.font.color.rgb = DARK
+    """Back-compat: toolkit rows are preferred. Kept for older call sites."""
+    add_toolkit(doc, [(label, items)])
 
 
 def build(data, path):
     doc = Document()
     set_base_style(doc)
-    add_header(doc, "MESHACK ARIRI", data["headline"], CONTACT)
+    add_header(doc, "MESHACK ARIRI", data["headline"], CONTACT, data.get("metrics"))
 
-    add_heading(doc, "Professional Summary")
-    add_para(doc, data["summary"], size=10.2, space_after=4)
+    add_heading(doc, "Profile")
+    add_para(doc, data["summary"], size=10.2, space_after=6)
+    add_toolkit(doc, data.get("skills") or [])
 
-    add_heading(doc, "Core Skills")
-    for label, items in data["skills"]:
-        add_skill_line(doc, label, items)
-
-    add_heading(doc, "Professional Experience")
+    add_heading(doc, "Experience")
     for role in data["experience"]:
         add_role(doc, role["org"], role["title"], role["dates"], role.get("loc", ""))
         add_bullets(doc, role["bullets"])
 
-    add_heading(doc, "Education")
-    add_para(doc, "BSc, Applied Computing  |  KCA University, Nairobi  |  November 2023", bold=True, size=10.2, space_after=1)
-    add_para(doc, "Specialized in Cybersecurity and Digital Forensics. Coursework included Ethical Hacking, Digital Forensics, Data Protection, and Cloud Computing.", size=9.8, color=GREY)
-    add_para(doc, "Capstone: Designed and implemented a secure office network (VLANs, Active Directory, backup/DR) simulating real-world IT administration.", size=9.8, color=GREY)
+    if data.get("projects"):
+        add_heading(doc, "Selected work")
+        for proj in data["projects"]:
+            add_role(
+                doc,
+                proj.get("org", ""),
+                proj["title"],
+                proj.get("dates", ""),
+                proj.get("loc", ""),
+            )
+            add_bullets(doc, proj["bullets"])
+
+    add_credentials(doc, data)
 
     if data.get("languages"):
         add_heading(doc, "Languages")
         add_para(doc, data["languages"], size=10)
 
-    add_heading(doc, "Certifications")
-    add_para(doc, data["certs"], size=10)
-
     if data.get("achievements"):
-        add_heading(doc, "Achievements & Activities")
+        add_heading(doc, "Selected results")
         add_bullets(doc, data["achievements"])
 
-    add_heading(doc, "Referees")
-    if data.get("referees"):
-        for ref in data["referees"]:
-            add_para(doc, ref, size=10, space_after=4)
-    else:
-        add_para(doc, "Available upon request.", size=10, color=GREY)
+    if data.get("show_referees", True):
+        add_heading(doc, "Referees")
+        if data.get("referees"):
+            for ref in data["referees"]:
+                add_para(doc, ref, size=10, space_after=4)
+        else:
+            add_para(doc, "Available upon request.", size=10, color=GREY)
 
     doc.save(path)
     print("Saved:", path)
@@ -378,6 +458,12 @@ ACH = [
 # 1) PRIMARY — Health Informatics
 health = {
 "headline": "Health Informatics Specialist  |  EMR (KenyaEMR/OpenMRS) & DHIS2  |  Health Data & Systems Support",
+"metrics": [
+    ("120+", "users supported"),
+    ("~98%", "uptime"),
+    ("80+", "staff trained"),
+    ("~40%", "faster reporting"),
+],
 "summary": ("Health Informatics and IT professional with ~3 years at PATH supporting national-scale health "
     "information systems such as KenyaEMR/TaifaCare, DHIS2, and EMR, laboratory, and pharmacy integrations. Combines hands-on "
     "EMR/HMIS support with data quality (DQA, SQL validation), analytics (Power BI, Grafana), and reliable IT "
@@ -421,6 +507,12 @@ health = {
 # 2) VARIANT — INGO / UN ICT Officer / IT Support
 ingo = {
 "headline": "ICT Officer  |  Health Systems & IT Support  |  Microsoft 365 · Active Directory · Networking · ITIL/SLA",
+"metrics": [
+    ("120+", "users supported"),
+    ("~98%", "uptime"),
+    ("ITIL", "SLA / tickets"),
+    ("80+", "staff trained"),
+],
 "summary": ("ICT professional with ~3 years at PATH delivering reliable IT support and systems administration for "
     "120+ users across multi-site health programs. Strong in Microsoft 365, Active Directory, networking, and "
     "ITIL/SLA-driven service desk operations, with hands-on experience supporting mission-critical health "
@@ -459,6 +551,12 @@ ingo = {
 # 3) VARIANT — Enterprise / Remote IT Operations & Sysadmin
 itops = {
 "headline": "IT Operations & Systems Administrator  |  Microsoft 365 · Active Directory · Networking · Automation  |  Remote-ready",
+"metrics": [
+    ("120+", "users supported"),
+    ("~98%", "uptime"),
+    ("~25%", "faster response"),
+    ("Remote", "EST-ready"),
+],
 "summary": ("IT operations professional with ~3 years at PATH supporting 120+ users in hybrid Windows/Microsoft 365 "
     "environments. Skilled across service desk (Freshdesk/Jira, ITIL/SLA), Active Directory, networking, endpoint "
     "security, and Windows/Linux server administration, with growing automation (PowerShell, Bash, Python) and "

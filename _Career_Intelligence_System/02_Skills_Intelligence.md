@@ -58,10 +58,11 @@
 - Git / GitHub workflows (certified)
 
 ### Software / Web
-- Web development (HTML/CSS, Node.js/Express, some full-stack — freelance)
+- Application engineering: React, Next.js, TypeScript, Node.js/Express, REST APIs (freelance / independent)
+- Flutter mobile (JuaX and other mobile surfaces)
+- Systems internals / assembly-level computer architecture (diagnosis, not firmware shipping)
 - REST API integration, authentication flows
 - CMS / page-builder environments; on-page SEO
-- Mobile app project (JuaX)
 
 ### Delivery, Enablement & Business
 - Training & capacity building (health workers, ICT officers)

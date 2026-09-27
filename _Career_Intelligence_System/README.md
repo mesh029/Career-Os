@@ -6,7 +6,7 @@ repository must contain enough context for a person or a fresh agent to continue
 
 > **Start with this README, then read `00_SYSTEM_PROMPT.md`. Do not rely on a previous chat.**
 
-**Last continuity update:** 2026-08-25
+**Last continuity update:** 2026-09-02
 **Repository:** `https://github.com/mesh029/Career-Os.git`
 **Default branch:** `main`
 
@@ -111,9 +111,9 @@ When files disagree, use this order:
 | 1 | `00_SYSTEM_PROMPT.md` | Governance, objectives, and ethical rules |
 | 2 | `resumes/00_Master_Resume.md` | Canonical facts: titles, dates, metrics, education, certifications |
 | 3 | `01_` through `08_*.md` | Strategy and interpretation (incl. jobless/remote volume playbook) |
-| 4 | `applications/<Role>/Job_Description.md` | Captured requirements for one role |
-| 5 | `applications/<Role>/Application_Intelligence.md` | Fit analysis and honest positioning |
-| 6 | `applications/<Role>/build.py` | Renderable role-specific content |
+| 4 | `applications/<Employer Role>/Job_Description.md` | Captured requirements for one role |
+| 5 | `applications/<Employer Role>/Application_Intelligence.md` | Fit analysis and honest positioning |
+| 6 | `applications/<Employer Role>/build.py` | Renderable role-specific content |
 | 7 | Generated `.docx` and `.pdf` files | Outputs only |
 | 8 | `applications/APPLICATIONS_TRACKER.md` | Operational status and deadlines |
 | 9 | `prep/README.md` | Interview vocabulary and practice material |
@@ -169,19 +169,11 @@ credibility risk.
 
 ## 5. Current operational snapshot
 
-Snapshot from `applications/APPLICATIONS_TRACKER.md`, last updated 2026-07-15:
+Snapshot from `applications/APPLICATIONS_TRACKER.md`, last updated 2026-09-02:
 
-- Ten application packages are built; none is recorded as sent.
-- **Immediate deadline:** ICT Officer — Gas Africa, 2026-07-21, approximately 85% apply score.
-- Other strong unsent packages include Solvo Global (~85%), CCaaS SysAdmin (~85%),
-  Influx (~82%), Thika SysAdmin/Web Dev (~80%), and Kuehne+Nagel (~78%).
-- INSO is a long-shot because French is essential.
-- Confirm every listing, deadline, employer, and submission channel before applying.
-- `applications/APPLICATIONS_TRACKER.md` is newer than the running log in
-  `03_Application_Intelligence.md`; those files need synchronization.
-
-The tracker is the live pipeline. This snapshot is only a handoff summary and will become
-stale; update both when the pipeline changes.
+- **Apply today:** Technical Support Agent L2 — BruntWork healthcare MSP (posted 31 Aug 2026, immediate hiring). Portal: assessment + tech check + voice. Pack built. Apply score ~84%.
+- **Email by Sep 14:** ICT Officer — USIU-Africa.
+- Older packages remain recorded as unsent; verify those listings before sending.
 
 ### Facts still requiring Meshack's confirmation
 
@@ -218,7 +210,7 @@ Until confirmed, do not turn these into stronger or more definite claims.
 | `resumes/build_resumes.py` | Builds the three general DOCX resumes |
 | `resumes/pdf_builder.py` | Shared ReportLab renderer for application PDFs |
 | `applications/APPLICATIONS_TRACKER.md` | Active application pipeline |
-| `applications/<Role>/` | JD, analysis, builder, messages, and generated package |
+| `applications/<Employer Role>/` | JD, analysis, builder, messages, and generated package |
 | `prep/README.md` | Rick-Speak Technical Handbook and interview preparation |
 | `templates/` | Reusable cover letters, emails, and recruiter messages |
 | `reports/` | Portfolio, market, and supporting research reports |
@@ -241,20 +233,22 @@ Outputs:
 2. `resumes/Meshack_Ariri_Resume_ICT_Officer_INGO.docx`
 3. `resumes/Meshack_Ariri_Resume_IT_Operations.docx`
 
-The general builder currently creates DOCX only.
+The general builder creates DOCX + PDF for the three tracks (filenames stay underscored there because they live together in `resumes/` / `downloads/`).
 
 ### One application package
 
 ```bash
-python3 "applications/ICT Officer - Gas Africa/build.py"
+python3 "applications/Gas Africa ICT Officer/build.py"
 ```
 
-Each application builder normally creates four files beside itself:
+Each application builder creates four files with the same names in every folder:
 
-- tailored CV DOCX
-- tailored cover letter DOCX
-- tailored CV PDF
-- tailored cover letter PDF
+- `Meshack Ariri CV.docx`
+- `Meshack Ariri Cover Letter.docx`
+- `Meshack Ariri CV.pdf`
+- `Meshack Ariri Cover Letter.pdf`
+
+The folder already names the job (`Employer Role`, spaces, no hyphens). Do not use `Role - Employer` or underscored filenames.
 
 ### All application packages
 
@@ -274,17 +268,17 @@ documents are factually correct or visually clean.
 
 The source of truth for resume styling is `resumes/resume_theme.py`.
 
-**Current theme:** Royal Indigo and slate, not teal.
+**Current theme:** Editorial Light — navy type on white paper, copper accent. No full-width dark header.
 
 | Token | Hex | Use |
 |---|---|---|
-| Accent | `#3730A3` | Section bars, titles, labels, bullets |
-| Accent dark | `#2A2478` | Top stripe and name |
-| Accent mid | `#6366F1` | Rules and separators |
-| Accent light | `#ECEDFB` | Soft lavender header band |
-| Accent pale | `#F6F6FD` | Section-heading strip |
+| Navy | `#0F2744` | Name, section titles |
+| Copper | `#C45C26` | Hairline, toolkit labels, bullets, metric values |
+| Copper soft | `#E8C4A8` | Metric dividers |
+| Sand | `#F6EFE6` | Metric chips |
+| Cream | `#FBF7F2` | Toolkit wash |
 | Slate | `#1E293B` | Body text |
-| Muted slate | `#64748B` | Dates and secondary text |
+| Muted slate | `#64748B` | Dates, contact, captions |
 
 Fonts:
 
@@ -293,12 +287,13 @@ Fonts:
 
 Layout:
 
-- ATS-safe, single column
-- top accent stripe
-- shaded centered header
-- two-line contact row
-- section headings with a left accent bar
-- dark body text on white
+- ATS-safe, single column, real text (no icons, photos, or skill bars)
+- Light header: navy name, copper hairline, no dark band
+- Optional metric chips under the header (`metrics` on the CV dict)
+- Skills as a copper-rail toolkit ribbon (never a "Core Skills" heading)
+- Education and certifications as one full-width Credentials strip (never a two-column footer)
+- Uppercase section titles with a copper rule
+- Dark body text on white
 
 To change the look globally, edit `resumes/resume_theme.py`, then rebuild all affected
 documents. Check `resumes/build_resumes.py` and `resumes/pdf_builder.py` for hard-coded
@@ -328,7 +323,7 @@ Portability notes:
 ### Adding a new job
 
 1. Verify the live posting, employer, location, deadline, and application channel.
-2. Create `applications/<Role - Employer>/`.
+2. Create `applications/<Employer Role>/` (spaces, no hyphens, no `Role - Employer`).
 3. Save the JD and its source/date in `Job_Description.md`.
 4. Create `Application_Intelligence.md`: fit, gaps, ATS terms, evidence, risks, and
    recommendation.
@@ -421,6 +416,211 @@ certifications, unresolved placeholders, and stale deadlines.
 
 ## 12. Latest handoff
 
+### 2026-09-14 (ILRI ICT Technician Digital Workplace Services)
+
+**State**
+
+- Pack: `applications/ILRI ICT Technician Digital Workplace Services/`
+- Nairobi, Kenyan nationals, HG12. Deadline **28 Sep 2026**. REF: **ICT-CS/2308-09/2026**. Apply **~87%**.
+- Canonical PATH titles. Intune = equivalent, not tenant. Copilot = adoption, not rollout lead. Fill referee phones.
+- Rebuild: `python3 "applications/ILRI ICT Technician Digital Workplace Services/build.py"`
+
+### 2026-09-14 (St. Kizito Vocational Centre ICT Trainer)
+
+**State**
+
+- Pack: `applications/St Kizito Vocational Centre ICT Trainer/`
+- Utawala, Nairobi. Deadline **16 Sep 2026**. Apply **~83%**.
+- Training + equipment. No TSC. Relocate. Google Form.
+- Rebuild: `python3 "applications/St Kizito Vocational Centre ICT Trainer/build.py"`
+
+### 2026-09-10 (BruntWork IT Microsoft Support Specialist)
+
+**State**
+
+- Pack: `applications/BruntWork IT Microsoft Support Specialist/`
+- Seattle healthcare client. 20h, Pacific business hours = **7:00–11:00 PM EAT**. Apply **~87%** if the window is real.
+- Not the AEST M365 MSP pack. Not the EST healthcare L2 pack. Do not claim HIPAA, MS-900, or A+.
+- Portal: `Portal_Application_Pack.md` (assessment + voice).
+- Rebuild: `python3 "applications/BruntWork IT Microsoft Support Specialist/build.py"`
+
+### 2026-09-10 (Corus Senior IT Service Desk Specialist)
+
+**State**
+
+- Pack: `applications/Corus Senior IT Service Desk Specialist/`
+- Washington DC hybrid Tue/Wed. US work authorization required. Apply **~45%** because of that gate, not because the NGO service desk story is weak.
+- Cover is honest: Kenya, no US work auth. Intern off.
+- Rebuild: `python3 "applications/Corus Senior IT Service Desk Specialist/build.py"`
+
+### 2026-09-10 (Influx Technical Support Agent L2)
+
+**State**
+
+- Pack: `applications/Influx Technical Support Agent L2/`
+- Kenya WFH, 44h, 24x7 staggered 5-day. Intern off. L2 titles this CV only.
+- Apply score **~85%**. Not the Customer Support Specialist pack.
+- Apply: official Influx only (@influx.com). Portal answers in `Portal_Application_Pack.md`.
+- Rebuild: `python3 "applications/Influx Technical Support Agent L2/build.py"`
+
+### 2026-09-10 (Tier 3 IT Support and NOC Engineer)
+
+**State**
+
+- Pack: `stretch/Tier 3 IT Support NOC Engineer/`
+- Stretch. Intern off. Current PATH line = Tier 3 IT Support and NOC Engineer. ICT era = Network Operations Engineer.
+- Apply score **~85%**. Employer not in the paste. Swap cover greeting when named.
+- Rebuild: `python3 "stretch/Tier 3 IT Support NOC Engineer/build.py"`
+
+### 2026-09-10 (Technical Support Agent base pack)
+
+**State**
+
+- Pack: `applications/Technical Support Agent/`
+- Reusable TSA CV. Service desk first. Programming as product diagnostics, application engineering (React, Next.js, Express, Flutter), and assembly-level systems internals.
+- PATH titles canonical. Independent line carries the engineering.
+- Rebuild: `python3 "applications/Technical Support Agent/build.py"`
+- Clone and retarget the cover per employer. Not a substitute for BruntWork L2, Cigna, or Influx customer-support packs.
+
+### 2026-09-08 (Wave HR Systems Analyst)
+
+**State**
+
+- Pack: `stretch/Wave HR Systems Analyst/`
+- Kenya remote, UTC+3, pay USD 66.4k–75.8k plus equity.
+- HMIS unchanged. ICT era = People Systems and Identity Administrator. Intern off. No ECD line.
+- Apply score **~82%**. ICT era = HRIS and People Systems Analyst. Workday as HCM implementation posture.
+- Apply: English CV + cover on Wave form.
+- Rebuild: `python3 "stretch/Wave HR Systems Analyst/build.py"`
+
+### 2026-09-08 (G Adventures Tour Staff Administrator)
+
+**State**
+
+- Pack: `stretch/G Adventures Tour Staff Administrator/`
+- Titles this CV only: ECD = Field Programme Administrator, Nuru ya Mtoto; ICT era = Regional Operations and Staff Administrator; HMIS unchanged.
+- Apply score **~68%**. Not G Adventures, not tour leader, not tourism diploma.
+- Rebuild: `python3 "stretch/G Adventures Tour Staff Administrator/build.py"`
+
+### 2026-09-08 (Simera Project Assistant)
+
+**State**
+
+- Pack: `stretch/Simera Project Assistant/` (not the Coordinator pack).
+- Apply score **~85%**. Intern off. **Nuru ya Mtoto / ECD** is the lead story.
+- Upload `Meshack Ariri CV.pdf` from that folder.
+- Rebuild: `python3 "stretch/Simera Project Assistant/build.py"`
+
+### 2026-09-08 (Simera Project Coordinator)
+
+**State**
+
+- Pack: `stretch/Simera Project Coordinator/` (hard-positioned; not under `applications/`).
+- Apply score **~84%**. Intern omitted. PATH titles canonical. Independent = freelance SMB + County Health Systems Operations Platform.
+- Upload `Meshack Ariri CV.pdf` from that folder. Portal answers in `Portal_Application_Pack.md`.
+- Rebuild: `python3 "stretch/Simera Project Coordinator/build.py"`
+
+### 2026-09-08 (Bandari Maritime Academy ICT Officer I)
+
+**State**
+
+- Pack: `applications/Bandari Maritime Academy ICT Officer I/` (ref **BMA/26/CEO/ICT1/17**).
+- Apply score **~86%**. CCNA + 3 years comparable ICT. Do not claim PSC grade or MCSE.
+- Deadline **29 Sep 2026 5:00 PM EAT**. Google Form then email **recruitment@bma.ac.ke**, subject **BMA/26/CEO/ICT1/17 ICT Officer I**.
+- Nairobi on-site, permanent and pensionable. Relocate. Pay is public-sector, not Cigna.
+- Send USIU and Aga Khan first (both **14 Sep**).
+- Rebuild: `python3 "applications/Bandari Maritime Academy ICT Officer I/build.py"`
+
+### 2026-09-07 (BruntWork IT Operations Specialist)
+
+**State**
+
+- Pack: `applications/BruntWork IT Operations Specialist/` (published 7 Sep 2026).
+- Apply score **~68%**. Named-tool miss: SimplePractice, Stripe, social scheduler, HIPAA-trained.
+- Hours: 9 AM–6 PM US Central = **5:00 PM–2:00 AM EAT** (CDT), 40 hours. Do not stack with PATH.
+- Healthcare L2 remains the better BruntWork bet (~84%, 4–8 PM EAT, 20h) if still open.
+- Apply: Candidate Portal. Assessment + technical check + voice. Use that folder’s `Portal_Application_Pack.md`.
+- Rebuild: `python3 "applications/BruntWork IT Operations Specialist/build.py"`
+
+### 2026-09-07 (Cigna Technical Customer Support Analyst)
+
+**State**
+
+- Pack: `applications/Cigna Technical Customer Support Analyst/` (Nairobi, hybrid 66/34).
+- Apply score **~83%**. Service Desk + IMAC + AD + SLA + healthcare is the shortlist case.
+- Do not claim Citrix, SCCM, ServiceNow, or Avaya. ITIL practice, not Foundation exam.
+- Rota is the filter: Sat 8 AM–1 PM every 3 weeks; Mon–Fri 4 PM–midnight every 6 weeks (from home).
+- Apply: https://cigna.wd5.myworkdayjobs.com — upload `Meshack Ariri CV.pdf`.
+- Rebuild: `python3 "applications/Cigna Technical Customer Support Analyst/build.py"`
+
+### 2026-09-02 (night — CMMB Kenya IT Specialist volunteer)
+
+**State**
+
+- Pack: `applications/CMMB Kenya IT Specialist Volunteer/` (category listing only; no detailed JD).
+- Apply as **Kenya local volunteer**, not the US international $5,000 / NYC orientation track.
+- Score **~89%**. PATH health-facility IT is the edge. Do not claim ECHIS.
+- Apply: https://cmmb.org/volunteernow/ + volunteer@cmmb.org + CMMB Kenya contact form.
+- Confirm 6–12 months and PATH overlap before sending.
+
+### 2026-09-02 (night — Aga Khan Academy IT Associate)
+
+**State**
+
+- Pack: `applications/Aga Khan Academy IT Associate/` (job **4954BR**, deadline **14 Sep 2026**).
+- Apply score **~87%**. First-line + infra + security + assets match. Do not claim IB LMS or pentest lead.
+- Nairobi campus: relocate. Same deadline as USIU: submit both.
+- Apply: https://www.akdn.org/careers (search 4954BR) / Brassring.
+- Rebuild: `python3 "applications/Aga Khan Academy IT Associate/build.py"`
+
+### 2026-09-02 (night — BruntWork Microsoft 365 MSP, AEST)
+
+**State**
+
+- Second BruntWork posting packed: `applications/BruntWork Microsoft 365 MSP Support/` (published 1 Sep 2026).
+- Apply score **~77%**. Honest gaps: no Intune/Defender/Copilot console, no named RMM. M365 + Entra + backups are real.
+- **Hours:** 9 AM–1 PM AEST = **2:00–6:00 AM EAT** (1:00–5:00 AM after AU DST). Apply only if that window is real. Do not stack with healthcare L2 without a sleep plan.
+- Healthcare L2 remains the better BruntWork bet (~84%, 4–8 PM EAT, 3CX + healthcare edge).
+- Rebuild: `python3 "applications/BruntWork Microsoft 365 MSP Support/build.py"`
+
+**Next actions**
+
+1. Decide hours first. If 2 AM is a no, skip this posting.
+2. If yes: portal in one sitting using that folder's `Portal_Application_Pack.md`. Do not paste HIPAA answers.
+3. Upload `Meshack Ariri CV.pdf` from that folder.
+
+### 2026-09-02 (evening — folder standard + Editorial Light CV)
+
+**State**
+
+- Every job lives in `applications/Employer Role/` (spaces, no hyphens). Same four output names in every pack: `Meshack Ariri CV.pdf` / `.docx` and `Meshack Ariri Cover Letter.pdf` / `.docx`.
+- CV theme is **Editorial Light**: navy on white, copper accent, no dark header block. Core Skills replaced by a toolkit ribbon.
+- All 12 application packs rebuilt on the new theme. BruntWork L2 remains **one page**.
+- Preview: `reports/cv_visual_targets/Meshack_Ariri_CV_L2_preview.png`
+- Apply copies: `applications/BruntWork Technical Support L2/` and `downloads/JOBS/BruntWork Technical Support L2/`
+
+### 2026-09-02 (BruntWork Technical Support Agent L2 — healthcare MSP)
+
+**State**
+
+- Meshack pasted a live BruntWork posting (published 31 Aug 2026): **Technical Support Agent Level 2** for a healthcare-only MSP, 20 hrs/week, Mon–Fri 9:00 AM–1:00 PM Eastern (Kenya 4–8 PM EAT during US daylight time).
+- Full Phase 5 pack: `applications/BruntWork Technical Support L2/`
+  - JD, intelligence (~84% apply), portal/voice/HIPAA pack, tailored CV + cover (DOCX+PDF).
+- This is the BruntWork IT opening the 2026-08-25 scour said to watch: remote L2 + healthcare + 3CX plus.
+- Honest gaps: not a named US MSP; no Enable/N-able production; no US HIPAA certificate. Do not fabricate those.
+- Contractor pay is likely low vs NGO IT; treat as income floor, not destination.
+- PATH Master Resume still says **Present**. Confirm end date / moonlighting before signing a BAA.
+- Tracker, `03_Application_Intelligence.md` log, and `prep/README.md` (JD11) updated.
+- Rebuild: `python3 "applications/BruntWork Technical Support L2/build.py"`
+
+**Next actions for Meshack**
+
+1. **Apply today** on the BruntWork Candidate Portal. Complete assessment + technical check + voice in one sitting (incomplete apps are deprioritized).
+2. Use `Portal_Application_Pack.md`: record the voice script twice; study the HIPAA cheat sheet; paste assessment answers in your own voice.
+3. Upload `Meshack Ariri CV.pdf` from that folder.
+4. After submit, log date/time in `applications/APPLICATIONS_TRACKER.md`.
+5. USIU ICT Officer remains a separate Sep 14 email application; do not let this replace it.
+
 ### 2026-08-25 (CVs + apply links packaged)
 
 **State**
@@ -485,7 +685,7 @@ operational state changes, keeping the newest dated entry first.
 - Career strategy remains Health Informatics / EMR–DHIS2 first.
 - Ten application packages are built and recorded as unsent.
 - Gas Africa is the nearest known deadline: 2026-07-21.
-- The Royal Indigo/slate theme is implemented in `resumes/resume_theme.py`.
+- The Editorial Light (navy + copper) theme is implemented in `resumes/resume_theme.py`.
 - Canonical PATH timeline is confirmed; LinkedIn alignment is not confirmed complete.
 
 **Next actions**

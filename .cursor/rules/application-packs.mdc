@@ -1,0 +1,40 @@
+---
+description: Application pack folders, file names, and CV visual standard for Career-Os
+alwaysApply: true
+---
+
+# Application packs and CV design
+
+## Folders
+
+Each job lives in one folder under `_Career_Intelligence_System/applications/`.
+
+Name pattern: `Employer Role` with spaces. No hyphens, no `Role - Employer`.
+
+```
+✅ applications/BruntWork Technical Support L2/
+❌ applications/Technical Support Agent L2 - BruntWork Healthcare MSP/
+```
+
+## Files inside every pack
+
+Same four output names in every folder (the folder already names the job):
+
+- `Meshack Ariri CV.pdf`
+- `Meshack Ariri CV.docx`
+- `Meshack Ariri Cover Letter.pdf`
+- `Meshack Ariri Cover Letter.docx`
+
+Plus source: `Job Description.md`, `Application Intelligence.md`, `build.py`.
+
+Use `build_resumes.pack_files(HERE)` in every `build.py`. Do not invent hyphenated or underscored CV filenames.
+
+## Visual standard
+
+Shared theme: `resumes/resume_theme.py`. Shared builders: `resumes/pdf_builder.py`, `resumes/build_resumes.py`.
+
+- Light editorial header: navy name on white, copper hairline. No full-width dark header block.
+- Metric chips when the pack has `metrics`.
+- Skills render as a toolkit ribbon, never a "Core Skills" heading.
+- Education and certifications render as one full-width Credentials strip (copper labels, cream band). Never a two-column footer.
+- ATS-safe: real text, single column, no photo, no icons, no skill bars.

@@ -25,12 +25,13 @@
 | 15 | bruntwork Systems Admin | Systems Administrator | Sysadmin (remote) | Sysadmin | Medium–High |
 | 16 | influx | Technical Support (KE, via LinkedIn) | Tech support | Generic full-stack-ish support | Medium |
 | 17 | Level 1 IT Helpdesk (Voice) | L1 Helpdesk (voice) | Helpdesk | Web/support hybrid | Low (below your level) |
+| 18 | BruntWork Technical Support L2 | L2 Technical Support — healthcare MSP (remote PT) | Enterprise/Remote IT Ops + health | Healthcare L2 + 3CX + HIPAA-aware | **High** (income floor; not destination pay) |
 
 ---
 
 ## B. The dominant pattern (the single biggest problem)
 
-**You are applying as a different person every time.** Across 17 applications you present at
+**You are applying as a different person every time.** Across 18 applications you present at
 least **seven different professional identities** — health informatics specialist, cybersecurity
 analyst, sysadmin, CRM/SaaS consultant, web/Webflow developer, customer-support agent, talent-
 acquisition/ops associate.
@@ -67,6 +68,7 @@ tailoring — it's a **primary identity** with at most 2–3 disciplined variant
 
 **Highest probability (apply aggressively):**
 - Health Informatics / HMIS / EMR / DHIS2 Officer or Specialist (implementers, MoH, INGOs)
+- **Healthcare MSP / HIPAA-aware L2 remote** (BruntWork 2026-09-02 pack — live, apply same day)
 - ICT Officer / ICT Associate / IT Support Specialist at INGOs & UN agencies
 - Health data / M&E officer (health context)
 
@@ -139,3 +141,22 @@ interoperability (HL7/FHIR), DQA, MEL, SLA/MTTR, RCA, capacity building, deploym
 | Date | Company | Role | Track | Resume variant used | Match % | Outcome | Notes |
 |---|---|---|---|---|---|---|---|
 | _(historical, pre-system)_ | see §A above | — | mixed | inconsistent | — | unknown | baseline |
+| 2026-09-02 | BruntWork (healthcare MSP client, FL/EST) | Technical Support Agent Level 2 | Remote IT Ops + health | `BruntWork Technical Support L2` | **~84%** | Pack built; not yet submitted | Apply via portal same day: assessment + tech check + voice. 3CX is a real plus. Do not claim Enable/N-able or HIPAA cert. Contractor pay likely low. |
+| 2026-09-02 | BruntWork (SMB MSP client, AEST) | Microsoft 365 & MSP IT Support Specialist | Remote IT Ops | `BruntWork Microsoft 365 MSP Support` | **~77%** | Pack built; not yet submitted | 9 AM–1 PM AEST = **2–6 AM EAT**. Apply only if hours are real. Do not claim Intune/Defender/Copilot admin. Different posting from healthcare L2. |
+| 2026-09-02 | Aga Khan Academy Nairobi (AKES / AKDN) | IT Associate (4954BR) | University / school ICT | `Aga Khan Academy IT Associate` | **~87%** | Pack built; not yet submitted | Deadline **14 Sep 2026**, same day as USIU. Apply on akdn.org/careers. Relocate to Nairobi. Do not claim IB LMS or pentest lead. |
+| 2026-09-02 | CMMB Kenya | IT Specialist (volunteer) | INGO / health volunteer | `CMMB Kenya IT Specialist Volunteer` | **~89%** | Pack built; not yet submitted | Local Kenya volunteer, not US international track. Form + volunteer@cmmb.org. Confirm 6–12 months and PATH conflict. No ECHIS. |
+| 2026-09-02 | Greenspoon Kenya | IT Administrator | Remote IT Ops / Nairobi admin | `Greenspoon Kenya IT Administrator` | **~88%** | Pack built; not yet submitted | Nairobi on-site. Deadline treat as 11 Sep. Do not claim Mac fleet. Fill salary and notice yourself. |
+| 2026-09-07 | Cigna Nairobi | Technical Customer Support Analyst | Enterprise / Remote IT Ops + health | `Cigna Technical Customer Support Analyst` | **~83%** | Pack built; not yet submitted | Hybrid 66/34. Confirm Saturday and late rota. Do not claim Citrix, SCCM, ServiceNow, Avaya. |
+| 2026-09-07 | BruntWork (US client + 2 partners) | Information Technology Operations Specialist | Remote IT Ops + health adjacent | `BruntWork IT Operations Specialist` | **~68%** | Pack built; not yet submitted | 9 AM–6 PM Central = **5 PM–2 AM EAT**, 40h. Do not claim SimplePractice, Stripe, or HIPAA trained. Weaker than healthcare L2. |
+| 2026-09-08 | Bandari Maritime Academy | ICT Officer I | University / academy ICT | `Bandari Maritime Academy ICT Officer I` | **~86%** | Pack built; not yet submitted | Deadline **29 Sep 2026 5PM**. Form + recruitment@bma.ac.ke. CCNA yes. Do not claim PSC grade or MCSE. After USIU/Aga Khan. |
+| 2026-09-08 | Simera | Project Coordinator | Remote ops / coordination | `stretch/Simera Project Coordinator` | **~84%** | Pack built; not yet submitted | **Stretch folder.** Intern off. Coordination read of PATH + independent. SPK on apply. |
+| 2026-09-08 | Simera | Project Assistant | Remote ops / ECD project support | `stretch/Simera Project Assistant` | **~85%** | Pack built; not yet submitted | **Stretch.** Intern off. Nuru ya Mtoto / ECD is the lead. Different CV from Coordinator. |
+| 2026-09-08 | G Adventures | Tour Staff Administrator | Stretch / field ops admin | `stretch/G Adventures Tour Staff Administrator` | **~68%** | Pack built; not yet submitted | ECD = Field Programme Admin. ICT era = Regional Ops and Staff Admin. HMIS unchanged. Not tour leader. |
+| 2026-09-08 | Wave Mobile Money | HR Systems Analyst | Stretch / people systems | `stretch/Wave HR Systems Analyst` | **~82%** | Pack built; not yet submitted | ICT era = HRIS and People Systems Analyst. Workday as HCM posture. HMIS unchanged. |
+| 2026-09-10 | (employer TBC) | Tier 3 IT Support and NOC Engineer | Stretch / NOC | `stretch/Tier 3 IT Support NOC Engineer` | **~85%** | Pack built; not yet submitted | Intern off. Current = Tier 3 / NOC. ICT era = Network Operations Engineer. Full stack on the page. |
+| 2026-09-10 | (base pack) | Technical Support Agent | Remote IT Ops / product support | `applications/Technical Support Agent` | n/a (no single JD) | Pack built; clone per posting | Programming framed as product diagnostics + systems internals. PATH titles canonical. |
+| 2026-09-10 | Influx | Technical Support Agent (L2) | Remote IT Ops / product L2 | `applications/Influx Technical Support Agent L2` | **~85%** | Pack built; not yet submitted | Kenya WFH, 44h, 24x7 staggered. Intern off. Python/GitLab/K8s on the page. Not the CSS pack. |
+| 2026-09-10 | Corus International | Senior IT Service Desk Specialist | Stretch / NGO service desk | `applications/Corus Senior IT Service Desk Specialist` | **~45%*** | Pack built; do not submit unless DC/visa waived | DC hybrid Tue/Wed. US work auth. Intern off. PATH as global NGO. Cover is honest on Kenya. |
+| 2026-09-14 | St. Kizito Vocational Centre Utawala | ICT Trainer | Education / ICT | `applications/St Kizito Vocational Centre ICT Trainer` | **~83%** | Pack built; apply by **16 Sep 2026** | Training + labs. No TSC. Relocate Nairobi. Google Form. |
+| 2026-09-14 | ILRI (CGIAR) | ICT Technician - Digital Workplace Services | INGO / Nairobi ICT | `applications/ILRI ICT Technician Digital Workplace Services` | **~87%** | Pack built; apply by **28 Sep 2026** | REF ICT-CS/2308-09/2026. Kenyan only. Canonical PATH titles. Fill referee phones. |
+| 2026-09-10 | BruntWork (Seattle healthcare client) | IT Microsoft Support Specialist | Remote IT Ops + health | `BruntWork IT Microsoft Support Specialist` | **~87%** | Pack built; not yet submitted | 20h, Seattle hours = **7–11 PM EAT**. Do not claim HIPAA, MS-900, A+. Different from AEST M365 MSP and EST healthcare L2. |

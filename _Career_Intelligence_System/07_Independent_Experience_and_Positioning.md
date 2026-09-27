@@ -34,12 +34,14 @@ Backed by your documents/certs — safe to use now:
 |---|---|---|
 | **FLAGSHIP: NDWH & CBS Platform** | Own full-stack build: Next.js/TS, Prisma, MySQL (Aiven), 40+ APIs, health facility reporting + EMR + IT assets + tickets across 4 counties. See `reports/Project_NDWH_CBS_Platform.md` | **Strongest asset — proves health informatics + full-stack + DB/API design at once** |
 | Healthcare engineering | KenyaEMR/TaifaCare, OpenMRS, DHIS2, EMR–lab–pharmacy integration (PATH) | Strong — lead with it |
-| Hackathons | Cyber Rise (Huawei 2023), NRF Cybersecurity Challenge (2024), Blockchain Security (CP Hub 2024), Cyberise/CA Kenya (2022), KCA Innovation Weeks (2022–23) | "National-level hackathons: incident response, rapid prototyping, secure app design" |
-| Web / API dev | Built & deployed multiple websites; inventory mgmt web app (CRUD, DB); REST API integration; on-page SEO | "Full-stack web projects & API integrations" (Projects/Featured) |
-| Mobile | JuaX mobile application project | "Mobile app project — functional validation" |
+| Hackathons | Cyberise (CA Kenya and Huawei, 2022), Cyber Rise (Huawei 2023), NRF Cybersecurity Challenge (2024), Blockchain Security (CP Hub 2024), KCA Innovation Weeks (2022–23), Cyber Shujaa programme (Serianu / KBA / USIU-Africa) | "National-level cybersecurity hackathons and the Cyber Shujaa programme. Attendance, not a prize unless a certificate names a placing." |
+| Web / API dev | Built & deployed multiple websites; inventory mgmt web app (CRUD, DB); REST API integration; on-page SEO; React, Next.js, Node.js/Express | "Application engineering: web surfaces, service layers, API contracts" (Projects/Featured). Not "basic coder / HTML CSS." |
+| Mobile | JuaX Flutter mobile application (functional product) | "Flutter mobile application surfaces" |
+| Systems internals | Applied Computing + user-confirmed assembly literacy | "Assembly-level computer architecture for crash/performance diagnosis." Not firmware engineer. |
 | Infrastructure / networking | Capstone: secure enterprise network (VLANs, AD, DNS/DHCP, backup/DR); PATH networking (Meraki, LAN/WAN) | "Enterprise network design & administration" |
 | Server / systems | Windows/Linux servers, Apache Tomcat, backups/DR, patching (PATH) | "Linux/Windows server administration; app hosting" |
 | Consulting / freelance | Remote SaaS/CRM support (Zoho, HubSpot/Salesforce concepts), web client work, remote onboarding/training | "Independent technical consulting (project-based)" |
+| Payments | Paystack API + M-Pesa STK push on more than one system (Meshack confirmed 2026-09-07) | "Configured Paystack to collect payments, including STK push." Not Stripe. |
 | Data / automation | SQL validation, Power BI/Grafana dashboards, Python/PowerShell/Bash automation | "Data pipelines, dashboards, automation" |
 | AI-assisted engineering | Use of ChatGPT/Copilot for docs, troubleshooting, KB | "AI-assisted engineering & documentation" |
 | Research / advisory | Technology evaluation before implementation (cloud, frameworks, DB, DevOps) | "Technical research & solution evaluation" |

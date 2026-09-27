@@ -3,13 +3,13 @@
 > **Not a guide. A weapon.**  
 > Built from every job description you've applied to. Grows every time you drop a new JD here.
 
-**Last synced from JDs:** 2026-07-16 · **Roles indexed:** 10
+**Last synced from JDs:** 2026-09-08 · **Roles indexed:** 22
 
 ---
 
 ## How this handbook works
 
-1. **You apply to a role** → JD lands in `applications/[Role]/Job_Description.md`
+1. **You apply to a role** → JD lands in `applications/[Employer Role]/Job_Description.md`
 2. **Keywords get extracted** → merged into the Master Lexicon below
 3. **You drill daily** → pick today's cluster, run the Rick-Speak reps
 4. **You interview** → pull answer cards from the matching JD cluster
@@ -63,7 +63,7 @@ You do the same — in interviews, not a cartoon voice.
 
 **Morning read (primary):** §11 — 10 questions for today's JD. Say every Rick answer out loud before coffee wears off.
 
-**Weekly rotation:** Mon=JD01 · Tue=JD02 · Wed=JD03 · Thu=JD04 · Fri=JD05 · Sat=JD06 · Sun=JD07–10 catch-up
+**Weekly rotation:** Mon=JD01 · Tue=JD02 · Wed=JD03 · Thu=JD04 · Fri=JD05 · Sat=JD06 · Sun=JD07–11 catch-up (drill JD11 BruntWork HIPAA/RMM the night before you apply)
 
 ---
 
@@ -164,6 +164,21 @@ Train until these roll off your tongue. **Bold** = appears in 3+ JDs.
 | **Compliance** | Meet policy/regulatory/organizational standards | "Compliance is provable adherence — logs, configs, access reviews, not good intentions." |
 | **Data protection** | Safeguard sensitive data at rest and in transit | "Data protection is encryption, access control, and knowing where the data actually lives." |
 | **Access control** | Who can reach what resources | "Access control is least privilege — give the minimum door keys required for the job." |
+| **HIPAA** | US law protecting health information (Privacy + Security + Breach rules) | "HIPAA is not a sticker. It's PHI handling, access control, audit, encryption, and a BAA if you touch the data." |
+| **PHI / ePHI** | Protected Health Information, including electronic form | "If it can identify a patient and speaks to their health, treat the screen like a vault. That's ePHI." |
+| **BAA / Business Associate** | Contract binding vendors who handle PHI for a covered entity | "The clinic is the covered entity. The MSP and I are Business Associates. The BAA is the legal fence." |
+| **Minimum necessary** | Only the access/data required to do the job | "I don't need the whole chart to fix DNS. Minimum necessary is how L2 avoids becoming a breach." |
+
+### MSP, RMM & patching (Optimise, BruntWork Healthcare L2)
+
+| Term | One-liner | Rick-Speak example |
+|------|-----------|-------------------|
+| **MSP** | Managed Service Provider — IT for many client orgs | "MSP is multi-tenant ops. Every click might be the wrong client's tenant. Label the window." |
+| **RMM** | Remote Monitoring and Management console | "RMM is the camera and the hands: alerts, patching, remote control, scripts — across every endpoint." |
+| **Enable / N-able** | Likely N-able N-central or N-sight RMM (JD says Enable) | "I haven't run Enable in production. I have done the jobs the console exists for: monitor, patch, remote-fix, document." |
+| **Patching** | Controlled OS/app updates to close vulnerabilities | "Patching isn't 'Windows Update and pray.' It's rings, change windows, reboot policy, rollback." |
+| **Multi-tenant** | One technician, many isolated client environments | "Wrong tenant is a career-ending click. Confirm client, then touch the box." |
+| **Standardized procedures** | Same fix, same steps, every client (with documented exceptions) | "SOPs are how a lean MSP scales without the owner being the only brain." |
 
 ### Customer-facing & soft-power terms (Influx, Kuehne+Nagel, INSO)
 
@@ -181,7 +196,7 @@ Train until these roll off your tongue. **Bold** = appears in 3+ JDs.
 
 | Cluster | Roles | Drill focus |
 |---------|-------|-------------|
-| **A — MSP / 2nd-3rd line** | Optimise Outsourcing | M365 deep, Intune/Jamf, VLANs, IT Glue, escalation, RCA, SLA |
+| **A — MSP / 2nd-3rd line** | Optimise Outsourcing; BruntWork Healthcare L2 | M365, VLANs, escalation, RCA, SLA, RMM, patching, HIPAA/BAA, 3CX |
 | **B — Enterprise stack / CCaaS** | System Administrator CCaaS | CCaaS, SSO, IAM, IT audit, license mgmt, ROI, executive presentation |
 | **C — INGO / global support** | INSO | Remote support, travel, compliance, SharePoint, Intune, French+English, austere env |
 | **D — Internal sysadmin / ownership** | Bridge Talent, Gas Africa, ICT Manager | M365, Entra, PowerShell, VoIP, CRM, API integration, vendor mgmt |
@@ -269,6 +284,14 @@ Train until these roll off your tongue. **Bold** = appears in 3+ JDs.
 >
 > Now I timebox diagnosis, document what I've tried, and escalate with a clean handover at the right tier. Faster resolution, better ticket quality, less hero culture. The system wins, not my pride.
 
+### Card 11 — Healthcare MSP / HIPAA / BAA (BruntWork L2)
+
+> Healthcare IT is not generic helpdesk with a clinic logo. The ticket might be sitting on ePHI.
+>
+> At PATH I already treat clinical systems that way: unique accounts, least privilege, MFA, encryption, patching, backups, and I trained 80+ staff on secure use. I am not a US HIPAA officer and I will not pretend I am. I know PHI vs ePHI, minimum necessary, and that a Business Associate Agreement legally binds the MSP and me. I will sign it and follow the client's incident process.
+>
+> Enable/N-able is a console I will learn in week one. The jobs underneath — monitor, patch, remote-fix, SOP — I already do. 3CX I have actually supported.
+
 ---
 
 ## §6 — Rapid-fire Q&A (Rick-Speak one-liners)
@@ -313,16 +336,28 @@ Pulled from Google SRE thinking. Use when interviewers ask "how do you think abo
 
 | # | Role | Employer | Cluster | JD path | Keywords added |
 |---|------|----------|---------|---------|----------------|
-| 1 | ICT Manager | Hospitality (Hotel) | D | `applications/ICT Manager - Hospitality/` | PMS, POS, keycard, 24/7, AV, vendor mgmt |
-| 2 | IT Support Engineer 2nd-3rd Line | Optimise Outsourcing | A | `applications/IT Support Engineer 2nd-3rd Line - Optimise Outsourcing/` | M365 deep, Intune, Jamf, DLP, IT Glue, MSP |
-| 3 | IT Systems Administrator | Thika (HCO) | G | `applications/IT Systems Administrator (Web Dev) - Thika/` | Web dev, CMS, WordPress, ERP, cybersecurity |
-| 4 | System Administrator | CCaaS (unnamed) | B | `applications/System Administrator - CCaaS/` | CCaaS, audit, ROI, license mgmt, SSO |
-| 5 | ICT Officer | Gas Africa | D | `applications/ICT Officer - Gas Africa/` | ICT systems, uptime, asset tracking, vendor |
-| 6 | Customer Support Specialist | Influx | E | `applications/Customer Support Specialist - Influx/` | Remote support, KB, empathy, CRM, escalation |
-| 7 | IT Support Technician | Solvo Global | E | `applications/IT Support Technician - Solvo Global/` | Windows setup, Ping/Tracert/DNS, ITSM, night shift |
-| 8 | IT & Systems Administrator | Bridge Talent | D | `applications/IT & Systems Administrator - Bridge Talent/` | Entra, Intune, PowerShell, Zoho, VoIP, API |
-| 9 | IT Officer – Global Support | INSO | C | `applications/IT Officer Global Support - INSO/` | INGO, French, travel, compliance, remote |
-| 10 | IT Specialist | Kuehne+Nagel | F | `applications/IT Specialist - Kuehne+Nagel/` | Logistics, service metrics, process improvement |
+| 1 | ICT Manager | Hospitality (Hotel) | D | `applications/Hospitality ICT Manager/` | PMS, POS, keycard, 24/7, AV, vendor mgmt |
+| 2 | IT Support Engineer 2nd-3rd Line | Optimise Outsourcing | A | `applications/Optimise Outsourcing IT Support Engineer/` | M365 deep, Intune, Jamf, DLP, IT Glue, MSP |
+| 3 | IT Systems Administrator | Thika (HCO) | G | `applications/Thika IT Systems Administrator/` | Web dev, CMS, WordPress, ERP, cybersecurity |
+| 4 | System Administrator | CCaaS (unnamed) | B | `applications/CCaaS System Administrator/` | CCaaS, audit, ROI, license mgmt, SSO |
+| 5 | ICT Officer | Gas Africa | D | `applications/Gas Africa ICT Officer/` | ICT systems, uptime, asset tracking, vendor |
+| 6 | Customer Support Specialist | Influx | E | `applications/Influx Customer Support Specialist/` | Remote support, KB, empathy, CRM, escalation |
+| 7 | IT Support Technician | Solvo Global | E | `applications/Solvo Global IT Support Technician/` | Windows setup, Ping/Tracert/DNS, ITSM, night shift |
+| 8 | IT & Systems Administrator | Bridge Talent | D | `applications/Bridge Talent IT Systems Administrator/` | Entra, Intune, PowerShell, Zoho, VoIP, API |
+| 9 | IT Officer – Global Support | INSO | C | `applications/INSO IT Officer Global Support/` | INGO, French, travel, compliance, remote |
+| 10 | IT Specialist | Kuehne+Nagel | F | `applications/Kuehne Nagel IT Specialist/` | Logistics, service metrics, process improvement |
+| 11 | Technical Support Agent Level 2 | BruntWork (Healthcare MSP) | A | `applications/BruntWork Technical Support L2/` | L2, MSP, RMM, Enable/N-able, HIPAA, BAA, PHI, patching, 3CX |
+| 12 | Microsoft 365 & MSP IT Support Specialist | BruntWork (SMB MSP) | A | `applications/BruntWork Microsoft 365 MSP Support/` | M365, Intune, Entra, Defender, Copilot, RMM, backups, SMB, AEST |
+| 13 | IT Associate | Aga Khan Academy Nairobi | D | `applications/Aga Khan Academy IT Associate/` | first-line, helpdesk, SLA, EdTech, CCTV, identity, vendors, backup |
+| 14 | IT Specialist (Volunteer) | CMMB Kenya | C | `applications/CMMB Kenya IT Specialist Volunteer/` | volunteer, health NGO, first-line, M365, facilities, e-health adjacent |
+| 15 | IT Administrator | Greenspoon Kenya | D | `applications/Greenspoon Kenya IT Administrator/` | assets, licences, helpdesk, WiFi, DPA 2019, M365 |
+| 16 | Technical Customer Support Analyst | Cigna Nairobi | A | `applications/Cigna Technical Customer Support Analyst/` | Service Desk, IMAC, Windows 11, AD, Exchange, SLA |
+| 17 | IT Operations Specialist | BruntWork (US practice stack) | A | `applications/BruntWork IT Operations Specialist/` | SimplePractice, Stripe, social scheduler, HIPAA, website audit |
+| 18 | ICT Officer I | Bandari Maritime Academy | D | `applications/Bandari Maritime Academy ICT Officer I/` | hardware, software, CCNA, user support, documentation, academy |
+| 19 | Project Coordinator | Simera | A | `stretch/Simera Project Coordinator/` | coordination, timelines, documentation, stakeholders, remote, M365 |
+| 20 | Project Assistant | Simera | A | `stretch/Simera Project Assistant/` | ECD, Nuru ya Mtoto, documentation, trackers, admin support, remote |
+| 21 | Tour Staff Administrator | G Adventures | A | `stretch/G Adventures Tour Staff Administrator/` | field staff, logistics, records, Teams, after hours, East Africa |
+| 22 | HR Systems Analyst | Wave Mobile Money | A | `stretch/Wave HR Systems Analyst/` | HRIS, Workday, identity, data quality, Power BI, APIs, Kenya remote |
 
 ---
 
@@ -708,6 +743,40 @@ Say each **Rick answer** out loud. Under 90 seconds. One PATH proof per answer w
 
 ---
 
+### JD11 — Technical Support Agent L2 · BruntWork Healthcare MSP · Cluster A
+
+**Q1. You are not from a US MSP. Why should we trust you on healthcare clients?**  
+**Rick:** PATH is healthcare IT, not a logo swap. 120+ users, clinical systems, ~98% uptime, SOPs, remote support across sites. I do not have Enable/N-able production hours. I have the jobs that console exists to do, and I will learn the tenant model in week one without clicking the wrong client.
+
+**Q2. Walk through a Level 2 escalation: "EMR is down."**  
+**Rick:** Reproduce. Then isolate layer: identity (account/MFA), endpoint (service, disk, patch), network (DNS, DHCP, VPN, VLAN), server (Windows/Linux, backup job). Fix or standard change, document, SOP if it will recur. Symptom said "EMR." Mechanism might be DHCP.
+
+**Q3. What is HIPAA to an L2 technician, not a lawyer?**  
+**Rick:** Treat the screen as ePHI. Unique ID, least privilege, minimum necessary, encrypt, patch, log, report incidents. I am not HIPAA-certified. I already protect health data that way at PATH and I will sign the BAA.
+
+**Q4. What is a Business Associate Agreement and will you sign one?**  
+**Rick:** The clinic is the covered entity. The MSP and I can touch ePHI while fixing IT, so we are Business Associates. The BAA is the contract for how we protect that data. Yes, I will sign and follow it. I will not copy PHI into personal WhatsApp or Gmail.
+
+**Q5. How do you patch production healthcare endpoints without breaking clinic hours?**  
+**Rick:** Rings. Pilot group, change window after clinic close, reboot policy agreed with the client, rollback. Patching during morning clinic is how you become the outage. Maintenance windows are the product.
+
+**Q6. Enable / N-able RMM — have you used it?**  
+**Rick:** Not in production. Adjacent: Meraki monitoring, endpoint patching, remote sessions, scripted validation. Week-one plan: lab tenant, device onboard, patch approval, remote control, script, documentation. I will not run untested scripts against a healthcare client.
+
+**Q7. 3CX is on the plus list. What have you actually done?**  
+**Rick:** VoIP/3CX handset and client setup, tied into Freshdesk support workflow. Troubleshoot registration and audio as a network/QoS problem, not "the phone is broken." Healthcare add-on: recordings may contain PHI — access and retention follow policy.
+
+**Q8. The business owner is drowning in escalations. How do you take that off them?**  
+**Rick:** Own L2 to resolution. Write the SOP. Tune the RMM alert so the same noise does not page them. Automation for the repeat fix. A lean MSP scales on procedures, not heroics.
+
+**Q9. Client is non-technical and angry that "the internet is down."**  
+**Rick:** Acknowledge the clinic impact first. Then diagnose: ping, DNS, DHCP, ISP. Explain in clinic language: "Your PCs are fine; the path to the internet is broken at X; here is the ETA." No jargon dump. Document so the next ticket is faster.
+
+**Q10. Schedule is 9 AM–1 PM Eastern, 20 hours, contractor. Can you hold it?**  
+**Rick:** Yes. That is 4–8 PM Kenya during US daylight time. Quiet setup, wired if possible, ready for the technical check. Independent contractor terms are clear. I complete assessment, tech check, and voice in one sitting because incomplete apps get skipped.
+
+---
+
 ### §11 Quick reference — question types by JD
 
 | JD | Technical | Scenario | Behavioral | Process |
@@ -722,6 +791,7 @@ Say each **Rick answer** out loud. Under 90 seconds. One PATH proof per answer w
 | 08 Bridge | PowerShell, Zoho, API | Phishing, AU hours | Proactive monitoring | Tool research |
 | 09 INSO | SharePoint, Intune | High-risk travel | Cross-cultural | Compliance, tutorials |
 | 10 Kuehne+Nagel | AV/backup, global IT | Bad escalation ticket | Mentoring | Metrics, logistics context |
+| 11 BruntWork L2 | HIPAA, RMM, patching, 3CX | EMR down, angry clinic | BAA, owner-escalation | EST contractor, Enable ramp |
 
 **Add new JDs:** 10 questions + Rick answers → append as JD11, JD12… Update §8 registry.
 

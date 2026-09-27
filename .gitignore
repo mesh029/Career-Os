@@ -6,8 +6,16 @@ _Career_Intelligence_System/applications/**/*.pdf
 _Career_Intelligence_System/applications/**/*.odt
 _Career_Intelligence_System/applications/**/*.rtf
 
+_Career_Intelligence_System/stretch/**/*.doc
+_Career_Intelligence_System/stretch/**/*.docx
+_Career_Intelligence_System/stretch/**/*.pdf
+_Career_Intelligence_System/stretch/**/*.odt
+_Career_Intelligence_System/stretch/**/*.rtf
+
 # Optional editor/OS noise
 .DS_Store
 Thumbs.db
 __pycache__/
 *.pyc
+.venv/
+venv/

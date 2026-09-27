@@ -125,7 +125,7 @@ Open a JD → count how many of these you can truthfully claim from PATH/freelan
 ### Files
 
 - PDF only unless DOCX requested  
-- Filename: `Meshack_Ariri_CV_[RoleOrCompany].pdf`  
+- Filename: `Meshack Ariri CV.pdf` (folder already names the job; do not use hyphens or underscores)  
 - Same facts as LinkedIn — always
 
 ---

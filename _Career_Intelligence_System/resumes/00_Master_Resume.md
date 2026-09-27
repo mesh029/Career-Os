@@ -24,6 +24,24 @@
 > Jan 2024–Present"). Update LinkedIn to match this table. Freelance/consulting work is listed as
 > a separate concurrent entry only if genuinely ongoing; do not overlap dates with full-time roles.
 
+### Programme workstreams (not separate PATH job titles)
+
+Use these on INGO / education / AGYW / MIS / field-programme CVs. They are **workstreams under PATH ICT / HMIS**, not extra employment contracts. Official HR titles stay the table above.
+
+| Workstream | Dates | How to write it | Do not write |
+|---|---|---|---|
+| **ECD** (Early Childhood Development) | **2024 to 2025. Closed.** | PATH ECD. Digital and manual MIS, field ICT, training, close-out | **Nuru ya Mtoto.** Do not list as current. Do not invent a second employer. |
+| **OVC** (Orphans and Vulnerable Children) | During ICT Associate, field | Field ICT: devices, connectivity, data tools, reporting for case workers | OVC programme manager / social worker |
+| **DREAMS** (PEPFAR AGYW) | During ICT Associate, field | Field ICT for mentors and AGYW programming; data tools and reporting | DREAMS coordinator |
+| **Youth mentoring and ICT hubs** | During ICT Associate | Mentored youth; trained ICT hubs | Full-time teacher / hub manager unless a pack is specifically that |
+
+**Reusable bullets (pick, do not dump all):**
+- Ran digital and manual MIS for PATH ECD until close-out in 2025: collection tools, Excel and Kobo trackers, cleaning, Power BI packs, staff onboarding, hard-copy and digital backups.
+- Supported **OVC** and **DREAMS** in the field as the ICT person: devices, connectivity, data tools and reporting so mentors and case workers could enter on time.
+- Mentored youth and trained ICT hubs; wrote job aids so the tools were used after the session.
+
+Zambia ECD learning touchpoints: use only if the pack needs multi-country; do not attach them to Nuru ya Mtoto.
+
 ### Education
 - **BSc, Applied Computing** — KCA University, Nairobi — **Nov 2023**
 - **Specialization: Cybersecurity & Digital Forensics**
@@ -37,8 +55,9 @@
 - IBM Technical Support Certificate (Coursera, 2023)
 - GitHub Professional Certificate (2024)
 - Microsoft Data Analysis (Microsoft + LinkedIn, 2024)
-- Cyberise Hackathon Certification (Communications Authority of Kenya, 2022)
+- Cyberise Hackathon Certification (Communications Authority of Kenya, with Huawei, 2022)
 - National Research Fund Hackathon Certification (2024)
+- Cyber Shujaa cybersecurity programme (Serianu, Kenya Bankers Association, USIU-Africa) — participation. Not a prize claim.
 
 ### Verified metrics you may quote (keep consistent)
 - 120+ users supported; ~98% system uptime
@@ -86,13 +105,11 @@ workers to adopt digital tools. Focused on digital-health, EMR/DHIS2 implementat
 - Develop SQL validation and data-quality (DQA) workflows that improve error detection and reduce reporting time (~40%).
 - Lead end-to-end data collection, cleaning, and analysis for care and treatment, PMTCT, and E-TEC indicators using advanced Excel tooling (including VBA/macros) and SQL-assisted validation.
 - Designed automation tools that reduced manual monthly reporting workload and improved consistency of M&E outputs for program and leadership review.
-- Build Power BI / Grafana / Metabase dashboards for surveillance, trend analysis, and program decision-making.
+- Build Power BI / Tableau / Grafana / Metabase dashboards for surveillance, trend analysis, and program decision-making.
 - Integrated National Data Warehouse (NDWH) APIs into reporting workflows to synchronize facility data to national systems and improve reporting timeliness.
 - Support EMR–laboratory–pharmacy integrations and multi-system data flow / interoperability.
 - Maintain Windows/Linux servers hosting EMR data — backups, encryption, patching, disaster recovery.
 - Conduct system audits, data-flow reviews, and risk identification against national HIS standards.
-- Provided technical support to PATH nurturing care / early childhood development (ECD) implementation by strengthening data tools and decision-support workflows with multidisciplinary teams, including collaboration touchpoints involving Zambia.
-- Contributed technical inputs in cross-functional decision-making forums, translating field data into actionable recommendations for program operations.
 - Train facility staff, ICT officers, and program teams on EMR modules, DHIS2, data quality, and secure use.
 - Produce SOPs, job aids, technical documentation, and operational/uptime reports.
 - _(security-flavored, use only when relevant & defensible)_ Support EMR cybersecurity monitoring, vulnerability reporting, and access controls.
@@ -100,12 +117,15 @@ workers to adopt digital tools. Focused on digital-health, EMR/DHIS2 implementat
 ### PATH — ICT Associate · Jan 2024 – Mar 2025
 - Provided 1st- and 2nd-line IT support to 120+ users, achieving ~98% uptime and secure system access.
 - Logged/tracked incidents in Freshdesk (and Zoho Desk) using ITIL workflows; met SLAs; improved response time ~25%.
+- Resolved **Salesforce** tickets for PATH users: login, access, forms and reports. PATH runs Salesforce; this is support on the ticket, not Salesforce tenant administration and not Taroworks.
 - Configured and monitored Cisco Meraki network devices (APs, switches, security appliances) for reliable connectivity.
 - Installed/maintained Windows 10/11, VoIP, and Microsoft 365 (Outlook, Teams, SharePoint).
 - Administered Active Directory — account provisioning, access rights, group policy (least privilege).
 - Supported endpoint protection, patching, and MFA; monitored/responded to alerts.
 - Developed SQL scripts and automated validation improving surveillance data accuracy.
 - Authored knowledge-base articles and delivered user training/onboarding.
+- Supported **OVC** and **DREAMS** field teams as ICT: devices, connectivity, data tools and reporting for mentors and case workers.
+- Mentored youth and trained ICT hubs.
 
 ### PATH — ICT Intern · Apr 2023 – Dec 2023
 - Supported LAN/WAN, routers, switches, structured cabling; assisted server-room audits and diagnostics.
@@ -119,19 +139,23 @@ workers to adopt digital tools. Focused on digital-health, EMR/DHIS2 implementat
 > Use only if genuinely ongoing and clearly project-based; never let it overlap-conflict with PATH.
 - Provided remote IT/SaaS support to small businesses: Microsoft 365, Zoho/Google Workspace setup, onboarding.
 - Built/maintained small business websites and digital workflows (HTML/CSS/CMS); on-page SEO; basic APIs.
+- Configured Paystack payment APIs on more than one system so they could collect payments from different channels, including M-Pesa STK push. (*Not Stripe. Do not upgrade this to Stripe console admin.*)
 - Supported CRM setup (HubSpot/Salesforce concepts) and delivered remote user training.
 
 ---
 
 ## SKILLS (master — pick relevant clusters per role)
+- **Programme / field (INGO):** ECD (closed 2025; not Nuru ya Mtoto), OVC, DREAMS, youth mentoring, ICT hub training, digital and manual programme MIS
 - **Health Information Systems:** KenyaEMR/TaifaCare, OpenMRS, DHIS2, NDWH, EMR–lab–pharmacy integration, interoperability, DQA, surveillance/MEL reporting, Kobo Toolbox
-- **Data & Analytics:** SQL (MySQL/PostgreSQL/MariaDB), Power BI, Grafana, Metabase, advanced Excel (Power Query, pivots, VBA/macros), Python (automation), data pipelines/validation
+- **Data & Analytics:** SQL (MySQL/PostgreSQL/MariaDB), Power BI, Tableau, Grafana, Metabase, advanced Excel (Power Query, pivots, VBA/macros), Python (automation), data pipelines/validation
 - **IT Service Management:** Freshdesk, Zoho Desk, Jira Service Management, Zendesk, ITIL, SLA, incident/RCA, knowledge base
 - **Systems Administration:** Windows 10/11 & Server 2016–2022, Active Directory / Azure AD, Group Policy, Microsoft 365, Linux (Ubuntu/CentOS), Apache Tomcat, VMware / Proxmox / Hyper-V virtualization, server-room management, Veeam/rsync backups & DR
 - **Networking:** LAN/WAN, VLANs, VPN, DNS/DHCP, TCP/IP, Cisco Meraki, MikroTik, routing/switching, guest & staff Wi-Fi (multi-AP), monitoring
 - **Cloud:** Microsoft Azure (AZ-900), Azure AD; AWS & Docker (familiarity); Git/GitHub
 - **Security:** firewalls (FortiGate, Cisco Meraki MX, MikroTik), endpoint protection/EDR, MFA, IAM, patch management, security-awareness training, vulnerability reporting; cybersecurity & digital forensics foundation
 - **Facilities & Comms Systems:** IP telephony/VoIP (3CX), CCTV & surveillance, access control, AV / conference-room setups
+- **Payments (project-based):** Paystack API, M-Pesa STK push, multi-channel collection. *Not Stripe production.*
+- **Application engineering (project-based):** React, Next.js, TypeScript, Node.js/Express, REST APIs, Flutter (web and mobile application surfaces). Systems internals / assembly-level computer architecture used for crash and performance diagnosis. *Not a firmware or compiler job. Do not list HTML/CSS as the story.*
 - **Leadership & Delivery:** team mentoring, sole/main IT point of contact, project delivery (network setup & migration), vendor/ISP management, IT budgeting, IT asset & software-license management, training/capacity building, SOPs/documentation
 
 ---
@@ -140,10 +164,10 @@ workers to adopt digital tools. Focused on digital-health, EMR/DHIS2 implementat
 - **EMR data-quality toolkit** — SQL/Python checks for KenyaEMR/DHIS2 data validation (portfolio/GitHub).
 - **Health analytics dashboard** — Power BI/Grafana surveillance dashboard (dummy data).
 - **Capstone: secure enterprise network** — VLANs, AD, backup/DR simulation.
-- **JuaX** — mobile application project (functional validation).
+- **JuaX** — Flutter mobile application (functional product / validation).
 
 ## ACHIEVEMENTS / ACTIVITIES
-- Cyber Rise Hackathon (Huawei, 2023); NRF Cybersecurity Challenge (Gov't of Kenya, 2024); Blockchain Security Hackathon (CP Hub, 2024); KCA Innovation Weeks (2022–2023).
+- Cyberise Hackathon (Communications Authority of Kenya and Huawei, 2022); Cyber Rise Hackathon (Huawei, 2023); NRF Cybersecurity Challenge (Government of Kenya, 2024); Blockchain Security Hackathon (CP Hub, 2024); KCA Innovation Weeks (2022–2023); Cyber Shujaa cybersecurity programme (Serianu / KBA / USIU-Africa). Attendance and certificates. Do not invent a win or a placing.
 
 ## REFEREES
 Available upon request.
