@@ -1,0 +1,18 @@
+INTERVIEW INTRO — THE ONE (memorize this)
+
+I'm Meshack. I keep people working when systems want to fall over.
+
+For about three years at PATH I grew from ICT Intern to ICT Associate to Health Informatics / HMIS Officer — still doing real IT support the whole way. I support 120-plus users across multiple sites: Microsoft 365, Active Directory, networking, endpoints, and ITIL-style ticketing in Freshdesk and Zoho. We held about 98% uptime. Not because nothing breaks — because we triage fast, fix the right layer, and document so it doesn't break the same way twice.
+
+The part most candidates skip: I also support mission-critical health systems — KenyaEMR and DHIS2 — where downtime isn't an inconvenience, it's clinics and reporting on the line. That trained me to treat reliability like an SLO, not a vibe. I've trained 80-plus staff, written the SOPs and job aids, and cut reporting grind about 40% with SQL validation and automation.
+
+So if you need someone who can own the service desk, stabilize the stack, explain tech in plain language, and still think in systems — that's me. Happy to go deep on whatever matters most for this role.
+
+
+30-SECOND HOOK
+
+I'm Meshack — IT support and systems ops out of Kenya. Three years at PATH: 120-plus users, Microsoft 365, Active Directory, networking, ticketing under SLAs, about 98% uptime. Bonus depth in EMR and DHIS2, so I know what high-stakes reliability feels like. I fix the layer under the ticket, train the user, document the fix. Looking to bring that discipline here.
+
+
+Full variants (university, UN/INGO, health informatics, remote):
+_Career_Intelligence_System/prep/Interview_Intro_Pitch.md
