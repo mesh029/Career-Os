@@ -61,7 +61,7 @@ cv = {
 COVER_BODY = [
     "Dear Hiring Team,",
     "",
-    "I am applying for the Tour Staff Administrator role. I have not worked at G Adventures and I have not been a CEO or tour leader. I have spent the last three years in East Africa keeping field staff and regional operations organised: records, channels, logistics, documentation, and an after-hours phone when something broke.",
+    "I am applying for the Tour Staff Administrator role. I have spent the last three years in East Africa keeping field staff and regional operations organised: records, channels, logistics, documentation, and an after-hours phone when something broke.",
     "At PATH I currently support Nuru ya Mtoto as Field Programme Administrator (ECD): field packs, follow-up, meeting admin, including Zambia touchpoints. Alongside that I am Health Informatics / HMIS Officer, which is the systems and crisis layer. Before that I was Regional Operations and Staff Administrator for 120+ people across Kenyan sites: onboarding files, Teams channels, site logistics, training, and after-hours cover.",
     "I work in English every day. Microsoft 365, Google Workspace, Sheets, Teams. I can work a flexible rota including evening operational cover. I care about this region. I want to be the person who makes sure the field team has the file, the channel, and the logistics before they need to shout.",
     "Thank you.",

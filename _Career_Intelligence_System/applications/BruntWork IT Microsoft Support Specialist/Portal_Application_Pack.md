@@ -35,11 +35,11 @@ Phone or laptop camera at eye level. Face lit, plain wall, door closed, wired he
 
 > Hi, I am Meshack Ariri. I am applying for the IT Microsoft Support Specialist role supporting your Seattle healthcare client.
 >
-> For about three years I have done this work at PATH. I am the first-line Microsoft 365 person for more than 120 healthcare users: Outlook, Teams, SharePoint, OneDrive, Windows, printers, MFA, and getting people onboarded and offboarded without leftover access. The queue lives in Freshdesk. When it is a password, I close it. When it is bigger, I write what I tried and I escalate to a vendor or to leadership. Uptime has stayed around 98 percent, and I write the how-to so the same question does not become tomorrow's ticket.
+> For about three years I have done this work at PATH. I am the first-line Microsoft 365 person for more than 120 healthcare users, covering Outlook, Teams, SharePoint, OneDrive, Windows, printers, MFA, and getting people onboarded and offboarded without leftover access. The queue lives in Freshdesk. When it is a password, I close it. When it is bigger, I write what I tried and I escalate to a vendor or to leadership. Uptime has stayed around 98 percent, and I write the how-to so the same question does not become tomorrow's ticket.
 >
 > I hold Azure Fundamentals, Google IT Support, and IBM Technical Support. I am good at translating IT into ordinary English, which matters when you report to a CEO and the staff are not technical.
 >
-> I am a fit because this is already my job: Microsoft 365, Entra ID, healthcare privacy habits, remote support, twenty focused hours. I am in Kenya, and I can work Monday to Friday during Seattle business hours. I would like to keep your team connected and unblocked. Thank you.
+> I am a fit because this is already my job. Microsoft 365, Entra ID, healthcare privacy habits, remote support, and twenty focused hours. I am in Kenya, and I can work Monday to Friday during Seattle business hours. I would like to keep your team connected and unblocked. Thank you.
 
 If you freeze: stop, breathe, start again. Do not say HIPAA certified. Do not read the CV. Do not film in a noisy room.
 

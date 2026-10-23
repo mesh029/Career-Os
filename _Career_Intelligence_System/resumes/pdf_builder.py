@@ -10,7 +10,7 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_RIGHT, TA_LEFT
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
-                                TableStyle, HRFlowable, KeepTogether)
+                                TableStyle, HRFlowable, KeepTogether, PageBreak)
 
 from resume_theme import (
     HEADER_FG, HEADER_SUB, HEADER_MUTED, WARM,
@@ -65,6 +65,10 @@ def _styles():
             "cred_label", fontName=FONT_B, fontSize=7.0, textColor=COPPER,
             alignment=TA_RIGHT, leading=10, spaceAfter=0,
         ),
+        "skills_label": ParagraphStyle(
+            "skills_label", fontName=FONT_B, fontSize=7.0, textColor=COPPER,
+            leading=10, spaceAfter=0,
+        ),
         "cred_value": ParagraphStyle(
             "cred_value", fontName=FONT_B, fontSize=9.3, textColor=NAVY,
             leading=12.4, spaceAfter=0,
@@ -101,13 +105,9 @@ def _styles():
             "smallg", fontName=FONT, fontSize=8.5, textColor=MUTED,
             leading=11.4, spaceAfter=1.2,
         ),
-        "metric_v": ParagraphStyle(
-            "metric_v", fontName=FONT_B, fontSize=11.5, textColor=COPPER,
-            alignment=TA_CENTER, leading=14, spaceAfter=0,
-        ),
-        "metric_c": ParagraphStyle(
-            "metric_c", fontName=FONT, fontSize=6.8, textColor=MUTED,
-            alignment=TA_CENTER, leading=9, spaceAfter=0,
+        "metric": ParagraphStyle(
+            "metric", fontName=FONT, fontSize=7.6, textColor=MUTED,
+            alignment=TA_CENTER, leading=11.5, spaceAfter=0,
         ),
         "letter": ParagraphStyle(
             "letter", fontName=FONT, fontSize=10.2, textColor=BODY,
@@ -130,6 +130,7 @@ def _doc(path):
     return SimpleDocTemplate(
         path, pagesize=A4, topMargin=0.38 * inch, bottomMargin=0.36 * inch,
         leftMargin=0.52 * inch, rightMargin=0.52 * inch, title="Meshack Ariri",
+        author="Meshack Ariri",
     )
 
 
@@ -147,22 +148,24 @@ def _header(story, S, name, title, contact, metrics=None):
     story.append(_rule(color=COPPER, thickness=2.4, space=0))
 
     if metrics:
-        packed = []
-        for value, caption in metrics:
-            packed.append(Table(
-                [[Paragraph(value, S["metric_v"])],
-                 [Paragraph(caption.upper(), S["metric_c"])]],
-                colWidths=[PAGE_W / len(metrics)],
-            ))
+        # Value and caption share one line so parsers read "120+ users supported" in order.
+        packed = [
+            Paragraph(
+                f'<font name="{FONT_B}" size="11" color="{ACCENT}">{value}</font>'
+                f'&nbsp;&nbsp;{caption}',
+                S["metric"],
+            )
+            for value, caption in metrics
+        ]
         row = Table([packed], colWidths=[PAGE_W / len(metrics)] * len(metrics))
         row.setStyle(TableStyle([
             ("BACKGROUND", (0, 0), (-1, -1), T_LT),
             ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
             ("ALIGN", (0, 0), (-1, -1), "CENTER"),
-            ("TOPPADDING", (0, 0), (-1, -1), 6),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
-            ("LEFTPADDING", (0, 0), (-1, -1), 2),
-            ("RIGHTPADDING", (0, 0), (-1, -1), 2),
+            ("TOPPADDING", (0, 0), (-1, -1), 7),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+            ("LEFTPADDING", (0, 0), (-1, -1), 3),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 3),
             ("LINEAFTER", (0, 0), (-2, -1), 0.4, T_MID),
         ]))
         story.append(row)
@@ -178,16 +181,20 @@ def _heading(story, S, text):
 
 
 def _toolkit(story, S, skills):
-    """Keyword ribbon. Not a Core Skills heading. Copper rail + sand wash."""
+    """Keyword ribbon with a small SKILLS label for ATS section mapping. Copper rail + sand wash."""
     if not skills:
         return
     lines = []
     for label, items in skills:
         lines.append(
-            f'<font name="{FONT_B}" color="{ACCENT}">{label}</font>'
-            f'&nbsp;&nbsp;{items}'
+            f'<font name="{FONT_B}" color="{ACCENT}">{label}:</font>'
+            f'&nbsp;{items}'
         )
-    inner = Paragraph("<br/>".join(lines), S["toolkit"])
+    inner = [
+        Paragraph("SKILLS", S["skills_label"]),
+        Spacer(1, 2),
+        Paragraph("<br/>".join(lines), S["toolkit"]),
+    ]
     rail = Table(
         [[Paragraph("", ParagraphStyle("rail", fontSize=1)), inner]],
         colWidths=[0.11 * inch, PAGE_W - 0.11 * inch],
@@ -270,6 +277,12 @@ def _credentials(story, S, data):
 
 def build_cv_pdf(data, path, contact):
     S = _styles()
+    story = _cv_story(S, data, contact)
+    _doc(path).build(story)
+    print("Saved:", path)
+
+
+def _cv_story(S, data, contact):
     story = []
     _header(
         story, S, "MESHACK ARIRI", data["headline"], contact,
@@ -366,12 +379,10 @@ def build_cv_pdf(data, path, contact):
             ref_block.append(Paragraph("Available upon request.", S["smallg"]))
         story.append(KeepTogether(ref_block))
 
-    _doc(path).build(story)
-    print("Saved:", path)
+    return story
 
 
-def build_cover_pdf(paragraphs, path, contact, headline="ICT Manager"):
-    S = _styles()
+def _cover_story(S, paragraphs, contact, headline):
     story = []
     _header(story, S, "MESHACK ARIRI", headline, contact)
     story.append(Spacer(1, 10))
@@ -383,5 +394,20 @@ def build_cover_pdf(paragraphs, path, contact, headline="ICT Manager"):
             story.append(Paragraph(para, S["sign"]))
         else:
             story.append(Paragraph(para, S["letter"]))
+    return story
+
+
+def build_cover_pdf(paragraphs, path, contact, headline="ICT Manager"):
+    S = _styles()
+    _doc(path).build(_cover_story(S, paragraphs, contact, headline))
+    print("Saved:", path)
+
+
+def build_application_pdf(cv_data, paragraphs, path, contact, headline):
+    """One PDF for portals that take a single upload: cover letter, then CV."""
+    S = _styles()
+    story = _cover_story(S, paragraphs, contact, headline)
+    story.append(PageBreak())
+    story.extend(_cv_story(S, cv_data, contact))
     _doc(path).build(story)
     print("Saved:", path)

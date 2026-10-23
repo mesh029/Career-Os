@@ -49,7 +49,7 @@ This is a **user-focused IT support and escalation** role with process improveme
 | 2–5 years IT experience | ~3 years PATH (Intern → Associate → Systems/HMIS Officer) |
 | IT certifications (preferred) | AZ-900, CCNA, Google IT Support, IBM Technical Support |
 | Microsoft environments (2+ years) | Daily M365, Entra ID/AD, Teams, SharePoint, Exchange Online |
-| Trouble tickets / incidents | Freshdesk, Zoho Desk, ITIL/SLA, 20+ tickets/day at peak |
+| Trouble tickets / incidents | Freshdesk, Zoho Desk, ITIL/SLA, ~20 tickets/week |
 | Setup and configure with users | Device imaging, M365 onboarding, VoIP, printer/network setup |
 | Escalation handling | 2nd-line ownership; clear diagnostics and handover notes |
 | Process improvement / service metrics | ~25% faster ticket response; SLA monitoring and reporting |

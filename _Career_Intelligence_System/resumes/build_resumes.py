@@ -101,17 +101,14 @@ def _render_metrics_row(doc, metrics):
         pv = cell.paragraphs[0]
         pv.alignment = WD_ALIGN_PARAGRAPH.CENTER
         pv.paragraph_format.space_before = Pt(6)
-        pv.paragraph_format.space_after = Pt(0)
-        rv = pv.add_run(value)
+        pv.paragraph_format.space_after = Pt(6)
+        rv = pv.add_run(value + "  ")
         rv.bold = True
-        rv.font.size = Pt(12)
+        rv.font.size = Pt(11)
         rv.font.color.rgb = ACCENT
         rv.font.name = FONT_NAME
-        pc = cell.add_paragraph()
-        pc.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        pc.paragraph_format.space_after = Pt(6)
-        rc = pc.add_run(caption.upper())
-        rc.font.size = Pt(7)
+        rc = pv.add_run(caption)
+        rc.font.size = Pt(7.6)
         rc.font.color.rgb = GREY
         rc.font.name = FONT_NAME
     spacer = doc.add_paragraph()
@@ -298,7 +295,7 @@ def add_bullets(doc, bullets):
 
 
 def add_toolkit(doc, skills):
-    """Copper-rail toolkit ribbon. Not a Core Skills heading."""
+    """Copper-rail toolkit ribbon with a small SKILLS label for ATS section mapping."""
     if not skills:
         return
     row = doc.add_table(rows=1, cols=2)
@@ -312,13 +309,19 @@ def add_toolkit(doc, skills):
     _set_cell_shading(body, ACCENT_PALE_HEX)
     rail.paragraphs[0].clear()
     body.paragraphs[0].clear()
-    first = True
+    head = body.paragraphs[0]
+    head.paragraph_format.space_before = Pt(2)
+    head.paragraph_format.space_after = Pt(1)
+    rh = head.add_run("SKILLS")
+    rh.bold = True
+    rh.font.size = Pt(7)
+    rh.font.color.rgb = ACCENT
+    rh.font.name = FONT_NAME
     for label, items in skills:
-        p = body.paragraphs[0] if first else body.add_paragraph()
-        first = False
+        p = body.add_paragraph()
         p.paragraph_format.space_before = Pt(1)
         p.paragraph_format.space_after = Pt(1)
-        rl = p.add_run(label + "  ")
+        rl = p.add_run(label + ": ")
         rl.bold = True
         rl.font.size = Pt(8.5)
         rl.font.color.rgb = ACCENT
@@ -399,7 +402,46 @@ def add_skill_line(doc, label, items):
 def build(data, path):
     doc = Document()
     set_base_style(doc)
-    add_header(doc, "MESHACK ARIRI", data["headline"], CONTACT, data.get("metrics"))
+    _render_cv(doc, data, CONTACT)
+    doc.save(path)
+    print("Saved:", path)
+
+
+def render_cover(doc, paragraphs, title, contact):
+    add_header(doc, "MESHACK ARIRI", title, contact)
+    for para in paragraphs:
+        if para == "":
+            continue
+        p = doc.add_paragraph()
+        p.paragraph_format.space_after = Pt(6)
+        p.paragraph_format.line_spacing = 1.08
+        r = p.add_run(para)
+        r.font.size = Pt(10.5)
+        r.font.name = FONT_NAME
+
+
+def build_cover(paragraphs, title, path, contact):
+    doc = Document()
+    set_base_style(doc)
+    render_cover(doc, paragraphs, title, contact)
+    doc.save(path)
+    print("Saved:", path)
+
+
+def build_application(data, paragraphs, cover_title, path, contact):
+    """One DOCX for portals that take a single upload: cover letter, then CV."""
+    from docx.enum.text import WD_BREAK
+    doc = Document()
+    set_base_style(doc)
+    render_cover(doc, paragraphs, cover_title, contact)
+    doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+    _render_cv(doc, data, contact)
+    doc.save(path)
+    print("Saved:", path)
+
+
+def _render_cv(doc, data, contact):
+    add_header(doc, "MESHACK ARIRI", data["headline"], contact, data.get("metrics"))
 
     add_heading(doc, "Profile")
     add_para(doc, data["summary"], size=10.2, space_after=6)
@@ -439,9 +481,6 @@ def build(data, path):
                 add_para(doc, ref, size=10, space_after=4)
         else:
             add_para(doc, "Available upon request.", size=10, color=GREY)
-
-    doc.save(path)
-    print("Saved:", path)
 
 # ---------------------------------------------------------------------------
 # SHARED building blocks
@@ -576,7 +615,7 @@ itops = {
         "Maintain documentation, SOPs, and access controls across enterprise platforms.",
     ]},
     {"org":"PATH","title":"ICT Associate","dates":"Jan 2024 – Mar 2025","loc":"Kisumu, Kenya","bullets":[
-        "Provided 1st/2nd-line support to 120+ users; handled 20+ tickets/day with ~98% uptime and ~25% faster response.",
+        "Provided 1st/2nd-line support to 120+ users; handled about 20 tickets a week with ~98% uptime and ~25% faster response.",
         "Administered Active Directory and Microsoft 365; enforced least-privilege access and group policy.",
         "Configured/monitored Cisco Meraki networks; troubleshot LAN/WAN, VPN, DNS/DHCP issues.",
         "Supported endpoint protection, patching, MFA; automated routine tasks with PowerShell/Bash.",

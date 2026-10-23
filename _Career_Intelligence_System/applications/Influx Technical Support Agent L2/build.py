@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Technical Support Agent (L2) — Influx. Kenya WFH. 24x7 staggered 44h.
-Intern off. PATH titles this CV only: L2 engineer / L2 agent.
+"""Technical Support Agent, Influx (Kenya only, WFH, 44h, 24/7 staggered 5-day). Repost of the Sep 2026 L2 ad.
+Real PATH titles, with the support level in brackets. Kubernetes and GitLab are hands-on
+(confirmed by Meshack 2026-10-07) and sit under independent project work, not PATH.
+No CV/ML platform, Datadog, banking or aviation claims.
 Run: python3 "applications/Influx Technical Support Agent L2/build.py"
 """
 import os, sys
-from docx import Document
-from docx.shared import Pt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESUMES = os.path.abspath(os.path.join(HERE, "..", "..", "resumes"))
@@ -13,86 +13,92 @@ sys.path.insert(0, RESUMES)
 import build_resumes as br
 import pdf_builder as pb
 
+CONTACT = br.CONTACT
+COVER_TITLE = "Technical Support Agent  |  Influx, Kenya (WFH)"
+
 cv = {
-"headline": "Technical Support Agent (L2)  |  Python, GitLab, Kubernetes, log investigation  |  Kenya WFH 24x7",
+"headline": "Technical Support Agent  |  Python  ·  GitLab  ·  Kubernetes  ·  Log Analysis  |  Kenya, 24/7",
 "metrics": [
-    ("3+ yrs", "technical / L2"),
-    ("Python", "logs and scripts"),
-    ("GitLab", "Kubernetes"),
-    ("24x7", "Kenya WFH"),
+    ("3+ yrs", "technical support"),
+    ("~98%", "production uptime"),
+    ("120+", "users supported"),
+    ("~25%", "faster ticket response"),
 ],
-"show_referees": False,
-"compact_education": True,
-"summary": ("L2 Technical Support Engineer, about three years at PATH: the person who takes the "
-    "ticket when guided steps fail. I read logs, write and run Python to isolate backend failures, "
-    "apply controlled changes in GitLab and Kubernetes (restart, MR merge, storage and capacity "
-    "inside the guideline), and I stop before a non-reversible live-database action. I escalate to "
-    "Engineering, QA, Infrastructure, and Product with reproduction notes. Grafana, Freshdesk, "
-    "Incident/Change/Problem. High-compliance health systems. Kenya, WFH, 24x7 staggered 5-day roster."),
+"summary": ("Technical support professional with 3+ years at PATH supporting production health systems and "
+    "120+ users, plus hands-on project work in GitLab and Kubernetes. I read system logs, write and run "
+    "Python to isolate backend failures, and apply controlled fixes within documented procedures. I know "
+    "where reversible ends: a backup and sign-off come before any live-database action that cannot be "
+    "undone. I escalate to engineering with complete evidence, explain the issue to the client in plain "
+    "English, and write up the root cause and knowledge-base article afterwards. Incident, Change and "
+    "Problem Management in Freshdesk and Zoho Desk; Grafana monitoring. Kenya-based, ready for the 24/7 "
+    "staggered roster."),
 "skills": [
-    ("L2 / product support", "Deep-dive troubleshooting, pre-approved fixes, client expectation management, evidence-ready escalation to Engineering/QA/Infra/Product"),
-    ("Log and code", "Complex system logs, Python (read, write, execute), operational scripting, backend failure isolation, RCA and workarounds"),
-    ("Platform operations", "GitLab and GitHub (MR, review, merge), Kubernetes (controlled config, restart, storage, capacity), reversible vs non-reversible database actions"),
-    ("Cloud / systems", "Cloud infrastructure (Azure/AZ-900), networking, system architecture, log analysis, Grafana"),
-    ("ITSM / change", "Incident, Change, and Problem Management; Freshdesk, Zoho Desk, Jira; KB, SOPs, monitoring hygiene"),
-    ("Compliance / roster", "Controlled high-compliance environments (health systems), access and change discipline; 24x7 staggered 5-day; English"),
+    ("Troubleshooting and escalation", "Deep-dive investigation, pre-approved fix procedures, service restarts, root cause and workarounds, defect confirmation, evidence-ready escalation to Engineering, QA, Infrastructure and Product"),
+    ("Logs and scripting", "System and application log analysis, Python (read, write, execute), SQL, Linux shell, operational scripting"),
+    ("Platform operations", "GitLab (merge requests, reviews, merges), Kubernetes (kubectl, pod restarts, scaling, storage, configuration), Docker, Git"),
+    ("Systems and cloud", "Linux and Windows servers, Apache Tomcat, MySQL, networking (TCP/IP, DNS, VPN), Microsoft Azure (AZ-900), system architecture"),
+    ("ITSM and monitoring", "Incident, Change and Problem Management, Freshdesk, Zoho Desk, Jira, Grafana, knowledge base"),
 ],
 "experience": [
-    {"org": "PATH", "title": "Technical Support Engineer (L2)", "dates": "Mar 2025 to Present",
-     "loc": "Kenya (Hybrid / Remote)", "bullets": [
-        "Own L2 deep-dives on production health systems: read logs, run Python, isolate backend failures, restore service, write the RCA. Uptime above 98%.",
-        "Apply only pre-approved change in GitLab/GitHub and Kubernetes: restarts, MR merges, storage and capacity. Stop before a non-reversible database action and escalate with evidence.",
-        "Hand Engineering, QA, and Infrastructure a confirmed defect (reproduction, logs, what is safe to run). Grafana for the live picture. Plain English to the client, then the KB article.",
+    {"org": "PATH", "title": "Health Informatics / HMIS Officer (L2 systems support)", "dates": "Mar 2025 to Present",
+     "loc": "Kenya (hybrid)", "bullets": [
+        "Take L2 investigations on production health systems (KenyaEMR, DHIS2): read server and application logs, isolate backend failures, restore service and write the root cause. Uptime above 98%.",
+        "Use Python and SQL to diagnose data and system errors and automate checks, cutting manual reporting work by about 40%.",
+        "Maintain Linux and Windows servers hosting EMR data: patching, backups and recovery. Take a backup and get sign-off before any database change that cannot be reversed.",
+        "Escalate confirmed defects to developers and national system teams with reproduction steps, logs and impact, using Grafana dashboards for the live picture.",
     ]},
-    {"org": "PATH", "title": "Technical Support Agent (L2)", "dates": "Jan 2024 to Mar 2025",
-     "loc": "Kenya (multi-site)", "bullets": [
-        "L2 queue for 120+ users: Freshdesk and Zoho Desk under Incident, Change, and Problem-style ITIL. About 25% faster response once L1 had a real escalation path.",
-        "Closed cases guided steps could not: identity, endpoint, network, application logs. Python and SQL to kill repeat failures. Change discipline on live data. Trained 80+ users.",
+    {"org": "PATH", "title": "ICT Associate (L1/L2 technical support)", "dates": "Jan 2024 to Mar 2025",
+     "loc": "Kisumu, Kenya", "bullets": [
+        "Handled escalated tickets for 120+ users in Freshdesk and Zoho Desk under Incident, Change and Problem workflows. Response time improved by about 25%.",
+        "Resolved identity, endpoint, network and application issues, wrote knowledge-base articles and trained 80+ users.",
     ]},
-    {"org": "Independent", "title": "Platform operations (GitLab, Kubernetes, Python)", "dates": "2023 to Present",
-     "loc": "Remote (project-based)", "bullets": [
-        "Operate GitLab/GitHub and Kubernetes-shaped environments: MRs, config, restarts, capacity. 40+ REST APIs, Python automation, MySQL, Grafana-style dashboards. Reversible actions in the runbook; irreversible SQL does not run.",
+    {"org": "Independent", "title": "Platform and software projects (project-based)", "dates": "2023 to Present",
+     "loc": "Remote", "bullets": [
+        "Run applications in GitLab and Kubernetes: merge requests, configuration changes, pod restarts, scaling and storage, following a written runbook.",
+        "Built an operations platform (Next.js, TypeScript, MySQL, 40+ REST APIs) with incident ticketing and dashboards, plus Python scripts for automation and log checks.",
     ]},
 ],
-"certs": "GitHub Professional  |  AZ-900  |  Google IT Support  |  IBM Technical Support  |  CCNA  |  Microsoft Data Analysis",
+"certs": ("GitHub Professional  |  Microsoft Azure Fundamentals (AZ-900)  |  Google IT Support  |  "
+          "IBM Technical Support  |  Microsoft Data Analysis"),
+"compact_education": True,
+"show_referees": False,
 }
 
 COVER_BODY = [
-    "Dear Influx hiring team,",
+    "Dear Influx Hiring Team,",
     "",
-    "I am applying for the Technical Support Agent (L2) role, Kenya, work from home. I am the L2: when the runbook ends, I read the logs, write and run Python, apply the controlled change in GitLab and Kubernetes, and I do not touch a live database action that cannot be reversed. I escalate to Engineering, QA, Infrastructure, and Product with reproduction and evidence. I explain the same incident to the client in plain English.",
-    "About three years at PATH in a controlled high-compliance health-systems environment: access, change management, operational procedure. Grafana in production. Freshdesk under Incident, Change, and Problem workflows. Ticket response about 25% faster once the queue had a real L2 path. I hold a BSc in Applied Computing, GitHub Professional, and Azure Fundamentals (AZ-900).",
-    "I am based in Kenya. I can work the 44-hour, 24x7 staggered 5-day roster including nights, weekends, and holidays. I will take your English assessment. Contact me only from an @influx.com address. I will not pay any fee.",
-    "Thank you.",
+    "Re: Technical Support Agent (Kenya, work from home)",
+    "",
+    "I am applying for the Technical Support Agent role. For more than three years at PATH I have supported "
+    "production health systems where downtime stalls clinics, keeping them above 98% uptime for 120+ users. "
+    "When the guided steps run out, I am the one who opens the logs.",
+    "",
+    "My approach matches your brief. I read server and application logs, write and run Python to isolate "
+    "the failure, and apply the fix the procedure allows. In my project work I operate in GitLab and "
+    "Kubernetes: merge requests, configuration changes, pod restarts, scaling and storage, all from a written "
+    "runbook. On live databases I know the line between reversible and not: a backup and sign-off come before "
+    "anything that cannot be undone.",
+    "",
+    "When it is a real defect, Engineering gets reproduction steps, logs and impact, not a vague ticket. The "
+    "client gets a plain-English explanation and an honest timeline. Afterwards I write the root cause and the "
+    "knowledge-base article so the next agent solves it faster. I work under Incident, Change and Problem "
+    "Management in Freshdesk and Zoho Desk, watch systems in Grafana, and cut our ticket response time by "
+    "about 25%.",
+    "",
+    "Your values read like a description of good support: do what you say, show rather than tell, focus on "
+    "the facts. I hold a BSc in Applied Computing, GitHub Professional and Microsoft Azure Fundamentals "
+    "(AZ-900). I am in Kenya, ready for the 44-hour 24/7 staggered roster including nights, weekends and "
+    "holidays, and happy to take your English and technical assessments.",
     "",
     "Sincerely,",
     "Meshack Ariri",
 ]
 
 
-def build_cover_letter(path):
-    doc = Document()
-    br.set_base_style(doc)
-    br.add_name(doc, "MESHACK ARIRI")
-    br.add_title(doc, "Technical Support Agent (L2)")
-    br.add_contact(doc, br.CONTACT)
-    for para in COVER_BODY:
-        if para == "":
-            continue
-        p = doc.add_paragraph()
-        p.paragraph_format.space_after = Pt(6)
-        p.paragraph_format.line_spacing = 1.08
-        r = p.add_run(para)
-        r.font.size = Pt(10.5)
-    doc.save(path)
-    print("Saved:", path)
-
-
 if __name__ == "__main__":
     files = br.pack_files(HERE)
     br.build(cv, files["cv_docx"])
-    build_cover_letter(files["cover_docx"])
-    cover_title = cv["headline"].split("|")[0].strip()
-    pb.build_cv_pdf(cv, files["cv_pdf"], br.CONTACT)
-    pb.build_cover_pdf(COVER_BODY, files["cover_pdf"], br.CONTACT, cover_title)
+    br.build_cover(COVER_BODY, COVER_TITLE, files["cover_docx"], CONTACT)
+    pb.build_cv_pdf(cv, files["cv_pdf"], CONTACT)
+    pb.build_cover_pdf(COVER_BODY, files["cover_pdf"], CONTACT, COVER_TITLE)
     print("Generated:", HERE)

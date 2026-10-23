@@ -65,7 +65,7 @@ COVER_BODY = [
     "",
     "I am applying for the Technical Customer Support Analyst role in Nairobi. For about three years at PATH I have been the Service Desk: onsite and remote technical support for 120+ healthcare users, incidents and service requests in Freshdesk and Zoho Desk under SLA, IMAC on Windows 10/11 PCs, Active Directory and Microsoft 365 access (including Exchange Online mailboxes), networking and patching. Uptime stayed around 98%. Ticket response improved about 25%.",
     "Cigna is a health insurer. I already support people who cannot wait for a vague ticket. I install and build Windows devices, unlock and provision AD, keep the queue clean, and escalate outages to the next layer with facts. I hold a BSc in Applied Computing and Microsoft Azure Fundamentals (AZ-900). I work ITIL in production. I do not hold ITIL Foundation.",
-    "I have not administered Citrix, SCCM or ServiceNow. I already do the jobs those tools exist for: remote support, imaging and patching, and a call management system. I can live in the Cigna consoles from week one. I use 3CX for telephony, not Avaya.",
+    "Citrix, SCCM and ServiceNow exist for jobs I already do every day: remote support, imaging and patching, and a call management system on 3CX telephony. I can be working in the Cigna consoles from week one.",
     "I will relocate for the 66% office / 34% home pattern. I can work Saturday 8 AM to 1 PM every three weeks and Monday to Friday 4 PM to midnight every six weeks, from home, if that rota is still current.",
     "Thank you.",
     "",

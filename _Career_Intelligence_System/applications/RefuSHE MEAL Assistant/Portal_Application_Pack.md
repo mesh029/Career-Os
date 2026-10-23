@@ -1,0 +1,37 @@
+# Apply — MEAL Assistant, RefuSHE (email)
+
+**Send to:** hr@refushe.org
+**Deadline:** 23 Oct 2026
+
+## Attach
+
+- `Meshack Ariri Cover Letter and CV.pdf`
+
+Certificates not attached. Have them ready if RefuSHE asks.
+
+## Subject
+
+```text
+MEAL Assistant – RK/HR/REC26-__
+```
+
+Fill in the MEAL Assistant number from RefuSHE's vacancy table (the IT Assistant is RK/HR/REC26-12). Use the same number in the email body and the cover letter's "Re:" line.
+
+## Email body
+
+```text
+Dear Hiring Manager,
+
+Please find attached my cover letter and CV for the MEAL Assistant position in Nairobi (Ref: RK/HR/REC26-__).
+
+For three years at PATH, an international health NGO in Kenya, I have collected, cleaned and reported programme data: paper forms and KoboToolbox/ODK, checks for errors, missing information and duplicates, and Excel and Power BI tables and charts. I have trained more than 80 staff on data tools and handle confidential personal data under the Kenya Data Protection Act. I was also the field ICT support for the DREAMS programme for adolescent girls and young women, which is close to RefuSHE's work. I speak English and Kiswahili and am happy to travel to field sites.
+
+My two professional referees, both from my current employer, PATH, are listed on my CV.
+
+Thank you for your consideration. I look forward to hearing from you.
+
+Kind regards,
+Meshack Ariri
++254 741 174 779
+aririmeshack@gmail.com
+```

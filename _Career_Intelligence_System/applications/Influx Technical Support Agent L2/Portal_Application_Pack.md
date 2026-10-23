@@ -1,10 +1,12 @@
-# Form answers — Influx Technical Support Agent (L2)
+# Form answers — Influx Technical Support Agent
 
 Apply only through official Influx channels. Legitimate mail ends **@influx.com**. Never pay.
 
+Upload `Meshack Ariri CV.pdf` (and `Meshack Ariri Cover Letter.pdf` if there is a slot). These replace the September L2 files.
+
 ### Location / eligibility
 
-Kenya. WFH. Authorised to work here. This posting is open to Kenya, India, Indonesia.
+Kenya. WFH. Kenyan citizen, authorised to work here. This posting is open to Kenya only.
 
 ### Hours
 
@@ -50,9 +52,9 @@ I also have the work, not just the degree. I started IT support at PATH in 2023 
 
 **GitLab.** Same change path, different console. I open the MR, get it reviewed, merge inside the guideline, and use that as the safe way to push a config or a fix instead of editing production by hand.
 
-**Kubernetes.** I use it for controlled platform work: apply a config, restart a service, adjust storage or capacity, then stop. If the next click is a live-database change I cannot undo, I do not click it. I write the evidence and escalate.
+**Kubernetes.** I use it hands-on in my project work for controlled platform changes: check pods and logs with kubectl, apply a config, restart a deployment, adjust scaling or storage, then stop. If the next click is a live-database change I cannot undo, I do not click it. I write the evidence and escalate.
 
-**AWS.** I have used AWS for cloud infrastructure tasks in the same family as the Azure work I am certified on (AZ-900): networking, access, and hosted compute or storage. I treat it like any live cloud. Read first, change second, and do not run the irreversible thing.
+**AWS.** AWS sits in the same family as the Azure work I am certified on (AZ-900): networking, identity and access, hosted compute and storage. I treat any live cloud the same way. Read first, change second, and do not run the irreversible thing.
 
 ### Ticketing and monitoring (paste)
 

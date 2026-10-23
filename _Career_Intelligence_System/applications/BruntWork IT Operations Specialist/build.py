@@ -63,7 +63,7 @@ COVER_BODY = [
     "Dear Hiring Team,",
     "",
     "I am applying for the Information Technology Operations Specialist role. For about three years at PATH I have reviewed and configured healthcare and workplace systems for 120+ users: audit the set-up, fix what is wrong, document it so the team can keep it. That is the job you described, on a different named stack.",
-    "I have not administered SimplePractice or Stripe. I have configured Paystack payment APIs, including M-Pesa STK push, so more than one system can take payments from different channels. That is the same job as reviewing Stripe: keys, payment methods, test vs live, and the path money takes. I have not run a social scheduler as the owner. I already audit configuration, websites, and integrations, and I can live in SimplePractice, Stripe, and your scheduler from week one.",
+    "I have configured Paystack payment APIs, including M-Pesa STK push, so more than one system can take payments from different channels. That is the same job as reviewing Stripe: keys, payment methods, test vs live, and the path money takes. I already audit configuration, websites, and integrations, and I can be working in SimplePractice, Stripe, and your scheduler from week one.",
     "I work in healthcare IT. I protect health information through access control, encryption, and least privilege. I am not HIPAA-course certified. I will sign and follow Business Associate and privacy agreements.",
     "I am based in Kenya, fully remote, and available Monday to Friday, 9:00 AM to 6:00 PM US Central. I hold a BSc in Applied Computing plus AZ-900, CCNA, Google IT Support, and IBM Technical Support.",
     "Thank you.",

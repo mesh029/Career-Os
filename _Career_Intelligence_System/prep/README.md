@@ -424,7 +424,7 @@ Say each **Rick answer** out loud. Under 90 seconds. One PATH proof per answer w
 **Rick:** Contain panic, run the checklist: input source, HDMI handshake, audio routing, codec, network for VC. Spare adapter kit exists because Murphy lives in event rooms. Parallel path: phone bridge backup. After: document the config that worked and label the ports. AV failures are always "it worked yesterday."
 
 **Q7. How do you prioritize when every department says their issue is urgent?**  
-**Rick:** Impact × urgency × SLA. Guest-facing and revenue-blocking beat internal printer drama. I triage openly — "here's the queue, here's why you're third." Transparency kills politics. At PATH I handled 20+ tickets/day without hero culture by making priority logic visible.
+**Rick:** Impact × urgency × SLA. Guest-facing and revenue-blocking beat internal printer drama. I triage openly — "here's the queue, here's why you're third." Transparency kills politics. At PATH I handled the queue for 120+ users without hero culture by making priority logic visible.
 
 **Q8. How do you maintain hardware/software license inventory?**  
 **Rick:** If it's not in inventory, it doesn't exist for audit or renewal. Asset tag, owner, warranty, license seat, last audit date. Quarterly reconcile: active users vs. paid seats. Orphaned licenses are cash on the table. I've run stack audits that cut waste before asking for new budget.

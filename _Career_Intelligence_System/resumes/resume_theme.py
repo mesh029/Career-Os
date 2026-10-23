@@ -54,6 +54,8 @@ CV_DOCX = "Meshack Ariri CV.docx"
 CV_PDF = "Meshack Ariri CV.pdf"
 COVER_DOCX = "Meshack Ariri Cover Letter.docx"
 COVER_PDF = "Meshack Ariri Cover Letter.pdf"
+COMBINED_DOCX = "Meshack Ariri Cover Letter and CV.docx"
+COMBINED_PDF = "Meshack Ariri Cover Letter and CV.pdf"
 
 # Canonical education block (Credentials strip). Do not fork this copy in pack builders.
 EDU_DEGREE = "BSc, Applied Computing"
@@ -98,4 +100,6 @@ def pack_files(here):
         "cv_pdf": os.path.join(here, CV_PDF),
         "cover_docx": os.path.join(here, COVER_DOCX),
         "cover_pdf": os.path.join(here, COVER_PDF),
+        "combined_docx": os.path.join(here, COMBINED_DOCX),
+        "combined_pdf": os.path.join(here, COMBINED_PDF),
     }

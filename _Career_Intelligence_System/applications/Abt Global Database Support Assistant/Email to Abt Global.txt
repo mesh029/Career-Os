@@ -1,0 +1,24 @@
+To: [FILL: address from the jobsinkenya.co.ke listing]
+Subject: Application for Database Support Assistant (REF: DSA/001/2026)
+Attachment: Meshack Ariri Cover Letter and CV.pdf
+
+Dear Hiring Manager,
+
+I am applying for the Database Support Assistant position (REF: DSA/001/2026) on the Busia and Siaya IRS campaign, based at the Kisumu office.
+
+Please find attached my cover letter and CV in one document.
+
+Briefly: I hold a BSc in Applied Computing (KCA University) and a DHIS2 Academy certificate. For over three years at PATH I have supported DHIS2 and KenyaEMR and run data-quality work: checks for duplicates, missing fields and outliers, paper-to-database entry, and Excel and Power BI reporting. I also worked the 2023 IRS campaign in Homa Bay County as IT Assistant, supporting spray teams on ODK/Kobo Collect. I live in Kisumu and can work Monday to Saturday for the full campaign.
+
+Referees:
+1. Patrick Ondieki, ICT Officer, PATH, pondieki@path.org
+2. Marvin Ngosa, Systems Administrator, PATH, mngosa@path.org
+3. Gadaffi Ochieng, Procurement Officer, Ampath, ochienggadaffi@gmail.com
+
+Telephone: +254 741 174 779
+Email: aririmeshack@gmail.com
+
+Thank you for your consideration.
+
+Yours faithfully,
+Meshack Ariri

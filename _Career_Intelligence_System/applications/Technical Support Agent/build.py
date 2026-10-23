@@ -34,7 +34,7 @@ cv = {
     "write a note the next person can use."
 ),
 "skills": [
-    ("Service desk", "First and second line, Freshdesk, Zoho Desk, Jira Service Management, ITIL, SLA, knowledge base, 20+ tickets a day"),
+    ("Service desk", "First and second line, Freshdesk, Zoho Desk, Jira Service Management, ITIL, SLA, knowledge base, ~20 tickets a week"),
     ("Product diagnostics", "Reproduce the fault, read logs and REST payloads, SQL checks, Grafana, clean handoff to Engineering"),
     ("Identity and endpoints", "Active Directory, Microsoft 365, Windows 10 and 11, MFA, imaging, printers, VoIP and 3CX, Salesforce tickets"),
     ("Networking", "LAN, WAN, VPN, DNS, DHCP, Cisco Meraki, MikroTik, Wi-Fi. CCNA."),
@@ -50,7 +50,7 @@ cv = {
     ]},
     {"org": "PATH", "title": "ICT Associate", "dates": "Jan 2024 to Mar 2025",
      "loc": "Kisumu, Kenya", "bullets": [
-        "Ran first and second line for more than 120 users across sites, often more than 20 tickets a day. Uptime stayed around 98 percent. Response time improved about 25 percent once the queue had a real path.",
+        "Ran first and second line for more than 120 users across sites, about 20 tickets a week. Uptime stayed around 98 percent. Response time improved about 25 percent once the queue had a real path.",
         "Closed login, MFA, Microsoft 365, Windows, printer, VoIP, and Salesforce access tickets in Freshdesk and Zoho Desk. Administered Active Directory with least privilege. Diagnosed LAN, WAN, VPN, DNS, and DHCP on Cisco Meraki.",
         "Turned repeat fixes into knowledge-base articles. Supported OVC and DREAMS in the field as the ICT person. Ran digital and manual MIS for PATH ECD until that workstream closed in 2025.",
     ]},

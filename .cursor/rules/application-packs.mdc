@@ -25,16 +25,37 @@ Same four output names in every folder (the folder already names the job):
 - `Meshack Ariri Cover Letter.pdf`
 - `Meshack Ariri Cover Letter.docx`
 
-Plus source: `Job Description.md`, `Application Intelligence.md`, `build.py`.
+When the employer wants one upload (CV and cover letter together), also build:
+
+- `Meshack Ariri Cover Letter and CV.pdf`
+- `Meshack Ariri Cover Letter and CV.docx`
+
+Use `br.build_application(...)` and `pb.build_application_pdf(...)`: cover letter first, page break, then CV.
+
+Plus source: `Job_Description.md`, `Application_Intelligence.md`, `Portal_Application_Pack.md`, `build.py`.
+
+Generated CV and cover files stay in the pack folder under `applications/` (gitignored there). Do not copy them to `downloads/JOBS/`.
 
 Use `build_resumes.pack_files(HERE)` in every `build.py`. Do not invent hyphenated or underscored CV filenames.
+
+## Tell him where the files are
+
+Every time a CV or cover letter is built or updated, the reply ends with the absolute path of the folder and the file names (`Meshack Ariri CV.pdf`, `Meshack Ariri Cover Letter.pdf`, and the `.docx` copies). If only one of them was rebuilt, name that file.
+
+## BruntWork portal packs
+
+For every BruntWork application, build the voice recording, video introduction and technical check from `applications/BruntWork_Recording_Templates.md`. Keep the three-line template's fixed phrases ("I have built my career in", "I take pride in", "I look forward to showing how I can be of value to your company") for both the voice and the video. Keep the video to 30 to 45 seconds. No colons in spoken scripts. Put the client's hours in Kenya time in the pack.
+
+## Tone on tools and gaps
+
+Never write "I have not used", "I haven't", "no experience with" or similar in a CV or cover letter. Frame an unfamiliar tool by the job it does and the systems Meshack already runs ("X sits in the same family as..."; "X exists for jobs I already do every day"). Do not claim hands-on use of a tool he has not used. Gaps are handled in `Application_Intelligence.md` for interview prep only.
 
 ## Visual standard
 
 Shared theme: `resumes/resume_theme.py`. Shared builders: `resumes/pdf_builder.py`, `resumes/build_resumes.py`.
 
 - Light editorial header: navy name on white, copper hairline. No full-width dark header block.
-- Metric chips when the pack has `metrics`.
-- Skills render as a toolkit ribbon, never a "Core Skills" heading.
+- Metric chips when the pack has `metrics`. Value and caption sit on one line ("120+ users supported") so parsers read them in order.
+- Skills render as a toolkit ribbon with a small copper "SKILLS" label inside it (ATS section mapping). Never a big "Core Skills" heading. Each toolkit label ends with a colon.
 - Education and certifications render as one full-width Credentials strip (copper labels, cream band). Never a two-column footer.
 - ATS-safe: real text, single column, no photo, no icons, no skill bars.

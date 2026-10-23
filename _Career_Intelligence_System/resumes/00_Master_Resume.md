@@ -10,6 +10,7 @@
 - **Name:** Meshack Ariri
 - **Email:** aririmeshack@gmail.com  ·  **Phone:** +254 741 174 779
 - **Location:** Kisumu, Kenya (open to relocate / remote-friendly)
+- **Languages:** English, Swahili, Dholuo
 - **LinkedIn:** linkedin.com/in/meshack-ariri  ·  **Portfolio:** meshreallycodes.online  ·  **GitHub:** _add link_
 - **Employer:** **PATH** (write as "PATH" — NOT "Program Appropriate for Technology in Health")
 
@@ -19,6 +20,11 @@
 | Health Informatics / HMIS Officer | **Mar 2025 – Present** | Kisumu/Nyamira, Kenya (Hybrid) |
 | ICT Associate | **Jan 2024 – Mar 2025** | Kisumu, Kenya |
 | ICT Intern | **Apr 2023 – Dec 2023** | Homa Bay, Kenya |
+| IT Assistant, IRS campaign (short-term) | **2023, one campaign (~2 months), before PATH** | Homa Bay County, Kenya |
+
+> **IRS campaign:** write it as "IT Assistant · Indoor Residual Spraying (IRS) Campaign · Homa Bay County · 2023".
+> No employer name. Tool on record: **ODK / Kobo Collect**. It is **one campaign**, not "1 year of IRS".
+> Do not claim DHIS2, GPS cleaning, device fleet setup or spray-tracker ownership on the IRS campaign unless confirmed.
 
 > ⚠️ Your LinkedIn currently shows different titles/dates ("Technical Support Specialist (HMIS)
 > Jan 2024–Present"). Update LinkedIn to match this table. Freelance/consulting work is listed as
@@ -30,7 +36,7 @@ Use these on INGO / education / AGYW / MIS / field-programme CVs. They are **wor
 
 | Workstream | Dates | How to write it | Do not write |
 |---|---|---|---|
-| **ECD** (Early Childhood Development) | **2024 to 2025. Closed.** | PATH ECD. Digital and manual MIS, field ICT, training, close-out | **Nuru ya Mtoto.** Do not list as current. Do not invent a second employer. |
+| **ECD** (Early Childhood Development) | **2024 to 2025. Closed. Remote** *(confirmed 2026-10-14)* | PATH ECD. Remote first line for field staff (Kobo, tablets, logins, sync by phone and chat), digital and manual MIS, remote onboarding, close-out. On remote-support CVs it may replace the ICT Intern entry: "ECD Programme MIS and ICT Support · PATH · Remote · 2024 to 2025"; then say "three years in IT support" | **Nuru ya Mtoto.** Do not list as current. Do not invent a second employer. |
 | **OVC** (Orphans and Vulnerable Children) | During ICT Associate, field | Field ICT: devices, connectivity, data tools, reporting for case workers | OVC programme manager / social worker |
 | **DREAMS** (PEPFAR AGYW) | During ICT Associate, field | Field ICT for mentors and AGYW programming; data tools and reporting | DREAMS coordinator |
 | **Youth mentoring and ICT hubs** | During ICT Associate | Mentored youth; trained ICT hubs | Full-time teacher / hub manager unless a pack is specifically that |
@@ -55,6 +61,7 @@ Zambia ECD learning touchpoints: use only if the pack needs multi-country; do no
 - IBM Technical Support Certificate (Coursera, 2023)
 - GitHub Professional Certificate (2024)
 - Microsoft Data Analysis (Microsoft + LinkedIn, 2024)
+- DHIS2 Academy certificate (academy.dhis2.org) — write as "DHIS2 Academy certificate"
 - Cyberise Hackathon Certification (Communications Authority of Kenya, with Huawei, 2022)
 - National Research Fund Hackathon Certification (2024)
 - Cyber Shujaa cybersecurity programme (Serianu, Kenya Bankers Association, USIU-Africa) — participation. Not a prize claim.
@@ -64,8 +71,33 @@ Zambia ECD learning touchpoints: use only if the pack needs multi-country; do no
 - 80+ health workers trained (security/data use); 15+ training sessions
 - ~40% reduction in reporting/processing time via automation *(if defensible)*
 - ~25% improvement in ticket response time *(GreenWheels CV — confirm before reuse)*
-- 20+ support tickets/day
-- _Add: # facilities/sites supported (fill in real number)_ 
+- ~20 support tickets/week on average *(confirmed 2026-10-13; replaces the old "20+ tickets/day", which was wrong. Never write "a day")*
+- 50+ health facilities supported on site across 3–4 counties *(confirmed 2026-10-07)*
+- 250+ devices imaged and set up across PATH roles: desktops, laptops and servers combined *(confirmed 2026-10-13)*
+- 7 offices supported *(confirmed 2026-10-13)*
+- Maintains physical and remote servers *(confirmed 2026-10-13; no count, do not invent one)*
+- Restores systems after outages "as soon as possible": no measured restore time, do not invent one
+- Licence reviews: removed inactive accounts and reassigned unused licences instead of buying new ones; no savings figure, do not invent one
+
+### Field and hardware facts (confirmed by Meshack 2026-10-07)
+- Installed and upgraded **KenyaEMR** (Ministry of Health national system) at facilities himself; usable as "government system rollout".
+- Hands-on: **fingerprint / biometric scanners** (KenyaEMR patient ID), **UPS / power backup** (install, battery replacement, maintenance), **tablets and phones for field teams**, **document scanners**.
+- Valid **driving licence**.
+- Not claimed: POS terminals, access control installs, solar.
+
+### Project coordination facts (confirmed by Meshack 2026-10-08)
+- Planned the KenyaEMR rollout schedule and kept the per-facility tracker (done / pending / issues).
+- Sent regular weekly and monthly written progress updates to managers and county teams.
+- Organised equipment, materials and transport before site visits.
+- Raised purchase requests and tracked spending against budget. Vendor quotes: only through the ICT Associate vendor/ISP evaluations.
+- Scheduled contractors on site (cabling, electricians, ISP installers) and checked their work before sign-off.
+- Takes meeting minutes and follows up action points regularly.
+- Tools used: Excel / Google Sheets trackers, Asana, MS Project, Monday.com (plus Jira).
+- Google Project Management Certificate (Coursera): started 2026-10, in progress.
+
+### Mentoring result (from Meshack 2026-10-08)
+- Trained 10 people in self-awareness over two months; 3 went on to start businesses or secure jobs. Placed under ICT Associate youth mentoring; confirm context before using on a CV outside PATH youth work.
+- Stays organised with Google Tasks and Google Keep; uses time boxing in the calendar.
 
 ---
 
@@ -137,6 +169,7 @@ workers to adopt digital tools. Focused on digital-health, EMR/DHIS2 implementat
 
 ### Independent / Freelance — Digital Systems & IT Support (project-based, concurrent) · 2023 – Present
 > Use only if genuinely ongoing and clearly project-based; never let it overlap-conflict with PATH.
+> Do not name Upwork (withdrawn by Meshack 2026-10-14).
 - Provided remote IT/SaaS support to small businesses: Microsoft 365, Zoho/Google Workspace setup, onboarding.
 - Built/maintained small business websites and digital workflows (HTML/CSS/CMS); on-page SEO; basic APIs.
 - Configured Paystack payment APIs on more than one system so they could collect payments from different channels, including M-Pesa STK push. (*Not Stripe. Do not upgrade this to Stripe console admin.*)
@@ -152,6 +185,7 @@ workers to adopt digital tools. Focused on digital-health, EMR/DHIS2 implementat
 - **Systems Administration:** Windows 10/11 & Server 2016–2022, Active Directory / Azure AD, Group Policy, Microsoft 365, Linux (Ubuntu/CentOS), Apache Tomcat, VMware / Proxmox / Hyper-V virtualization, server-room management, Veeam/rsync backups & DR
 - **Networking:** LAN/WAN, VLANs, VPN, DNS/DHCP, TCP/IP, Cisco Meraki, MikroTik, routing/switching, guest & staff Wi-Fi (multi-AP), monitoring
 - **Cloud:** Microsoft Azure (AZ-900), Azure AD; AWS & Docker (familiarity); Git/GitHub
+- **Platform operations (project-based, hands-on; confirmed 2026-10-07):** GitLab (merge requests, reviews, merges), Kubernetes (kubectl, pod restarts, scaling, storage, configuration). *Project work, not PATH. Do not place under a PATH role.*
 - **Security:** firewalls (FortiGate, Cisco Meraki MX, MikroTik), endpoint protection/EDR, MFA, IAM, patch management, security-awareness training, vulnerability reporting; cybersecurity & digital forensics foundation
 - **Facilities & Comms Systems:** IP telephony/VoIP (3CX), CCTV & surveillance, access control, AV / conference-room setups
 - **Payments (project-based):** Paystack API, M-Pesa STK push, multi-channel collection. *Not Stripe production.*

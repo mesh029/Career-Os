@@ -1,40 +1,49 @@
-# Technical Support Agent (L2) — Influx
+# Technical Support Agent — Influx
 
-*Captured 2026-09-10 from the posting Meshack pasted. Kenya / India / Indonesia. WFH. Full-time 44h. 24/7 staggered 5-day (days, nights, weekends, holidays).*
+*Captured 2026-10-07 (LinkedIn). This repost replaces the Sep 2026 "Technical Support Agent (L2)" capture. Same duties; changes listed at the bottom.*
+
+- **Company:** Influx, a profitable startup with its head office in Australia and 1,000+ people worldwide; provides 24/7 on-demand customer support for brands and tech companies
+- **Type:** Full-time only, 44 hours per week, work from home
+- **Roster:** 24/7 staggered 5-day schedule (day and night rotations, weekends, holidays)
+- **Who can apply:** applicants in Kenya only
+- **Safety:** Influx never asks for payment. Contact only from emails ending @influx.com
 
 ## About the role
 
-Advanced technical support. Deep-dive into complex system behaviour. Bridge customers, Engineering, QA, Infrastructure, and Product. Translate technical challenges into solutions and engineering insights.
+Advanced technical support and deep-dive investigation into complex system behaviour. Bridge customers, Engineering, QA, Infrastructure and Product, and turn technical problems into clear solutions and engineering insights.
 
 ## Key responsibilities
 
-- Pre-approved fix procedures: service restarts, Merge Request (MR) merges, storage management, capacity adjustments within documented guidelines
-- Log and code investigation: complex system logs, Python scripting, backend failures, root cause or workaround
-- Platform operations: GitLab and Kubernetes; controlled configuration changes; reversible vs non-reversible database actions
-- Escalate to Engineering/QA/Infrastructure/Product with complete technical evidence
-- Client communication, expectation management, empathy
-- Tickets: Incident, Change, and Problem Management
-- Documentation, KB, process and monitoring improvement
+- **Technical analysis and troubleshooting:** pre-approved fix procedures within documented guidelines, such as service restarts, merge request (MR) merges, storage management and capacity adjustments.
+- **Log and code investigation:** analyse complex system logs and use Python scripting to diagnose backend failures, evaluate errors and find root causes or workarounds.
+- **Platform operations:** work directly in GitLab and Kubernetes to apply controlled configuration changes, respecting the line between reversible and non-reversible database actions.
+- **Escalation and collaboration:** work with Engineering, QA, Infrastructure and Product; confirm product defects and escalate with complete technical evidence.
+- **Client and expectation management:** explain complex issues clearly, manage expectations, show empathy.
+- **Ticket and incident workflow:** track and document issues in ticketing tools under Incident, Change and Problem Management.
+- **Documentation and improvement:** investigations, root causes, workarounds, knowledge-base articles; refine processes, guidelines and monitoring.
 
 ## Requirements
 
-- 3+ years Technical Support Engineering, Systems Engineering, DevOps, or Software Development
-- Minimum 1 year L2 Technical Support
-- Python: read, write, execute; operational scripting
-- Mandatory: GitLab (or GitHub) and Kubernetes
-- Cloud infrastructure, networking, system architecture, log analysis
-- Live database: reversible vs non-reversible
-- Excellent English (assessment). 24/7 staggered 5-day flexibility
-- Controlled high-compliance software environments (banking, government, aviation/airports named as examples): security, access, change-management, operational procedure
+- 3+ years in Technical Support Engineering, Systems Engineering, DevOps or Software Development.
+- **Must have hands-on experience** navigating and executing tasks in GitLab and Kubernetes.
+- Python: read, write and execute code; general operational scripting.
+- Strong foundation in cloud infrastructure, networking, system architecture and log analysis.
+- Understanding of live database environments and the difference between reversible and non-reversible actions.
+- Excellent written and spoken English (assessed). Full flexibility for the 24/7 staggered roster.
 
 ## Nice to have
 
-- Computer Vision or Machine Learning platforms
-- Grafana, Datadog, ITSM Incident/Change
+- Experience supporting computer vision or machine learning platforms.
+- Enterprise monitoring tools (e.g. Grafana, Datadog) and ITSM frameworks (Incident and Change Management).
 
-## Offer / constraints
+## Values
 
-- WFH. International clients and team. Training.
-- Kenya, India, Indonesia only
-- Never pay. Contact only @influx.com
-- Apply via official Influx channel (Typeform / influx.com careers). Listings historically: myjobmag technical-support-agent-l2-influx / tier-2-influx
+Treat others as you'd like to be treated. Do what you say you'll do; show, don't tell. Prioritise the listener. Focus on the facts.
+
+## Changes from the September posting
+
+- Title dropped "(L2)".
+- Kenya only (was Kenya, India and Indonesia).
+- "Minimum 1 year L2 technical support" removed.
+- GitLab and Kubernetes are now "must have hands-on"; "GitLab (or GitHub)" removed.
+- The high-compliance environments line (banking, government, aviation) removed.

@@ -69,7 +69,7 @@ COVER_BODY = [
     "",
     "I am applying for the Information Security Analyst role, Kenya office. I am a Kenyan national. I do not need visa sponsorship. I can start as soon as possible and I can commit two years.",
     "For three years at PATH I have been the person who makes the security stack do work: EDR, MDM-class fleet management, SIEM-class monitoring, identity and firewall policy. I tune detections, keep coverage on a distributed estate, investigate alerts, contain, recover, and write the post-incident note. I design SETA that staff actually sit through. I assess risk on systems, vendors and data flows and I hand project teams something they can do this month. I keep policies and evidence so the next due-diligence request is faster. I know Kenya's Data Protection Act and GDPR principles from both study and a health-data environment. I will follow ISO/IEC 27001 and NIST CSF as the language of the control set. I will sit Security+ as the first cert you fund.",
-    "I have not been the named SASE or CASB tenant owner. I already do that job on the identity, VPN and firewall layer, and I get productive on a new console the way I did on every other one: with the alert, with the policy, and with the user. I still take help-desk tickets. That is how I know whether the control is usable.",
+    "SASE and CASB do at the cloud edge what I already do every day on the identity, VPN and firewall layer, and I get productive on a new console the way I did on every other one: with the alert, with the policy, and with the user. I still take help-desk tickets. That is how I know whether the control is usable.",
     "Put the stack in front of me and I will run it.",
     "",
     "Sincerely,",

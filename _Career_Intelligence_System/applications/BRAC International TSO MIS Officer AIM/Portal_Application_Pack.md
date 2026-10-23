@@ -37,7 +37,7 @@ I already run digital and manual programme MIS at PATH: DHIS2, KenyaEMR and Sale
 
 **Availability:** As soon as possible. Relocating from Kisumu for Nairobi.
 
-**Salary:** Wait for their band. If forced: 200,000 KES per month.
+**Salary (typed 20 Oct 2026 on the pre-screening form):** current gross KES 105,000 / USD 809 per month. Expected gross KES 180,000 / USD 1,387 per month. Benefits: medical insurance and house allowance. Travel: 30%. No relative at BRAC.
 
 ## Interview lines
 

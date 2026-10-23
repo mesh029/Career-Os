@@ -79,7 +79,7 @@ This is a **stretch-up** role, not a helpdesk seat. Your CV is positioned as an 
 - **Headline:** Systems Administrator / Enterprise Stack & CCaaS Ecosystem — not Health Informatics.
 - **Summary:** Stack auditor, license optimizer, framework builder, executive reporter — explicitly *not* frontline helpdesk.
 - **Experience emphasis:** ICT Associate gets the densest achievement bullets; HMIS reframed as enterprise governance; Independent platform entry included; Intern minimized to one rollout bullet.
-- **Drop from this CV:** KenyaEMR/DHIS2 clinical jargon, "1st/2nd-line support" as lead phrase, "20+ tickets/day."
+- **Drop from this CV:** KenyaEMR/DHIS2 clinical jargon, "1st/2nd-line support" as lead phrase, ticket counts.
 
 ## Likely interview questions
 

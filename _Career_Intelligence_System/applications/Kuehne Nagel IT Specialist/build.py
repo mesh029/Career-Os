@@ -39,7 +39,7 @@ cv = {
         "Contribute to improvement projects including automated reporting and operational dashboards that cut manual processing time by about 40%.",
     ]},
     {"org":"PATH","title":"ICT Associate","dates":"Jan 2024 to Mar 2025","loc":"Kisumu, Kenya","bullets":[
-        "Resolved user and system incidents via Freshdesk and Zoho Desk under ITIL and SLA, often handling 20+ tickets per day at peak periods.",
+        "Resolved user and system incidents via Freshdesk and Zoho Desk under ITIL and SLA, averaging about 20 tickets a week.",
         "Completed setup and configuration work with users: Microsoft 365 accounts, devices, printers, VoIP extensions, and network access.",
         "Took on escalated tasks from frontline support, troubleshooting identity, endpoint, and connectivity issues through to resolution.",
         "Studied ticket trends and tightened workflows, improving average response time by about 25% and keeping the knowledge base current.",
@@ -66,7 +66,7 @@ COVER_BODY = [
     "",
     "I am applying for the IT role at Kuehne+Nagel. Over the past three years at PATH I have supported and administered technology for more than 120 users across several sites, working through trouble tickets, setup and configuration requests, and escalated issues that needed proper diagnostics before handover or resolution. I am comfortable in Microsoft environments (Microsoft 365, Entra ID and Active Directory, Teams, SharePoint), networked anti-virus and endpoint protection, and backup and recovery routines.",
     "What I enjoy most is closing the loop: finding the actual cause, documenting it clearly, and leaving the user with a fix that lasts. I improved average ticket response time by about 25% by tightening ITIL workflows, keeping the knowledge base current, and tracking simple service metrics for the team. I have also mentored interns and trained 80+ colleagues on secure system use, which fits your emphasis on mentoring and better customer service.",
-    "I hold a BSc in Applied Computing (Cybersecurity and Digital Forensics) from KCA University and certifications including Microsoft Azure Fundamentals (AZ-900) and CCNA. I have not worked directly in logistics or transport yet, but I am drawn to Kuehne+Nagel because the work sits behind real-world delivery that matters, and my background is already in keeping multi-site, time-sensitive operations online at around 98% uptime.",
+    "I hold a BSc in Applied Computing (Cybersecurity and Digital Forensics) from KCA University and certifications including Microsoft Azure Fundamentals (AZ-900) and CCNA. I am drawn to Kuehne+Nagel because the work sits behind real-world delivery that matters, and my background is already in keeping multi-site, time-sensitive operations online at around 98% uptime.",
     "I am organised under pressure, happy to work flexible hours, and able to travel when the role requires it. I would welcome the opportunity to discuss how I can support your global IT team and contribute to improvement projects alongside colleagues in other regions.",
     "",
     "Thank you for your time and consideration.",

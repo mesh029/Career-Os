@@ -1,0 +1,115 @@
+MESHACK ARIRI
+
+MAILING ADDRESS
+P.O. Box [FILL], [FILL postal code], Kisumu, Kenya
+Physical: [FILL estate/street], Kisumu, Kenya (willing to relocate to Nairobi)
+
+TELEPHONE NUMBERS
+Day: +254 741 174 779
+Evening: +254 741 174 779
+Email: aririmeshack@gmail.com
+LinkedIn: linkedin.com/in/meshack-ariri
+
+EDUCATION
+
+College/University
+KCA University, Nairobi, Kenya
+Bachelor of Science (BSc), Applied Computing. Specialization: Cybersecurity and Digital Forensics
+Degree received: November 2023
+Total credits earned: [FILL from transcript] ([FILL: semester or trimester] hours)
+Relevant coursework: Ethical Hacking, Digital Forensics, Data Protection, Cloud Computing, System Analysis and Design, Artificial Intelligence
+Capstone: Designed and implemented a secure office network (VLANs, Active Directory, backup and disaster recovery) simulating real-world IT administration.
+
+High School
+[FILL school name], [FILL town], Kenya
+Kenya Certificate of Secondary Education (KCSE), [FILL year]
+
+WORK EXPERIENCE
+
+1) Health Informatics / HMIS Officer
+Employer: PATH, [FILL office address], Kisumu, Kenya
+Supervisor: [FILL name, title], Telephone: [FILL]. May we contact: [FILL Yes/No]
+Dates: March 2025 to Present
+Hours per week: 40
+Salary: KES [FILL] per month
+Duties and accomplishments:
+- Keep critical systems available at over 98% across multiple facilities: administer Windows and Linux servers, including backups, encryption, patching and disaster recovery for hosted applications and data.
+- Monitor systems and network links proactively; troubleshoot outages and latency with ISPs and site teams; escalate infrastructure and security incidents with clear records.
+- Deliver technical rollouts and system integrations: gather requirements with users, configure, test, train and hand over.
+- Maintain virtual machines on VMware, Hyper-V and Proxmox.
+- Build SQL validation and reporting automation that cut manual reporting time by about 40%.
+- Train facility staff, ICT officers and programme teams on new tools and secure use; write SOPs, job aids and uptime reports for management.
+
+2) ICT Associate
+Employer: PATH, [FILL office address], Kisumu, Kenya
+Supervisor: [FILL name, title], Telephone: [FILL]. May we contact: [FILL Yes/No]
+Dates: January 2024 to March 2025
+Hours per week: 40
+Salary: KES [FILL] per month
+Duties and accomplishments:
+- Provided tier 1 and tier 2 support, and tier 3 where there was no internal escalation, to 120+ users across multiple sites at about 98% uptime.
+- Took each ticket to resolution, documented the steps in the ticket and closed it under ITIL/SLA workflows (Freshdesk, Zoho Desk); improved ticket response time by about 25%; handled about 20 tickets a week.
+- Configured and monitored Cisco Meraki access points, switches and security appliances; troubleshot LAN/WAN, VPN, DNS, DHCP and Wi-Fi issues across sites.
+- Administered Active Directory and Microsoft 365 (Outlook, Teams, SharePoint, OneDrive): account provisioning, permissions, group policy, MFA and least-privilege access.
+- Set up and supported laptops, phones and connectivity for OVC and DREAMS field teams, including user accounts and secure access to programme systems.
+- Installed and maintained Windows 10/11 and VoIP phones; supported AV and conference-room setups.
+- Gathered technical requirements and vendor quotes for equipment and connectivity renewals for management sign-off; maintained IT asset and license inventory.
+- Supported endpoint protection, patching and MFA; responded to security alerts.
+- Resolved Salesforce user tickets (login, access, forms, reports); wrote knowledge-base articles and delivered user training and onboarding.
+
+3) ICT Intern
+Employer: PATH, [FILL office address], Homa Bay, Kenya
+Supervisor: [FILL name, title], Telephone: [FILL]. May we contact: [FILL Yes/No]
+Dates: April 2023 to December 2023
+Hours per week: 40
+Salary: KES [FILL] per month (stipend)
+Duties and accomplishments:
+- Supported LAN/WAN, routers, switches and structured cabling; assisted server-room audits and diagnostics.
+- Deployed and configured printers, VoIP phones and desktop imaging (PXE boot).
+- Created and tracked Freshdesk tickets under ITIL workflows and SLA monitoring.
+- Shadowed senior engineers on firewall rules, VLAN segmentation and Linux server provisioning; contributed to process documentation and internal IT audits.
+
+4) IT Assistant (short-term campaign)
+Employer: Indoor Residual Spraying (IRS) Campaign, Homa Bay County, Kenya
+Supervisor: [FILL name], Telephone: [FILL]
+Dates: [FILL month] 2023 to [FILL month] 2023 (one campaign, approximately 2 months)
+Hours per week: [FILL]
+Salary: KES [FILL]
+Duties and accomplishments:
+- Supported field teams on ODK / Kobo Collect mobile data collection: forms on devices, daily submissions and sync troubleshooting.
+
+OTHER QUALIFICATIONS
+
+Certifications and training:
+- Cisco Certified Network Associate (CCNA)
+- Microsoft Certified: Azure Fundamentals (AZ-900)
+- Google IT Support Professional Certificate (Coursera, 2023)
+- IBM Technical Support Certificate (Coursera, 2023)
+- GitHub Professional Certificate (2024)
+- Microsoft Data Analysis (Microsoft and LinkedIn, 2024)
+- DHIS2 Academy certificate
+- Cyber Shujaa cybersecurity programme (Serianu, Kenya Bankers Association, USIU-Africa), participant
+
+Computer hardware and software skills:
+- Networking: LAN/WAN, TCP/IP, DNS, DHCP, VLANs, VPN, routing and switching, Wi-Fi; Cisco Meraki, MikroTik, Fortinet FortiGate
+- Servers and virtualization: Windows Server 2016-2022, Linux (Ubuntu, CentOS), VMware, Hyper-V, Proxmox, Apache Tomcat; backups (Veeam, rsync) and disaster recovery
+- Microsoft 365 and identity: Outlook, Teams, SharePoint, OneDrive; Active Directory / Entra ID, Group Policy, MFA
+- Service management: Freshdesk, Zoho Desk, Jira Service Management, ITIL, SLA
+- Other: VoIP (3CX), AV and conference-room setups, CCTV, SQL, Power BI, PowerShell, Bash, Python, Git
+- Typing speed: [FILL] words per minute (optional; delete if unknown)
+
+Languages:
+- English: fluent (speaking, reading, writing)
+- Swahili: fluent
+- Dholuo: fluent
+
+Honors and activities:
+- Cyberise Hackathon, Communications Authority of Kenya with Huawei (2022), participant and certificate
+- National Research Fund Cybersecurity Challenge (2024), participant and certificate
+- Cyber Rise Hackathon, Huawei (2023); Blockchain Security Hackathon, CP Hub (2024); KCA Innovation Weeks (2022-2023)
+- Trained 80+ health workers and staff across 15+ sessions on digital tools, data quality and secure system use
+
+REFERENCES
+1. Patrick Ondieki, ICT Officer, PATH. Email: pondieki@path.org. Telephone: [FILL]
+2. Marvin Ngosa, Systems Administrator, PATH. Email: mngosa@path.org. Telephone: [FILL]
+3. Gadaffi Ochieng, Procurement Officer, Ampath. Email: ochienggadaffi@gmail.com. Telephone: [FILL]

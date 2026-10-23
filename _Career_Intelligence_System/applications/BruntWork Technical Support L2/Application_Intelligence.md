@@ -72,7 +72,7 @@ It is **not** a career-destination salary. It is a **high-probability income flo
 - **Headline:** Technical Support Agent Level 2 | Healthcare IT, patching, network, 3CX. Not Health Informatics Specialist.
 - **Keep canonical PATH titles** (HMIS Officer / ICT Associate / Intern). Tailor bullets, do not rename the job.
 - **Lead bullets:** escalations, patching, network, healthcare data security, SOPs, 3CX, automation.
-- **Drop from this CV:** DHIS2 indicator jargon, MEL, Power BI as the lead story, "20+ tickets/day" as the identity.
+- **Drop from this CV:** DHIS2 indicator jargon, MEL, Power BI as the lead story, ticket counts as the identity.
 - **Cover letter:** one honest MSP sentence; one HIPAA-aware sentence; 3CX; EST availability; willing to sign BAA.
 
 ## Interview / portal likelihood: **25–40%** if the voice + assessment are clean

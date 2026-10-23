@@ -21,4 +21,10 @@
 
 ## Salary
 
-If asked: **KES 180,000-220,000** for a Nairobi INGO technical officer. Single figure **200,000**. Do not name it first.
+Typed on the TSO-MIS pre-screening form, 20 October 2026. Use these figures on any later BRAC form.
+
+- **Current gross:** KES 105,000 per month (USD 809), including tax.
+- **Benefits:** Medical insurance and house allowance.
+- **Expected gross for this Nairobi role:** KES 180,000 per month (USD 1,387), including tax.
+- **Travel:** 30%.
+- **Relative at BRAC:** No.

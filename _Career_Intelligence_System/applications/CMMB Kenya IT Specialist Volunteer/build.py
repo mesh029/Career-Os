@@ -59,7 +59,7 @@ COVER_BODY = [
     "Dear Volunteer Programme Team,",
     "",
     "I am applying for the IT Specialist volunteer role listed under CMMB Kenya. I live in Kenya and I am asking to serve as a local volunteer with your Kenya team, not as an international volunteer based in the United States.",
-    "For the past three years at PATH I have supported 120+ users across health facilities, keeping services at over 98% uptime. The work is first-line IT in a health setting: Microsoft 365 and identity, device setup, backups, helpdesk discipline, and training clinicians and programme staff who are not IT people. I also support KenyaEMR and DHIS2 and reporting tools. I have not used ECHIS.",
+    "For the past three years at PATH I have supported 120+ users across health facilities, keeping services at over 98% uptime. The work is first-line IT in a health setting: Microsoft 365 and identity, device setup, backups, helpdesk discipline, and training clinicians and programme staff who are not IT people. I also support KenyaEMR, DHIS2 and reporting tools, which sit alongside ECHIS in Kenya's health information stack.",
     "CMMB’s values (collaboration, excellence, accountability, respect) match how I already work: finish the ticket, write the SOP, protect health information, and leave the next person a runbook. I can commit six to twelve months if the placement fits, and I can relocate within Kenya for the office or facility you need.",
     "Thank you for considering a Kenya-based IT specialist who already works in health.",
     "",

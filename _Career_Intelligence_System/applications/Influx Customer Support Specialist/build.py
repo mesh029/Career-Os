@@ -37,7 +37,7 @@ cv = {
         "Train facility and program staff (80+ people across 15+ sessions) using patient, step-by-step communication.",
     ]},
     {"org":"PATH","title":"ICT Associate","dates":"Jan 2024 to Mar 2025","loc":"Kisumu, Kenya","bullets":[
-        "Delivered 1st and 2nd-line user support to 120+ people via Freshdesk and Zoho Desk, often handling 20+ tickets per day at busy periods.",
+        "Delivered 1st and 2nd-line user support to 120+ people via Freshdesk and Zoho Desk, averaging about 20 tickets a week.",
         "Resolved login, password, account access, printer, VoIP, and basic connectivity issues following ITIL workflows and SLA targets.",
         "Walked users through software setup and configuration (Microsoft 365, Teams, SharePoint, devices) until the issue was closed.",
         "Categorised tickets accurately, wrote handover notes for escalations, and kept the knowledge base up to date.",

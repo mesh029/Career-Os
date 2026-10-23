@@ -60,7 +60,7 @@ COVER_BODY = [
     "",
     "I am applying for the Microsoft 365 & MSP IT Support Specialist (Infrastructure | Security) role. For the past three years at PATH I have provided remote-ready IT support for more than 120 users across multiple sites, keeping services at over 98% uptime. The core of that work is Microsoft 365, Entra ID and Active Directory, MFA, backups, patching, and endpoint protection.",
     "I already work the way an MSP bench needs: switch between environments without mixing them up, finish the ticket, write the SOP. I have also done project-based Microsoft 365 setup and onboarding for small businesses. PATH is in-house healthcare IT, not a named US or Australian MSP, but the multi-site, multi-context pattern is the same.",
-    "I want to be direct on the named tools. I have not administered Intune, Microsoft Defender, or Copilot as production consoles. I already do the underlying jobs — identity, endpoints, backups, security hygiene, and teaching non-technical users new tools — and I can ramp the client's Intune, Defender, RMM, and Copilot enablement in week one.",
+    "Intune, Microsoft Defender, Copilot and your RMM are built around jobs I already do every day: identity, endpoints, backups, security hygiene, and teaching non-technical users new tools. I can be working in the client's Intune, Defender, RMM and Copilot enablement in week one.",
     "I am based in Kenya, fully remote-ready, and available Monday through Friday, 9:00 AM to 1:00 PM AEST. I hold a BSc in Applied Computing (Cybersecurity and Digital Forensics) plus Microsoft Azure Fundamentals (AZ-900), CCNA, Google IT Support, and IBM Technical Support. Thank you for the chance to keep your SMB clients stable.",
     "",
     "Sincerely,",

@@ -68,7 +68,7 @@ COVER_BODY = [
     "Dear Hiring Team,",
     "",
     "I am applying for the IT Microsoft Support Specialist role supporting your Seattle healthcare client. For about three years at PATH I have been first-line Microsoft 365 support for more than 120 healthcare users: Outlook, Teams, SharePoint, OneDrive, Windows, printers, MFA, and the ticket that arrives as panic and leaves as a how-to. Uptime stayed around 98%. I already explain this to non-technical staff, and I already report up, not sideways.",
-    "I own onboarding and offboarding: accounts, licences, permissions, same-day leavers. I watch phishing and leftover access. I keep the asset list and the SOP. I escalate to vendors or management when the break is outside the runbook. I hold Microsoft Azure Fundamentals (AZ-900), Google IT Support, and IBM Technical Support. I have not sat MS-900 or CompTIA A+. I have not been a US HIPAA officer. I already protect health information through access control, MFA, and training, and I will follow your privacy rules.",
+    "I own onboarding and offboarding: accounts, licences, permissions, same-day leavers. I watch phishing and leftover access. I keep the asset list and the SOP. I escalate to vendors or management when the break is outside the runbook. I hold Microsoft Azure Fundamentals (AZ-900), Google IT Support, and IBM Technical Support. I already protect health information through access control, MFA, and training, and I will follow your privacy rules.",
     "I am based in Kenya, fully remote, and available Monday to Friday, 20 hours inside Seattle business hours (a working block for me is 9:00 AM to 1:00 PM Pacific, which is 7:00 to 11:00 PM my time). I can start immediately.",
     "Thank you.",
     "",
