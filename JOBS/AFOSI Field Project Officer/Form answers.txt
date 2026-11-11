@@ -25,3 +25,15 @@ Effective delivery for me means: clear roles, short feedback loops, documented s
 All of my PATH work sits on donor-funded health programs. I support work planning by turning program reporting calendars and field needs into digital task lists, SOPs and training schedules. I do not own the full project budget as finance lead; I contribute by tracking ICT/asset and license needs, flagging waste (unused access/seats), and keeping systems reliable so program spend is not lost to downtime.
 
 Monitoring and reporting: I run DQA/SQL checks, maintain Power BI/Grafana views, prepare indicator and uptime inputs for program/MEL review, and reconcile project data (PRISM) with national systems (DHIS2) where needed. Stakeholder coordination: facility teams, county-facing ICT/program colleagues, and internal PATH technical leads — plain-language updates, clean escalation, and documented outcomes.
+
+4) Coordinating developers, service providers, vendors or technical partners
+
+At PATH I work with internal ICT colleagues, facility ICT officers and external providers (ISP/network, software and device support) to keep digital services running. I gather requirements, translate field issues into clear technical asks, track vendor or escalated tickets to closure, and test that the fix works for users before we sign off. On my County Health Ops Platform I owned the product side: requirements, build decisions, testing and handover so the solution matched what program teams needed.
+
+5) Supporting digital adoption among youth, community groups and local enterprises
+
+I start where people are. Short demos, role-based practice, and simple job aids beat long theory. At PATH I trained 80+ staff with mixed digital literacy on EMR, DHIS2 and workplace tools using plain language, guided practice and follow-up support until they could complete the real task alone. For youth, community organisations and local enterprises I would segment by skill level, use local examples (their forms, their customers, their phones), appoint peer champions, and keep a support runway after go-live so adoption does not die after the workshop.
+
+6) Coordinating partnerships, consortium, government or other stakeholders
+
+On donor-funded PATH work I coordinate across facility teams, program officers and ICT counterparts, and I support county-facing digital and reporting workflows tied to national systems like DHIS2. I keep updates plain, agree who owns each action, document decisions, and escalate early when a partner blocker threatens timelines. The goal is shared delivery, not parallel workstreams.
