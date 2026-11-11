@@ -22,49 +22,50 @@ cv = {
     "Donor-Funded Delivery  |  Applied Computing"
 ),
 "summary": (
-    "Applied Computing graduate with ~3 years at PATH delivering technology-enabled work on "
-    "donor-funded multi-site health programs. Combines digital systems implementation and support "
-    "(EMR/DHIS2, project databases, Microsoft 365), digital skills training for 80+ staff, product "
-    "ownership of a county health operations platform, and monitoring/reporting through SQL, Excel, "
-    "and Power BI/Grafana dashboards. Strong at turning field needs into usable digital workflows, "
-    "SOPs, and results tracking. Seeking to lead technology and digital integration delivery with AFOSI in Kilifi."
+    "Applied Computing graduate with ~3 years at PATH on donor-funded, technology-enabled health "
+    "programs. Product owner of a multi-county digital ops platform (NDWH/CBS reporting, EMR, assets, "
+    "tickets); delivers digital skills training to 80+ staff; coordinates matrix/field teams as primary "
+    "digital contact for 120+ users; and owns monitoring/reporting through SQL, Excel, DHIS2/PRISM "
+    "workflows and Power BI/Grafana. Strong at work planning for digital rollouts, stakeholder "
+    "coordination, and results tracking. Open to Kilifi field delivery with AFOSI."
 ),
 "skills": [
-    ("Digital project delivery", "Technology-enabled program activities, digital tool rollout, SOP design, multi-site coordination, donor-funded delivery discipline"),
-    ("Digital skills & enablement", "Curriculum-style job aids, 15+ training sessions, 80+ staff trained, e-learning friendly documentation, non-technical facilitation"),
-    ("Product & systems", "Requirements-to-delivery ownership of reporting/ops platform; KenyaEMR/DHIS2 support; PRISM project database workflows; Microsoft 365"),
-    ("Data, M&E & reporting", "SQL validation, DQA, Excel analytics, Power BI/Grafana dashboards, indicator tracking, timely progress reporting"),
-    ("Innovation & tech stack", "Full-stack web (Next.js/TypeScript), cloud DB, AI coursework, automation; rapid prototyping via national hackathons"),
+    ("Digital project delivery", "Work planning for digital rollouts, multi-site coordination, SOP/job-aid design, donor-funded delivery discipline, stakeholder updates"),
+    ("Team leadership (matrix/field)", "Primary digital contact for 120+ users; coach facility ICT/program users; run 15+ training sessions; assign owners and escalate blockers"),
+    ("Product ownership", "County Health Ops Platform (Next.js/TypeScript/MySQL); KenyaEMR/DHIS2; PRISM project DB alongside DHIS2; Microsoft 365"),
+    ("M&E, reporting & data", "SQL/DQA, Excel analytics, Power BI/Grafana, indicator packages, uptime/progress reporting for program review"),
+    ("Innovation", "Automation (~40% reporting effort cut); AI coursework; hackathons (Cyberise/CA Kenya, NRF); Scrum Product Owner certification in progress"),
 ],
 "experience": [
     {"org": "PATH", "title": "Health Informatics / HMIS Officer", "dates": "Mar 2025 – Present", "loc": "Kisumu/Nyamira, Kenya (Hybrid)", "bullets": [
-        "Lead day-to-day digital systems support for KenyaEMR/DHIS2 and related reporting tools across facilities — uptime, data quality, and user adoption.",
-        "Design and deliver digital skills sessions for facility and program teams (part of 80+ staff trained); write SOPs and job aids that stick in the field.",
-        "Own monitoring and reporting workflows: SQL/Excel validation, dashboards (Power BI/Grafana), and timely indicator packages for program review.",
-        "Coordinate with multidisciplinary teams on digital tools for nurturing care / ECD data support; translate field feedback into system improvements.",
-        "Drive innovation through automation that cut reporting/processing effort ~40% while protecting data integrity.",
+        "Product-own and advance digital tools for donor-funded delivery: KenyaEMR/DHIS2 support, PRISM project-database workflows alongside DHIS2, and SQL/Excel validation.",
+        "Lead matrix coordination with facility ICT officers and program teams — set owners for data/system issues, coach users, and close loops before reporting deadlines.",
+        "Plan and deliver digital skills training (part of 80+ staff / 15+ sessions); publish SOPs and job aids that drive adoption in the field.",
+        "Own M&E inputs: Power BI/Grafana dashboards, indicator packages, and progress/uptime reporting for program and leadership review.",
+        "Built County Health Systems Operations Platform (NDWH & CBS) — Next.js/TypeScript/MySQL — for facility reporting, EMR overview, assets and tickets across four counties.",
+        "Cut reporting/processing effort ~40% through automation while protecting data integrity on donor reporting cycles.",
     ]},
     {"org": "PATH", "title": "ICT Associate", "dates": "Jan 2024 – Mar 2025", "loc": "Kisumu, Kenya", "bullets": [
-        "Delivered technology-enabled operations for 120+ users across multi-site programs — Microsoft 365, identity, networking, and ITIL-style service workflows (~98% uptime).",
-        "Ran digital onboarding/offboarding and user training; built knowledge-base content so teams could adopt tools without constant escalation.",
-        "Supported surveillance data accuracy with SQL checks and structured ticket discipline (~25% faster response).",
-        "Acted as primary digital contact for non-technical users — clear communication, field-friendly troubleshooting, documented fixes.",
+        "Primary digital contact for 120+ users on donor-funded multi-site programs — Microsoft 365, identity, networking, ITIL ticketing; ~98% uptime.",
+        "Led work planning for digital onboarding/offboarding and user enablement; knowledge-base content reduced repeat failures.",
+        "Coordinated with ICT colleagues and field users to hit SLA targets (~25% faster ticket response) and keep stakeholders updated.",
+        "Supported surveillance data quality with SQL checks tied to program monitoring needs.",
     ]},
     {"org": "PATH", "title": "ICT Intern", "dates": "Apr 2023 – Dec 2023", "loc": "Homa Bay, Kenya", "bullets": [
-        "Supported facility digitalization and ICT rollout — connectivity, devices, and day-to-day enablement for health workers.",
-        "Logged incidents, contributed to process documentation, and assisted deployments under program timelines.",
+        "Supported facility digitalization rollout — connectivity, devices, documentation — under program timelines with county-facing teams.",
+        "Assisted deployments and day-to-day enablement for health workers adopting new digital tools.",
     ]},
 ],
 "certs": (
-    "CCNA  |  Microsoft Azure Fundamentals (AZ-900)  |  Google IT Support Professional  |  "
-    "IBM Technical Support  |  GitHub Professional  |  Microsoft Data Analysis  |  "
-    "Cyberise Hackathon (CA Kenya)  |  NRF Cybersecurity Hackathon"
+    "CCNA  |  Azure Fundamentals (AZ-900)  |  Google IT Support  |  IBM Technical Support  |  "
+    "GitHub Professional  |  Microsoft Data Analysis  |  Cyberise / NRF Hackathons  |  "
+    "Scrum Product Owner certification — in progress"
 ),
 "achievements": [
-    "Product-owned County Health Systems Operations Platform (NDWH & CBS) — facility reporting, EMR overview, assets, and tickets across four counties.",
-    "Trained 80+ staff on digital tools, data quality, and secure use across 15+ sessions.",
-    "Sustained ~98% uptime for digital services supporting 120+ users on donor-funded programs.",
-    "National innovation/hackathon participant (Cyberise / CA Kenya; NRF) — rapid digital problem-solving under time pressure.",
+    "Product-owned multi-county digital ops platform (NDWH & CBS) with measurable reporting/visibility gains for program teams.",
+    "Led digital skills delivery for 80+ staff; primary digital contact coordinating 120+ users to ~98% uptime.",
+    "Donor-program M&E support: DQA, dashboards, and timely indicator/uptime inputs for review cycles.",
+    "National hackathons (Cyberise / CA Kenya; NRF) — rapid digital problem-solving under time pressure.",
 ],
 "languages": "English (excellent)  |  Kiswahili (fluent)",
 "referees": [
@@ -131,6 +132,7 @@ if __name__ == "__main__":
     extras = [
         os.path.join(HERE, "Meshack Ariri Cover Letter.txt"),
         os.path.join(HERE, "Certifications form answer.txt"),
+        os.path.join(HERE, "Form answers.txt"),
         os.path.join(HERE, "Job_Description.md"),
         os.path.join(HERE, "Application_Intelligence.md"),
         notes,

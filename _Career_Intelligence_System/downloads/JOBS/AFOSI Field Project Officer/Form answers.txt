@@ -1,0 +1,27 @@
+1) Most relevant digital / technology-enabled development project
+
+Project: County Health Systems Operations Platform (NDWH & CBS) — built while supporting PATH digital health work across Kakamega, Vihiga, Nyamira and Kisumu.
+
+Objectives: Give program and ICT teams one place to track facility reporting status (NDWH vs CBS), EMR deployment, IT assets and support incidents so gaps are visible early and reporting stays on time.
+
+My responsibilities: Product ownership end to end — gather field/program requirements, design the data model and workflows, build and test the platform, train users on the tool, and use it to spot missing facilities and open tickets. Day to day I also supported KenyaEMR/DHIS2 and PATH project data workflows (including PRISM alongside DHIS2), with SQL/Excel validation and dashboards.
+
+Technologies: Next.js, TypeScript, Prisma/MySQL (cloud), REST APIs, dashboards/maps; operational stack included DHIS2, KenyaEMR, Excel/SQL, Power BI/Grafana, Microsoft 365.
+
+Results: A working multi-county ops platform with 40+ APIs and modules for reporting, EMR overview, assets and tickets; faster visibility on missing facility reports; ~40% less manual reporting grind through validation/automation; digital skills transfer to 80+ staff so adoption stuck.
+
+
+2) Experience managing project teams
+
+I have not held a formal line-manager title with a large permanent report count. What I have done is lead delivery through matrix and field teams on donor-funded digital work.
+
+I am the primary digital contact for 120+ users across multi-site PATH programs. I plan and run digital skills sessions (15+ sessions; 80+ staff trained), coach facility ICT officers and program users on EMR/DHIS2 and related tools, set clear SOPs/job aids, and follow up until data and tickets close. I coordinate with ICT colleagues, program officers and facility teams — assign who owns a fix, track progress in ticketing, and escalate blockers early.
+
+Effective delivery for me means: clear roles, short feedback loops, documented standards, and daily/weekly checks on uptime, data quality and open issues — not waiting for month-end surprises.
+
+
+3) Donor-funded project experience
+
+All of my PATH work sits on donor-funded health programs. I support work planning by turning program reporting calendars and field needs into digital task lists, SOPs and training schedules. I do not own the full project budget as finance lead; I contribute by tracking ICT/asset and license needs, flagging waste (unused access/seats), and keeping systems reliable so program spend is not lost to downtime.
+
+Monitoring and reporting: I run DQA/SQL checks, maintain Power BI/Grafana views, prepare indicator and uptime inputs for program/MEL review, and reconcile project data (PRISM) with national systems (DHIS2) where needed. Stakeholder coordination: facility teams, county-facing ICT/program colleagues, and internal PATH technical leads — plain-language updates, clean escalation, and documented outcomes.
